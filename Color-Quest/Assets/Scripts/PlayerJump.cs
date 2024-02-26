@@ -33,7 +33,7 @@ public class PlayerJump : MonoBehaviour
         rb.velocity = new Vector2(moveInput * playerSpeed, rb.velocity.y);
 
         // Double Jump Logic
-        if (Input.GetButtonDown("Jump") && jumpsLeft > 0)
+        if (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.UpArrow) && jumpsLeft > 0)
         {
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Sqrt(2.0f * jumpHeight * Mathf.Abs(Physics2D.gravity.y)));
             jumpsLeft--;
