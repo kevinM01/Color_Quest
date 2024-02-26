@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Collectible
+  - Fall
   layers:
   - Default
   - TransparentFX
