@@ -47,11 +47,12 @@ public class PlayerJump : MonoBehaviour
         return hit.collider != null;
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+       void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Fall")
         {
             SceneManager.LoadScene("GameOver");
         }
     }
+ 
 }
