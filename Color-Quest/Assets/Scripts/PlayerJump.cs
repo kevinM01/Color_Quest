@@ -59,6 +59,7 @@ public class PlayerJump : MonoBehaviour
             // Stop the game and display game over text
             //gameOverText.enabled = true;
             Time.timeScale = 0f; // Stop time to freeze the game
+            SceneManager.LoadScene("GameOver");
             return; // Exit the update loop
         }
     }
