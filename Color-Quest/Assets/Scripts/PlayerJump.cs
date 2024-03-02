@@ -37,7 +37,7 @@ public class PlayerJump : MonoBehaviour
         if (groundedPlayer && Mathf.Approximately(rb.velocity.y, 0f))
         {
             // Reset jumps when grounded and not currently moving upwards
-            jumpsLeft = extraJumps + 1; // Allows for the initial jump without consuming extra jumps
+            jumpsLeft = extraJumps + 1; // Allows player for the initial jump without consuming extra jumps
         }
 
         float moveInput = Input.GetAxis("Horizontal");
