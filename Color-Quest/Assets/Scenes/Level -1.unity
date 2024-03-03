@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 8227073}
   - component: {fileID: 8227072}
   - component: {fileID: 8227071}
+  - component: {fileID: 8227075}
   m_Layer: 6
   m_Name: Coin1
   m_TagString: Coin
@@ -287,7 +288,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -44.28, y: -21.65, z: 9.988439}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1805913723}
@@ -436,6 +437,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8227075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8227069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10752fdadd4b2b47b9b950df35945ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &20642754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,6 +2998,7 @@ GameObject:
   - component: {fileID: 985772552}
   - component: {fileID: 985772551}
   - component: {fileID: 985772550}
+  - component: {fileID: 985772554}
   m_Layer: 6
   m_Name: Coin2
   m_TagString: Coin
@@ -3002,7 +3016,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30.36, y: -20.5, z: 9.988439}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1805913723}
@@ -3151,6 +3165,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &985772554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985772548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b10752fdadd4b2b47b9b950df35945ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &995770459
 GameObject:
   m_ObjectHideFlags: 0
