@@ -16,6 +16,8 @@ public class PlayerJump : MonoBehaviour
     public TextMeshProUGUI healthText;
     private Coroutine damageCoroutine;
 
+    private SendToGoogle sendToGoogle;
+
 
     private void Start()
     {
@@ -24,6 +26,8 @@ public class PlayerJump : MonoBehaviour
         jumpsLeft = extraJumps + 1;
         health = 100f;
         UpdateHealthText();
+
+        sendToGoogle = FindObjectOfType<SendToGoogle>();
     }
 
     private void Update()
@@ -51,6 +55,9 @@ public class PlayerJump : MonoBehaviour
         {
             health=0;
             UpdateHealthText();
+
+            CollectAnalytics();
+
             // Stop the game and display game over text
             Time.timeScale = 0f; // Stop time to freeze the game
             return; // Exit the update loop
@@ -96,11 +103,13 @@ public class PlayerJump : MonoBehaviour
             UpdateHealthText();
             if (health <= 0)
             {
-               
                 // Handle player death here if needed
                 int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
                 health = 100;
                 SceneManager.LoadScene(currentSceneIndex);
+
+                CollectAnalytics();
+
                 break;
             }
             yield return new WaitForSeconds(3f);
@@ -119,6 +128,24 @@ public class PlayerJump : MonoBehaviour
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(currentSceneIndex);
+
+            CollectAnalytics();
         }
     }
+
+    private void CollectAnalytics()
+    {
+        // x coord of the player at the time of his dehant (rip player, awks!)
+        // collect current level at time of death
+        Scene currentScene = SceneManager.GetActiveScene();
+        Debug.Log("Current Scene Name: " + currentScene.name.GetType());
+        float x_coord = transform.position.x;
+        Debug.Log("Current X Position of the Player: " + x_coord);
+        if (sendToGoogle != null)
+        {
+            sendToGoogle.Send(x_coord, currentScene.name);
+        }
+    }
+
+
 }
