@@ -120,6 +120,7 @@ public class PlayerJump : MonoBehaviour
             if (health <= 0)
             {
                 gameOverText.enabled = true;
+                Time.timeScale = 0f;
                 yield return new WaitForSeconds(2f);
                 // Handle player death here if needed
                 int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -171,8 +172,8 @@ public class PlayerJump : MonoBehaviour
 
     private IEnumerator ReloadSceneAfterDelay(float delay)
     {
+        Time.timeScale = 0f;
         yield return new WaitForSeconds(delay);
-
         // Reload the scene
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
