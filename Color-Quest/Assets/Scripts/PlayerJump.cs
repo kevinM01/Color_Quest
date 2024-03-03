@@ -121,7 +121,8 @@ public class PlayerJump : MonoBehaviour
     {
         if (col.tag == "Fall")
         {
-            SceneManager.LoadScene("GameOver");
+             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
         }
     }
 }
