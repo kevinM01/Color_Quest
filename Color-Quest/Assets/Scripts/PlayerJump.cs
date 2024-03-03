@@ -17,6 +17,7 @@ public class PlayerJump : MonoBehaviour
     private Coroutine damageCoroutine;
 
     private SendToGoogle sendToGoogle;
+    private Coroutine blinkCoroutine;
 
 
     private void Start()
@@ -50,6 +51,8 @@ public class PlayerJump : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Sqrt(2.0f * jumpHeight * Mathf.Abs(Physics2D.gravity.y)));
             jumpsLeft--;
         }
+
+        UpdateHealthText();
 
         if (health <= 0)
         {
@@ -119,6 +122,25 @@ public class PlayerJump : MonoBehaviour
     public void UpdateHealthText()
     {
         healthText.text = "Health: " + health.ToString() + "%";
+
+        if (health <= 20)
+        {
+            if (blinkCoroutine == null)
+            {
+                // Start the coroutine only if it's not already running
+                blinkCoroutine = StartCoroutine(BlinkHealthText());
+            }
+        }
+        else
+        {
+            // If health is greater than or equal to 10, ensure the text is visible and stop the coroutine
+            healthText.enabled = true;
+            if (blinkCoroutine != null)
+            {
+                StopCoroutine(blinkCoroutine);
+                blinkCoroutine = null;
+            }
+        }
     }
 
 
@@ -144,6 +166,15 @@ public class PlayerJump : MonoBehaviour
         if (sendToGoogle != null)
         {
             sendToGoogle.Send(x_coord, currentScene.name);
+        }
+    }
+
+    private IEnumerator BlinkHealthText()
+    {
+        while (true)
+        {
+            healthText.enabled = !healthText.enabled;
+            yield return new WaitForSeconds(0.5f); // Toggle every 0.5 seconds
         }
     }
 

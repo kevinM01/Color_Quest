@@ -19,7 +19,7 @@ public class SendToGoogle : MonoBehaviour
     {
         /*x_coord = Random.Range(0, 101);*/     // x coord of the player at the time of death
         /*level = 0;*/                          // level at the time of death
-
+        x_coord = (float)System.Math.Floor(x_coord);
         char levelNum = level[level.Length - 1];
         StartCoroutine(Post(_sessionID.ToString(), x_coord.ToString(), levelNum.ToString()));
         Debug.Log("Sendinggg Daa-taa" + levelNum);
