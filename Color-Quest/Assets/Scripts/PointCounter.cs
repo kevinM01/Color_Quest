@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UI;
 using TMPro;
 
 
@@ -33,12 +32,6 @@ public class PointCounter : MonoBehaviour
             UpdatePointsText();
         }
     }
-
-//    public void IncreasePoints(int amount)
-//    {
-//        points+=amount;
-//        UpdatePointsText();
-//    }
 
     void UpdatePointsText()
     {

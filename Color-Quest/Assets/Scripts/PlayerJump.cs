@@ -13,9 +13,7 @@ public class PlayerJump : MonoBehaviour
     private int extraJumps = 1;
     private int jumpsLeft;
     public float health;
-    //public PointCounter pointCounter;
     public TextMeshProUGUI healthText;
-    //public TextMeshProUGUI gameOverText;
     private Coroutine damageCoroutine;
 
 
@@ -26,8 +24,6 @@ public class PlayerJump : MonoBehaviour
         jumpsLeft = extraJumps + 1;
         health = 100f;
         UpdateHealthText();
-        //gameOverText.enabled = false;
-        //pointCounter = FindObjectOfType<PointCounter>();
     }
 
     private void Update()
@@ -55,11 +51,8 @@ public class PlayerJump : MonoBehaviour
         {
             health=0;
             UpdateHealthText();
-            //UpdateGameOverText();
             // Stop the game and display game over text
-            //gameOverText.enabled = true;
             Time.timeScale = 0f; // Stop time to freeze the game
-            SceneManager.LoadScene("GameOver");
             return; // Exit the update loop
         }
     }
@@ -103,8 +96,10 @@ public class PlayerJump : MonoBehaviour
             UpdateHealthText();
             if (health <= 0)
             {
-                //health = 0;
+                health = 100;
                 // Handle player death here if needed
+                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentSceneIndex);
                 break;
             }
             yield return new WaitForSeconds(3f);
@@ -121,8 +116,8 @@ public class PlayerJump : MonoBehaviour
     {
         if (col.tag == "Fall")
         {
-             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex);
         }
     }
 }
