@@ -96,9 +96,10 @@ public class PlayerJump : MonoBehaviour
             UpdateHealthText();
             if (health <= 0)
             {
-                health = 100;
+               
                 // Handle player death here if needed
                 int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                health = 100;
                 SceneManager.LoadScene(currentSceneIndex);
                 break;
             }
