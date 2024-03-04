@@ -123,57 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &15101206
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 15101207}
-  - component: {fileID: 15101208}
-  m_Layer: 0
-  m_Name: BlueCoin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &15101207
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15101206}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1431847, y: 0.21387213, z: 9.988439}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1922426511}
-  - {fileID: 239840164}
-  - {fileID: 667004500}
-  - {fileID: 2099984605}
-  - {fileID: 942776933}
-  - {fileID: 619519094}
-  m_Father: {fileID: 1278963375}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &15101208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 15101206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668578c4e170c214bbcd48bd580604e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: {r: 0, g: 0.7921569, b: 1, a: 0}
 --- !u!1 &21188410
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +136,7 @@ GameObject:
   - component: {fileID: 21188413}
   - component: {fileID: 21188412}
   m_Layer: 0
-  m_Name: VerticalRed (12)
+  m_Name: RedPlatform-9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -202,11 +151,11 @@ Transform:
   m_GameObject: {fileID: 21188410}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 89.71003, y: -19.2694, z: 0}
+  m_LocalPosition: {x: 86.56685, y: -19.055527, z: 9.988439}
   m_LocalScale: {x: 4, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 487927311}
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &21188412
 BoxCollider2D:
@@ -330,7 +279,7 @@ GameObject:
   - component: {fileID: 22186200}
   - component: {fileID: 22186199}
   m_Layer: 0
-  m_Name: HorizontalGreen (8)
+  m_Name: GreenPlatform-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -345,11 +294,11 @@ Transform:
   m_GameObject: {fileID: 22186197}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 140.43001, y: -17.7514, z: 0}
+  m_LocalPosition: {x: 137.28682, y: -17.537527, z: 9.988439}
   m_LocalScale: {x: 5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1740387703}
+  m_Father: {fileID: 1551575831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &22186199
 MonoBehaviour:
@@ -599,11 +548,11 @@ Transform:
   m_GameObject: {fileID: 29964999}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.37, y: -24.26, z: 0}
+  m_LocalPosition: {x: 30.181816, y: -24.486128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &29965005
 MonoBehaviour:
@@ -667,7 +616,7 @@ GameObject:
   - component: {fileID: 33052875}
   - component: {fileID: 33052874}
   m_Layer: 0
-  m_Name: Spike-3 (41)
+  m_Name: Spike-41
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -867,11 +816,11 @@ Transform:
   m_GameObject: {fileID: 33052873}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.41462517, y: 0.6857136, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 71.753815, y: -19.806128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &51204737
 GameObject:
@@ -886,7 +835,7 @@ GameObject:
   - component: {fileID: 51204740}
   - component: {fileID: 51204739}
   m_Layer: 0
-  m_Name: VerticalRed (5)
+  m_Name: RedPlatform-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,11 +850,11 @@ Transform:
   m_GameObject: {fileID: 51204737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.43, y: -18.64, z: 0}
+  m_LocalPosition: {x: 30.286816, y: -18.426126, z: 9.988439}
   m_LocalScale: {x: 3, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 487927311}
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &51204739
 BoxCollider2D:
@@ -1029,7 +978,7 @@ GameObject:
   - component: {fileID: 93472113}
   - component: {fileID: 93472115}
   m_Layer: 0
-  m_Name: Platform-4 (18)
+  m_Name: Ground-14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1172,7 +1121,7 @@ GameObject:
   - component: {fileID: 96133404}
   - component: {fileID: 96133406}
   m_Layer: 0
-  m_Name: Platform-3
+  m_Name: Ground-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1441,11 +1390,11 @@ Transform:
   m_GameObject: {fileID: 125584390}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.85, y: -18.9, z: 0}
+  m_LocalPosition: {x: 52.66181, y: -19.126127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &125584396
 MonoBehaviour:
@@ -1540,7 +1489,7 @@ GameObject:
   - component: {fileID: 141081039}
   - component: {fileID: 141081038}
   m_Layer: 0
-  m_Name: Spike-3 (18)
+  m_Name: Spike-24
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1740,11 +1689,11 @@ Transform:
   m_GameObject: {fileID: 141081037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 250.72002, y: -9.817202, z: 0}
+  m_LocalPosition: {x: 259.53183, y: -10.043329, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &146780243
 GameObject:
@@ -1759,7 +1708,7 @@ GameObject:
   - component: {fileID: 146780245}
   - component: {fileID: 146780247}
   m_Layer: 0
-  m_Name: Platform-4 (9)
+  m_Name: Ground-9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1904,7 +1853,7 @@ GameObject:
   - component: {fileID: 189316707}
   - component: {fileID: 189316706}
   m_Layer: 0
-  m_Name: Spike-3 (28)
+  m_Name: Spike-15
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2104,11 +2053,11 @@ Transform:
   m_GameObject: {fileID: 189316705}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 130.298, y: -18.6, z: 0}
+  m_LocalPosition: {x: 139.10982, y: -18.826128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &213888397
 GameObject:
@@ -2246,12 +2195,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 213888397}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.89, y: -17.57, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 19.701817, y: -17.796127, z: 9.988439}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 999516412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &236292189
 GameObject:
@@ -2346,7 +2295,7 @@ GameObject:
   - component: {fileID: 239840166}
   - component: {fileID: 239840165}
   m_Layer: 6
-  m_Name: BlueCoin (7)
+  m_Name: BlueCollectible-2
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2361,11 +2310,11 @@ Transform:
   m_GameObject: {fileID: 239840163}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 89.94003, y: -18.4694, z: 0}
+  m_LocalPosition: {x: 86.796844, y: -18.255527, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15101207}
+  m_Father: {fileID: 533301248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &239840165
 BoxCollider2D:
@@ -2650,11 +2599,11 @@ Transform:
   m_GameObject: {fileID: 249790530}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 100.82003, y: -14.34, z: 0}
+  m_LocalPosition: {x: 109.63184, y: -14.566128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &249790536
 MonoBehaviour:
@@ -2716,7 +2665,7 @@ GameObject:
   - component: {fileID: 256666474}
   - component: {fileID: 256666475}
   m_Layer: 0
-  m_Name: Platform-1
+  m_Name: Ground-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2892,7 +2841,7 @@ GameObject:
   - component: {fileID: 277173803}
   - component: {fileID: 277173802}
   m_Layer: 0
-  m_Name: Spike-3 (32)
+  m_Name: Spike-9
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3092,11 +3041,11 @@ Transform:
   m_GameObject: {fileID: 277173801}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.819995, y: -21.46, z: 0}
+  m_LocalPosition: {x: 21.63181, y: -21.686127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281437426
 GameObject:
@@ -3113,7 +3062,7 @@ GameObject:
   - component: {fileID: 281437428}
   - component: {fileID: 281437427}
   m_Layer: 0
-  m_Name: Spike-3 (33)
+  m_Name: Spike-11
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3313,11 +3262,11 @@ Transform:
   m_GameObject: {fileID: 281437426}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.210005, y: -17.73, z: 0}
+  m_LocalPosition: {x: 29.02182, y: -17.956127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &283729333
 GameObject:
@@ -3334,7 +3283,7 @@ GameObject:
   - component: {fileID: 283729336}
   - component: {fileID: 283729335}
   m_Layer: 0
-  m_Name: Spike-3 (9)
+  m_Name: Spike-4
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3349,7 +3298,7 @@ Transform:
   m_GameObject: {fileID: 283729333}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 211.04002, y: -4.4514, z: 9.988439}
+  m_LocalPosition: {x: 211.04002, y: -4.451399, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3554,7 +3503,7 @@ GameObject:
   - component: {fileID: 293197363}
   - component: {fileID: 293197362}
   m_Layer: 6
-  m_Name: RedCoin (8)
+  m_Name: RedCollectible-5
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3569,11 +3518,11 @@ Transform:
   m_GameObject: {fileID: 293197360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.79, y: -15.21, z: -0.10873355}
+  m_LocalPosition: {x: 62.863182, y: -15.602052, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1050722897}
+  m_Father: {fileID: 2078175138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &293197362
 MonoBehaviour:
@@ -3734,7 +3683,7 @@ GameObject:
   - component: {fileID: 318525123}
   - component: {fileID: 318525122}
   m_Layer: 0
-  m_Name: Spike-3 (35)
+  m_Name: Spike-35
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3934,11 +3883,11 @@ Transform:
   m_GameObject: {fileID: 318525121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24912453, y: 0.6571415, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 66.44382, y: -19.826128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318983042
 GameObject:
@@ -3955,7 +3904,7 @@ GameObject:
   - component: {fileID: 318983044}
   - component: {fileID: 318983043}
   m_Layer: 0
-  m_Name: Spike-3 (11)
+  m_Name: Spike-30
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4155,11 +4104,11 @@ Transform:
   m_GameObject: {fileID: 318983042}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.300003, y: -21.1686, z: 0}
+  m_LocalPosition: {x: 52.111816, y: -21.394728, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &319251558
 GameObject:
@@ -4276,7 +4225,7 @@ GameObject:
   - component: {fileID: 320180715}
   - component: {fileID: 320180714}
   m_Layer: 0
-  m_Name: VerticalRed (9)
+  m_Name: RedPlatform-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4291,11 +4240,11 @@ Transform:
   m_GameObject: {fileID: 320180712}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 236.72002, y: -6.7672005, z: 0}
+  m_LocalPosition: {x: 233.57683, y: -6.5533285, z: 9.988439}
   m_LocalScale: {x: 4, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 487927311}
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &320180714
 BoxCollider2D:
@@ -4545,11 +4494,11 @@ Transform:
   m_GameObject: {fileID: 336686233}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 132.19002, y: -15.91, z: 0}
+  m_LocalPosition: {x: 141.00183, y: -16.136127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &336686239
 MonoBehaviour:
@@ -4611,7 +4560,7 @@ GameObject:
   - component: {fileID: 381154739}
   - component: {fileID: 381154738}
   m_Layer: 0
-  m_Name: HorizontalBlue (10)
+  m_Name: BluePlatform-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4626,11 +4575,11 @@ Transform:
   m_GameObject: {fileID: 381154736}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 133.93001, y: -17.6514, z: 0}
-  m_LocalScale: {x: 0.7, y: 4, z: 3}
+  m_LocalPosition: {x: 130.78682, y: -17.437527, z: 9.988439}
+  m_LocalScale: {x: 0.6999999, y: 4, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 558978670}
+  m_Father: {fileID: 1674885295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &381154738
 MonoBehaviour:
@@ -4756,7 +4705,7 @@ GameObject:
   - component: {fileID: 394890846}
   - component: {fileID: 394890845}
   m_Layer: 0
-  m_Name: Spike-3 (36)
+  m_Name: Spike-32
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4956,11 +4905,11 @@ Transform:
   m_GameObject: {fileID: 394890844}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.19412422, y: 0.6571415, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 66.88382, y: -19.826128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &406346153
 GameObject:
@@ -4977,7 +4926,7 @@ GameObject:
   - component: {fileID: 406346156}
   - component: {fileID: 406346155}
   m_Layer: 0
-  m_Name: Spike-3 (8)
+  m_Name: Spike-3
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4992,7 +4941,7 @@ Transform:
   m_GameObject: {fileID: 406346153}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 210.59001, y: -4.4514, z: 9.988439}
+  m_LocalPosition: {x: 210.59001, y: -4.451399, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5198,7 +5147,7 @@ GameObject:
   - component: {fileID: 414831733}
   - component: {fileID: 414831732}
   m_Layer: 0
-  m_Name: Spike-3 (39)
+  m_Name: Spike-34
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5398,11 +5347,11 @@ Transform:
   m_GameObject: {fileID: 414831731}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4681263, y: 0.6571415, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 64.6918, y: -19.826128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &443684778
 GameObject:
@@ -5419,7 +5368,7 @@ GameObject:
   - component: {fileID: 443684780}
   - component: {fileID: 443684779}
   m_Layer: 0
-  m_Name: Spike-3 (43)
+  m_Name: Spike-38
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5619,11 +5568,11 @@ Transform:
   m_GameObject: {fileID: 443684778}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.36062622, y: 0.6857136, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 71.32182, y: -19.806128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &446011511
 GameObject:
@@ -5811,11 +5760,11 @@ Transform:
   m_GameObject: {fileID: 446011511}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.87, y: -16.71, z: 0}
+  m_LocalPosition: {x: 26.681816, y: -16.936127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453847143
 GameObject:
@@ -5830,7 +5779,7 @@ GameObject:
   - component: {fileID: 453847145}
   - component: {fileID: 453847147}
   m_Layer: 0
-  m_Name: Platform-5 (2)
+  m_Name: Ground-21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5960,51 +5909,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9162a3ebbbdd4c8cb20a231dcc02c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &461684621
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 461684622}
-  - component: {fileID: 461684623}
-  m_Layer: 0
-  m_Name: VerticalGreen
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &461684622
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461684621}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1431847, y: 0.21387213, z: 9.988439}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1779666194}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &461684623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461684621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e987fd80eebd52419448b01644394e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: {r: 0.105882354, g: 1, b: 0, a: 0}
 --- !u!1 &462317426
 GameObject:
   m_ObjectHideFlags: 0
@@ -6020,7 +5924,7 @@ GameObject:
   - component: {fileID: 462317428}
   - component: {fileID: 462317427}
   m_Layer: 0
-  m_Name: Spike-3 (31)
+  m_Name: Spike-8
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6220,11 +6124,11 @@ Transform:
   m_GameObject: {fileID: 462317426}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.45, y: -21.46, z: 0}
+  m_LocalPosition: {x: 21.261814, y: -21.686127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &482118297
 GameObject:
@@ -6239,7 +6143,7 @@ GameObject:
   - component: {fileID: 482118299}
   - component: {fileID: 482118301}
   m_Layer: 0
-  m_Name: Platform-4 (12)
+  m_Name: Ground-12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6369,60 +6273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9162a3ebbbdd4c8cb20a231dcc02c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &487927310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 487927311}
-  - component: {fileID: 487927312}
-  m_Layer: 0
-  m_Name: VerticalRed
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &487927311
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487927310}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1431847, y: 0.21387213, z: 9.988439}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 51204738}
-  - {fileID: 1240711405}
-  - {fileID: 1576710451}
-  - {fileID: 593223925}
-  - {fileID: 1629589907}
-  - {fileID: 1215872748}
-  - {fileID: 711478813}
-  - {fileID: 320180713}
-  - {fileID: 21188411}
-  m_Father: {fileID: 1779666194}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &487927312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 487927310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e987fd80eebd52419448b01644394e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: {r: 1, g: 0, b: 0.09803922, a: 0}
 --- !u!1 &503615385
 GameObject:
   m_ObjectHideFlags: 0
@@ -6438,7 +6288,7 @@ GameObject:
   - component: {fileID: 503615387}
   - component: {fileID: 503615386}
   m_Layer: 0
-  m_Name: Spike-3 (34)
+  m_Name: Spike-10
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6638,11 +6488,11 @@ Transform:
   m_GameObject: {fileID: 503615385}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.58, y: -17.73, z: 0}
+  m_LocalPosition: {x: 29.391815, y: -17.956127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &509050365
 GameObject:
@@ -6854,6 +6704,43 @@ MonoBehaviour:
   height: 6.5
   undergroundHeight: -9.5
   undergroundThreshold: 0
+--- !u!1 &533301247
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533301248}
+  m_Layer: 0
+  m_Name: BlueCollect-Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &533301248
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533301247}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1922426511}
+  - {fileID: 239840164}
+  - {fileID: 667004500}
+  - {fileID: 2099984605}
+  - {fileID: 942776933}
+  - {fileID: 619519094}
+  m_Father: {fileID: 1607541399}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &548668229
 GameObject:
   m_ObjectHideFlags: 0
@@ -6869,7 +6756,7 @@ GameObject:
   - component: {fileID: 548668231}
   - component: {fileID: 548668230}
   m_Layer: 0
-  m_Name: Spike-3 (19)
+  m_Name: Spike-21
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7069,11 +6956,11 @@ Transform:
   m_GameObject: {fileID: 548668229}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 105.700035, y: -18.02, z: 0}
+  m_LocalPosition: {x: 114.51185, y: -18.246128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555442849
 GameObject:
@@ -7090,7 +6977,7 @@ GameObject:
   - component: {fileID: 555442851}
   - component: {fileID: 555442850}
   m_Layer: 0
-  m_Name: Spike-3 (15)
+  m_Name: Spike-23
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7290,47 +7177,11 @@ Transform:
   m_GameObject: {fileID: 555442849}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 103.86004, y: -18.02, z: 0}
+  m_LocalPosition: {x: 112.67185, y: -18.246128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &558978669
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 558978670}
-  m_Layer: 0
-  m_Name: HorizontalBlue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &558978670
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558978669}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1431847, y: 0.21387213, z: 9.988439}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1178871401}
-  - {fileID: 1212578483}
-  - {fileID: 1093645951}
-  - {fileID: 381154737}
-  - {fileID: 1523347744}
-  m_Father: {fileID: 1532919478}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560373653
 GameObject:
@@ -7346,7 +7197,7 @@ GameObject:
   - component: {fileID: 560373656}
   - component: {fileID: 560373655}
   m_Layer: 0
-  m_Name: HorizontalGreen (10)
+  m_Name: GreenPlatform-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7360,12 +7211,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560373653}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 52.62, y: -16.01, z: 0}
-  m_LocalScale: {x: 13, y: 0.7, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 49.476814, y: -15.796128, z: 9.988439}
+  m_LocalScale: {x: 13, y: 0.6999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1740387703}
+  m_Father: {fileID: 1551575831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &560373655
 MonoBehaviour:
@@ -7488,37 +7339,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &562884643
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 562884644}
-  m_Layer: 0
-  m_Name: HorizontalRed
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &562884644
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562884643}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1431847, y: 0.21387213, z: 9.988439}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1532919478}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568719066
 GameObject:
   m_ObjectHideFlags: 0
@@ -7532,7 +7352,7 @@ GameObject:
   - component: {fileID: 568719068}
   - component: {fileID: 568719070}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Pole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7676,7 +7496,7 @@ GameObject:
   - component: {fileID: 593223927}
   - component: {fileID: 593223926}
   m_Layer: 0
-  m_Name: VerticalRed (16)
+  m_Name: RedPlatform-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7690,12 +7510,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 593223924}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 111.11003, y: -21.6514, z: 0}
-  m_LocalScale: {x: 8, y: 0.7, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 107.96684, y: -21.437527, z: 9.988439}
+  m_LocalScale: {x: 8, y: 0.6999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 487927311}
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &593223926
 MonoBehaviour:
@@ -8088,12 +7908,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609870803}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.9, y: -16.1, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 30.711815, y: -16.326128, z: 9.988439}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 999516412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &617515367
 GameObject:
@@ -8234,11 +8054,11 @@ Transform:
   m_GameObject: {fileID: 617515367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 29.369991, y: -23.25, z: 0}
+  m_LocalPosition: {x: 38.18181, y: -23.476128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &617515373
 MonoBehaviour:
@@ -8301,7 +8121,7 @@ GameObject:
   - component: {fileID: 619519096}
   - component: {fileID: 619519095}
   m_Layer: 6
-  m_Name: BlueCoin (8)
+  m_Name: BlueCollectible-6
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8316,11 +8136,11 @@ Transform:
   m_GameObject: {fileID: 619519093}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.7, y: -21.23, z: 0}
+  m_LocalPosition: {x: 56.556816, y: -21.016127, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15101207}
+  m_Father: {fileID: 533301248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &619519095
 BoxCollider2D:
@@ -8481,7 +8301,7 @@ GameObject:
   - component: {fileID: 638924872}
   - component: {fileID: 638924871}
   m_Layer: 0
-  m_Name: Spike-3 (14)
+  m_Name: Spike-13
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8681,11 +8501,11 @@ Transform:
   m_GameObject: {fileID: 638924870}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 104.79003, y: -18.02, z: 0}
+  m_LocalPosition: {x: 113.601845, y: -18.246128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &639211948
 GameObject:
@@ -8826,11 +8646,11 @@ Transform:
   m_GameObject: {fileID: 639211948}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.679996, y: -14.749999, z: 0}
+  m_LocalPosition: {x: 60.491814, y: -14.976127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &639211954
 MonoBehaviour:
@@ -9091,12 +8911,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658208727}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.73, y: -22.7, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 43.541817, y: -22.926128, z: 9.988439}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 999516412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &658208730
 MonoBehaviour:
@@ -9169,7 +8989,7 @@ GameObject:
   - component: {fileID: 667004502}
   - component: {fileID: 667004501}
   m_Layer: 6
-  m_Name: BlueCoin (12)
+  m_Name: BlueCollectible-3
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9184,11 +9004,11 @@ Transform:
   m_GameObject: {fileID: 667004499}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 108.4, y: -18, z: 0}
+  m_LocalPosition: {x: 105.25682, y: -17.786127, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15101207}
+  m_Father: {fileID: 533301248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &667004501
 BoxCollider2D:
@@ -9349,7 +9169,7 @@ GameObject:
   - component: {fileID: 681887877}
   - component: {fileID: 681887876}
   m_Layer: 0
-  m_Name: Spike-3 (45)
+  m_Name: Spike-40
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9549,11 +9369,11 @@ Transform:
   m_GameObject: {fileID: 681887875}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.1956253, y: 0.6857136, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 70.001816, y: -19.806128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &684425138
 GameObject:
@@ -9570,7 +9390,7 @@ GameObject:
   - component: {fileID: 684425140}
   - component: {fileID: 684425139}
   m_Layer: 0
-  m_Name: Spike-3 (26)
+  m_Name: Spike-17
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9770,11 +9590,11 @@ Transform:
   m_GameObject: {fileID: 684425138}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 131.70999, y: -18.6, z: 0}
+  m_LocalPosition: {x: 140.5218, y: -18.826128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &703078525
 GameObject:
@@ -9923,7 +9743,7 @@ GameObject:
   - component: {fileID: 710386126}
   - component: {fileID: 710386125}
   m_Layer: 0
-  m_Name: HorizontalGreen (3)
+  m_Name: GreenPlatform-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9938,11 +9758,11 @@ Transform:
   m_GameObject: {fileID: 710386123}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 45.619995, y: -24.82, z: 0}
-  m_LocalScale: {x: 0.7, y: 12, z: 1}
+  m_LocalPosition: {x: 42.476807, y: -24.606127, z: 9.988439}
+  m_LocalScale: {x: 0.6999999, y: 12, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1740387703}
+  m_Father: {fileID: 1551575831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &710386125
 MonoBehaviour:
@@ -10066,7 +9886,7 @@ GameObject:
   - component: {fileID: 711478815}
   - component: {fileID: 711478814}
   m_Layer: 0
-  m_Name: VerticalRed (11)
+  m_Name: RedPlatform-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10081,11 +9901,11 @@ Transform:
   m_GameObject: {fileID: 711478812}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.56, y: -23.83, z: 0}
+  m_LocalPosition: {x: 81.41681, y: -23.616127, z: 9.988439}
   m_LocalScale: {x: 5, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 487927311}
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &711478814
 BoxCollider2D:
@@ -10335,11 +10155,11 @@ Transform:
   m_GameObject: {fileID: 721435310}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.11003, y: -14.851399, z: 0}
+  m_LocalPosition: {x: 92.921844, y: -15.077527, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &721435316
 MonoBehaviour:
@@ -10388,6 +10208,46 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!1 &723320224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 723320225}
+  m_Layer: 0
+  m_Name: RedPlatform-Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &723320225
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723320224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 51204738}
+  - {fileID: 1240711405}
+  - {fileID: 1576710451}
+  - {fileID: 593223925}
+  - {fileID: 1629589907}
+  - {fileID: 1215872748}
+  - {fileID: 711478813}
+  - {fileID: 320180713}
+  - {fileID: 21188411}
+  m_Father: {fileID: 1955728418}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &750490233
 GameObject:
   m_ObjectHideFlags: 0
@@ -10403,7 +10263,7 @@ GameObject:
   - component: {fileID: 750490235}
   - component: {fileID: 750490234}
   m_Layer: 0
-  m_Name: Spike-3 (27)
+  m_Name: Spike-16
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10603,11 +10463,11 @@ Transform:
   m_GameObject: {fileID: 750490233}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 130.75998, y: -18.6, z: 0}
+  m_LocalPosition: {x: 139.5718, y: -18.826128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &752742914
 GameObject:
@@ -10795,11 +10655,11 @@ Transform:
   m_GameObject: {fileID: 752742914}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.36, y: -14.43, z: 0}
+  m_LocalPosition: {x: 31.171816, y: -14.656128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &758645131
 GameObject:
@@ -11121,57 +10981,12 @@ Transform:
   m_GameObject: {fileID: 777607432}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 108.11003, y: -13.9014, z: 0}
+  m_LocalPosition: {x: 116.921844, y: -14.127527, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &810378711
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 810378712}
-  - component: {fileID: 810378713}
-  m_Layer: 0
-  m_Name: VerticalBlue
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &810378712
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810378711}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1431847, y: 0.21387213, z: 9.988439}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1779666194}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &810378713
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810378711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e987fd80eebd52419448b01644394e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: {r: 0, g: 0.7921569, b: 1, a: 0}
 --- !u!1 &819122931
 GameObject:
   m_ObjectHideFlags: 0
@@ -11330,7 +11145,7 @@ GameObject:
   - component: {fileID: 834953539}
   - component: {fileID: 834953538}
   m_Layer: 0
-  m_Name: Spike-3 (16)
+  m_Name: Spike-22
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11530,11 +11345,46 @@ Transform:
   m_GameObject: {fileID: 834953537}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 103.37003, y: -18.02, z: 0}
+  m_LocalPosition: {x: 112.18185, y: -18.246128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &847337177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847337178}
+  m_Layer: 0
+  m_Name: BlackDiamond
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &847337178
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847337177}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1174451776}
+  - {fileID: 2142403327}
+  - {fileID: 1860459061}
+  - {fileID: 1102614157}
+  m_Father: {fileID: 1292997175}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &861854970
 GameObject:
@@ -11550,7 +11400,7 @@ GameObject:
   - component: {fileID: 861854973}
   - component: {fileID: 861854972}
   m_Layer: 6
-  m_Name: GreenCoin (12)
+  m_Name: GreenCollectible-3
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11565,11 +11415,11 @@ Transform:
   m_GameObject: {fileID: 861854970}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.12, y: -21.25, z: 0}
+  m_LocalPosition: {x: 54.976814, y: -21.036127, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1541331048}
+  m_Father: {fileID: 1032429943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &861854972
 CircleCollider2D:
@@ -11729,7 +11579,7 @@ GameObject:
   - component: {fileID: 883842969}
   - component: {fileID: 883842968}
   m_Layer: 6
-  m_Name: GreenCoin (7)
+  m_Name: GreenCollectible-4
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11744,11 +11594,11 @@ Transform:
   m_GameObject: {fileID: 883842966}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 127.11003, y: -21.0514, z: 0}
+  m_LocalPosition: {x: 123.96684, y: -20.837526, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1541331048}
+  m_Father: {fileID: 1032429943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &883842968
 CircleCollider2D:
@@ -12033,11 +11883,11 @@ Transform:
   m_GameObject: {fileID: 914739062}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 128.48001, y: -10.8514, z: 0}
+  m_LocalPosition: {x: 137.29182, y: -11.077528, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &914739068
 MonoBehaviour:
@@ -12100,7 +11950,7 @@ GameObject:
   - component: {fileID: 915485079}
   - component: {fileID: 915485078}
   m_Layer: 6
-  m_Name: GreenCoin (10)
+  m_Name: GreenCollectible-2
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12115,11 +11965,11 @@ Transform:
   m_GameObject: {fileID: 915485076}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.41999, y: -24.029999, z: 0}
+  m_LocalPosition: {x: 41.276802, y: -23.816126, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1541331048}
+  m_Father: {fileID: 1032429943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &915485078
 CircleCollider2D:
@@ -12279,7 +12129,7 @@ GameObject:
   - component: {fileID: 942776935}
   - component: {fileID: 942776934}
   m_Layer: 6
-  m_Name: BlueCoin (11)
+  m_Name: BlueCollectible-5
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12294,11 +12144,11 @@ Transform:
   m_GameObject: {fileID: 942776932}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 247.27002, y: -17.2486, z: 0}
+  m_LocalPosition: {x: 244.12683, y: -17.034727, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15101207}
+  m_Father: {fileID: 533301248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &942776934
 BoxCollider2D:
@@ -12459,7 +12309,7 @@ GameObject:
   - component: {fileID: 944200589}
   - component: {fileID: 944200588}
   m_Layer: 0
-  m_Name: Spike-3 (38)
+  m_Name: Spike-33
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12659,11 +12509,11 @@ Transform:
   m_GameObject: {fileID: 944200587}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.3581257, y: 0.6571415, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 65.57181, y: -19.826128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947286315
 GameObject:
@@ -12678,7 +12528,7 @@ GameObject:
   - component: {fileID: 947286317}
   - component: {fileID: 947286319}
   m_Layer: 0
-  m_Name: Platform-4 (11)
+  m_Name: Ground-11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12808,6 +12658,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9162a3ebbbdd4c8cb20a231dcc02c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &950996718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 950996719}
+  m_Layer: 0
+  m_Name: Coin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &950996719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950996718}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 29965004}
+  - {fileID: 1701713544}
+  - {fileID: 617515372}
+  - {fileID: 125584395}
+  - {fileID: 1833071872}
+  - {fileID: 721435315}
+  - {fileID: 968490270}
+  - {fileID: 963857495}
+  - {fileID: 639211953}
+  - {fileID: 1207330177}
+  - {fileID: 777607438}
+  - {fileID: 1048514415}
+  - {fileID: 249790535}
+  - {fileID: 336686238}
+  - {fileID: 914739067}
+  - {fileID: 1622803147}
+  - {fileID: 1234857556}
+  - {fileID: 446011517}
+  - {fileID: 2112228651}
+  - {fileID: 752742920}
+  m_Father: {fileID: 1278963375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963258136
 GameObject:
   m_ObjectHideFlags: 0
@@ -12822,7 +12723,7 @@ GameObject:
   - component: {fileID: 963258139}
   - component: {fileID: 963258138}
   m_Layer: 6
-  m_Name: RedCoin (5)
+  m_Name: RedCollectible-4
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12837,11 +12738,11 @@ Transform:
   m_GameObject: {fileID: 963258136}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.89, y: -15, z: -0.10873355}
+  m_LocalPosition: {x: 42.96318, y: -15.392052, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1050722897}
+  m_Father: {fileID: 2078175138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963258138
 MonoBehaviour:
@@ -13126,11 +13027,11 @@ Transform:
   m_GameObject: {fileID: 963857490}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.309998, y: -13.469999, z: 0}
+  m_LocalPosition: {x: 35.12181, y: -13.696127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963857496
 MonoBehaviour:
@@ -13365,11 +13266,11 @@ Transform:
   m_GameObject: {fileID: 968490264}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.700005, y: -16.699999, z: 0}
+  m_LocalPosition: {x: 56.511818, y: -16.926126, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995770459
 GameObject:
@@ -13400,13 +13301,51 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1546974582}
   - {fileID: 1248277741}
   - {fileID: 406346154}
   - {fileID: 283729334}
   - {fileID: 2102789320}
+  - {fileID: 2052410059}
+  - {fileID: 1994359093}
+  - {fileID: 462317432}
+  - {fileID: 277173807}
+  - {fileID: 503615391}
+  - {fileID: 281437432}
+  - {fileID: 1456299693}
+  - {fileID: 638924876}
+  - {fileID: 1439755175}
+  - {fileID: 189316711}
+  - {fileID: 750490239}
+  - {fileID: 684425144}
+  - {fileID: 1687636545}
+  - {fileID: 1556049272}
+  - {fileID: 1843355733}
+  - {fileID: 548668235}
+  - {fileID: 834953543}
+  - {fileID: 555442855}
+  - {fileID: 141081043}
+  - {fileID: 1938574783}
+  - {fileID: 1777599308}
+  - {fileID: 1817153553}
+  - {fileID: 1696176247}
+  - {fileID: 1459172541}
+  - {fileID: 318983048}
+  - {fileID: 1735609915}
+  - {fileID: 394890850}
+  - {fileID: 944200593}
+  - {fileID: 414831737}
+  - {fileID: 318525127}
+  - {fileID: 1465979237}
+  - {fileID: 1502558787}
+  - {fileID: 443684784}
+  - {fileID: 2063066613}
+  - {fileID: 681887881}
+  - {fileID: 33052879}
+  - {fileID: 1759580313}
   m_Father: {fileID: 1278963375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1017275461
+--- !u!1 &999516411
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13414,28 +13353,71 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1017275462}
+  - component: {fileID: 999516412}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: PinkDiamond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1017275462
+--- !u!4 &999516412
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1017275461}
+  m_GameObject: {fileID: 999516411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.482933, y: 8.737993, z: -0.21490516}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Children:
+  - {fileID: 658208729}
+  - {fileID: 1083947492}
+  - {fileID: 609870807}
+  - {fileID: 213888401}
+  m_Father: {fileID: 1292997175}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1032429942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032429943}
+  m_Layer: 0
+  m_Name: GreenCollect-Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032429943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032429942}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1870171382}
+  - {fileID: 915485077}
+  - {fileID: 861854971}
+  - {fileID: 883842967}
+  - {fileID: 1749959457}
+  - {fileID: 1799632210}
+  - {fileID: 1475019493}
+  - {fileID: 1294981694}
+  m_Father: {fileID: 1607541399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048514410
 GameObject:
@@ -13576,11 +13558,11 @@ Transform:
   m_GameObject: {fileID: 1048514410}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 94.650024, y: -17.470001, z: 0}
+  m_LocalPosition: {x: 103.46184, y: -17.696129, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1048514416
 MonoBehaviour:
@@ -13629,56 +13611,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!1 &1050722896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1050722897}
-  - component: {fileID: 1050722898}
-  m_Layer: 0
-  m_Name: RedCoin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1050722897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050722896}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.0731835, y: -0.39205146, z: 10.097172}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1407820130}
-  - {fileID: 1295480026}
-  - {fileID: 1230042757}
-  - {fileID: 963258137}
-  - {fileID: 293197361}
-  m_Father: {fileID: 1278963375}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1050722898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050722896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668578c4e170c214bbcd48bd580604e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: {r: 0.972549, g: 0.07058824, b: 0.07058824, a: 0}
 --- !u!1 &1081141062
 GameObject:
   m_ObjectHideFlags: 0
@@ -13930,12 +13862,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083947488}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.8, y: -12.8, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 93.61182, y: -13.026128, z: 9.988439}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 999516412}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1093645950
 GameObject:
@@ -13950,7 +13882,7 @@ GameObject:
   - component: {fileID: 1093645953}
   - component: {fileID: 1093645952}
   m_Layer: 0
-  m_Name: HorizontalBlue (6)
+  m_Name: BluePlatform-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13965,11 +13897,11 @@ Transform:
   m_GameObject: {fileID: 1093645950}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 96.31003, y: -16.2714, z: 0}
-  m_LocalScale: {x: 0.7, y: 4, z: 3}
+  m_LocalPosition: {x: 93.16684, y: -16.057528, z: 9.988439}
+  m_LocalScale: {x: 0.6999999, y: 4, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 558978670}
+  m_Father: {fileID: 1674885295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1093645952
 MonoBehaviour:
@@ -14159,12 +14091,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102614155}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 113.84, y: -20.14, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 122.65181, y: -20.366127, z: 9.988439}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 847337178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1102614158
 MonoBehaviour:
@@ -14379,12 +14311,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174451774}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.95, y: -25.65, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.761816, y: -25.876127, z: 9.988439}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 847337178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1174451777
 MonoBehaviour:
@@ -14458,7 +14390,7 @@ GameObject:
   - component: {fileID: 1178871406}
   - component: {fileID: 1178871405}
   m_Layer: 0
-  m_Name: HorizontalBlue (3)
+  m_Name: BluePlatform-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14472,12 +14404,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1178871400}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.619995, y: -27.47, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 30.47681, y: -27.256126, z: 9.988439}
   m_LocalScale: {x: 5, y: 0.7, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 558978670}
+  m_Father: {fileID: 1674885295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1178871402
 SpriteRenderer:
@@ -14798,11 +14730,11 @@ Transform:
   m_GameObject: {fileID: 1207330171}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.66, y: -12.1, z: 0}
+  m_LocalPosition: {x: 60.471817, y: -12.326128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1212578482
 GameObject:
@@ -14817,7 +14749,7 @@ GameObject:
   - component: {fileID: 1212578485}
   - component: {fileID: 1212578484}
   m_Layer: 0
-  m_Name: HorizontalBlue (11)
+  m_Name: BluePlatform-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14831,12 +14763,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212578482}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.809998, y: -14.759999, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 40.666813, y: -14.546127, z: 9.988439}
   m_LocalScale: {x: 0.7, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 558978670}
+  m_Father: {fileID: 1674885295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1212578484
 MonoBehaviour:
@@ -14959,7 +14891,7 @@ GameObject:
   - component: {fileID: 1214298954}
   - component: {fileID: 1214298953}
   m_Layer: 0
-  m_Name: End
+  m_Name: Ground-24
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15091,7 +15023,7 @@ GameObject:
   - component: {fileID: 1215872750}
   - component: {fileID: 1215872749}
   m_Layer: 0
-  m_Name: VerticalRed (17)
+  m_Name: RedPlatform-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15106,11 +15038,11 @@ Transform:
   m_GameObject: {fileID: 1215872747}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 127.010025, y: -22.0514, z: 0}
+  m_LocalPosition: {x: 123.86684, y: -21.837526, z: 9.988439}
   m_LocalScale: {x: 5, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 487927311}
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1215872749
 MonoBehaviour:
@@ -15247,7 +15179,7 @@ GameObject:
   - component: {fileID: 1230042759}
   - component: {fileID: 1230042758}
   m_Layer: 6
-  m_Name: RedCoin (6)
+  m_Name: RedCollectible-3
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15262,11 +15194,11 @@ Transform:
   m_GameObject: {fileID: 1230042756}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 78.55, y: -22.28, z: -0.10873355}
+  m_LocalPosition: {x: 82.623184, y: -22.672052, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1050722897}
+  m_Father: {fileID: 2078175138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1230042758
 MonoBehaviour:
@@ -15551,11 +15483,11 @@ Transform:
   m_GameObject: {fileID: 1234857551}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 242.11003, y: -16.6486, z: 0}
+  m_LocalPosition: {x: 250.92184, y: -16.874727, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1234857557
 MonoBehaviour:
@@ -15618,7 +15550,7 @@ GameObject:
   - component: {fileID: 1240711406}
   - component: {fileID: 1240711409}
   m_Layer: 0
-  m_Name: VerticalRed (10)
+  m_Name: RedPlatform-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15633,24 +15565,11 @@ Transform:
   m_GameObject: {fileID: 1240711404}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.58, y: -20.5, z: 0}
+  m_LocalPosition: {x: 68.43681, y: -20.286127, z: 9.988439}
   m_LocalScale: {x: 8, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1294981694}
-  - {fileID: 1735609915}
-  - {fileID: 394890850}
-  - {fileID: 944200593}
-  - {fileID: 414831737}
-  - {fileID: 318525127}
-  - {fileID: 1465979237}
-  - {fileID: 1502558787}
-  - {fileID: 443684784}
-  - {fileID: 2063066613}
-  - {fileID: 681887881}
-  - {fileID: 33052879}
-  - {fileID: 1759580313}
-  m_Father: {fileID: 487927311}
+  m_Children: []
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1240711406
 BoxCollider2D:
@@ -15788,7 +15707,7 @@ GameObject:
   - component: {fileID: 1248277743}
   - component: {fileID: 1248277742}
   m_Layer: 0
-  m_Name: Spike-3 (7)
+  m_Name: Spike-2
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15803,7 +15722,7 @@ Transform:
   m_GameObject: {fileID: 1248277740}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 210.09001, y: -4.4514, z: 9.988439}
+  m_LocalPosition: {x: 210.09001, y: -4.451399, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16023,15 +15942,47 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1607541399}
   - {fileID: 995770460}
   - {fileID: 1471438719}
-  - {fileID: 1050722897}
-  - {fileID: 15101207}
-  - {fileID: 1541331048}
-  - {fileID: 1779666194}
-  - {fileID: 1532919478}
+  - {fileID: 950996719}
+  - {fileID: 1955728418}
   - {fileID: 1704987260}
+  - {fileID: 1292997175}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1292997174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1292997175}
+  m_Layer: 0
+  m_Name: PlayerSize
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1292997175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292997174}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 999516412}
+  - {fileID: 847337178}
+  m_Father: {fileID: 1278963375}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294981693
 GameObject:
@@ -16047,7 +15998,7 @@ GameObject:
   - component: {fileID: 1294981696}
   - component: {fileID: 1294981695}
   m_Layer: 6
-  m_Name: GreenCoin (6)
+  m_Name: GreenCollectible-8
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16062,11 +16013,11 @@ Transform:
   m_GameObject: {fileID: 1294981693}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.017499924, y: 1.142856, z: 0}
-  m_LocalScale: {x: 0.0375, y: 0.34821427, z: 1}
+  m_LocalPosition: {x: 68.296814, y: -19.486128, z: 9.988439}
+  m_LocalScale: {x: 0.3, y: 0.24374999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 1032429943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1294981695
 CircleCollider2D:
@@ -16226,7 +16177,7 @@ GameObject:
   - component: {fileID: 1295480028}
   - component: {fileID: 1295480027}
   m_Layer: 6
-  m_Name: RedCoin (7)
+  m_Name: RedCollectible-2
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16241,11 +16192,11 @@ Transform:
   m_GameObject: {fileID: 1295480025}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.54, y: -17.29, z: -0.10873355}
+  m_LocalPosition: {x: 31.613184, y: -17.682053, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1050722897}
+  m_Father: {fileID: 2078175138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1295480027
 MonoBehaviour:
@@ -16405,7 +16356,7 @@ GameObject:
   - component: {fileID: 1340331645}
   - component: {fileID: 1340331644}
   m_Layer: 0
-  m_Name: HorizontalGreen (9)
+  m_Name: GreenPlatform-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16419,12 +16370,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340331642}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 103.91002, y: -12.9, z: 0}
-  m_LocalScale: {x: 8, y: 0.7, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 100.76683, y: -12.686128, z: 9.988439}
+  m_LocalScale: {x: 8, y: 0.6999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1740387703}
+  m_Father: {fileID: 1551575831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1340331644
 MonoBehaviour:
@@ -16592,7 +16543,7 @@ GameObject:
   - component: {fileID: 1407820132}
   - component: {fileID: 1407820131}
   m_Layer: 6
-  m_Name: RedCoin (4)
+  m_Name: RedCollectible-1
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16607,11 +16558,11 @@ Transform:
   m_GameObject: {fileID: 1407820129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.25, y: -26.1, z: -0.10873355}
+  m_LocalPosition: {x: 30.323183, y: -26.492052, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1050722897}
+  m_Father: {fileID: 2078175138}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1407820131
 MonoBehaviour:
@@ -16772,7 +16723,7 @@ GameObject:
   - component: {fileID: 1439755171}
   - component: {fileID: 1439755170}
   m_Layer: 0
-  m_Name: Spike-3 (13)
+  m_Name: Spike-14
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16972,11 +16923,11 @@ Transform:
   m_GameObject: {fileID: 1439755169}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 104.310036, y: -18.02, z: 0}
+  m_LocalPosition: {x: 113.12185, y: -18.246128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1442011430
 GameObject:
@@ -16991,7 +16942,7 @@ GameObject:
   - component: {fileID: 1442011432}
   - component: {fileID: 1442011434}
   m_Layer: 0
-  m_Name: Platform-4 (19)
+  m_Name: Ground-15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17134,7 +17085,7 @@ GameObject:
   - component: {fileID: 1452563535}
   - component: {fileID: 1452563537}
   m_Layer: 0
-  m_Name: Platform-3 (4)
+  m_Name: Ground-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17277,7 +17228,7 @@ GameObject:
   - component: {fileID: 1453921790}
   - component: {fileID: 1453921789}
   m_Layer: 0
-  m_Name: HorizontalGreen (6)
+  m_Name: GreenPlatform-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17292,11 +17243,11 @@ Transform:
   m_GameObject: {fileID: 1453921787}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 79.52999, y: -23.83, z: 0}
-  m_LocalScale: {x: 0.7, y: 5, z: 1}
+  m_LocalPosition: {x: 76.38681, y: -23.616127, z: 9.988439}
+  m_LocalScale: {x: 0.6999999, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1740387703}
+  m_Father: {fileID: 1551575831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1453921789
 MonoBehaviour:
@@ -17422,7 +17373,7 @@ GameObject:
   - component: {fileID: 1456299689}
   - component: {fileID: 1456299688}
   m_Layer: 0
-  m_Name: Spike-3 (7)
+  m_Name: Spike-12
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17622,11 +17573,11 @@ Transform:
   m_GameObject: {fileID: 1456299687}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.612003, y: -21.1686, z: 0}
+  m_LocalPosition: {x: 53.42382, y: -21.394728, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1459172535
 GameObject:
@@ -17643,7 +17594,7 @@ GameObject:
   - component: {fileID: 1459172537}
   - component: {fileID: 1459172536}
   m_Layer: 0
-  m_Name: Spike-3 (12)
+  m_Name: Spike-29
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17843,11 +17794,11 @@ Transform:
   m_GameObject: {fileID: 1459172535}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.86, y: -21.1686, z: 0}
+  m_LocalPosition: {x: 51.671814, y: -21.394728, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1465979231
 GameObject:
@@ -17864,7 +17815,7 @@ GameObject:
   - component: {fileID: 1465979233}
   - component: {fileID: 1465979232}
   m_Layer: 0
-  m_Name: Spike-3 (40)
+  m_Name: Spike-36
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18064,11 +18015,11 @@ Transform:
   m_GameObject: {fileID: 1465979231}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.413126, y: 0.6571415, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 65.131805, y: -19.826128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1471438718
 GameObject:
@@ -18080,7 +18031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1471438719}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18140,7 +18091,7 @@ GameObject:
   - component: {fileID: 1475019495}
   - component: {fileID: 1475019494}
   m_Layer: 6
-  m_Name: GreenCoin (8)
+  m_Name: GreenCollectible-7
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18155,11 +18106,11 @@ Transform:
   m_GameObject: {fileID: 1475019492}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.589996, y: -15.67, z: 0}
+  m_LocalPosition: {x: 39.44681, y: -15.456128, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1541331048}
+  m_Father: {fileID: 1032429943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1475019494
 CircleCollider2D:
@@ -18422,7 +18373,7 @@ GameObject:
   - component: {fileID: 1502558783}
   - component: {fileID: 1502558782}
   m_Layer: 0
-  m_Name: Spike-3 (42)
+  m_Name: Spike-37
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18622,11 +18573,11 @@ Transform:
   m_GameObject: {fileID: 1502558781}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.46962547, y: 0.6857136, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 72.19382, y: -19.806128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523347743
 GameObject:
@@ -18641,7 +18592,7 @@ GameObject:
   - component: {fileID: 1523347746}
   - component: {fileID: 1523347745}
   m_Layer: 0
-  m_Name: HorizontalBlue (7)
+  m_Name: BluePlatform-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18655,12 +18606,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523347743}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 111.11003, y: -15.5213995, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 107.96684, y: -15.307528, z: 9.988439}
   m_LocalScale: {x: 0.7, y: 5, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 558978670}
+  m_Father: {fileID: 1674885295}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1523347745
 MonoBehaviour:
@@ -18784,7 +18735,7 @@ GameObject:
   - component: {fileID: 1527699060}
   - component: {fileID: 1527699062}
   m_Layer: 0
-  m_Name: Platform-4 (22)
+  m_Name: Ground-17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18914,92 +18865,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9162a3ebbbdd4c8cb20a231dcc02c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1532919477
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1532919478}
-  m_Layer: 0
-  m_Name: H_Blocks
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1532919478
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532919477}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 562884644}
-  - {fileID: 1740387703}
-  - {fileID: 558978670}
-  m_Father: {fileID: 1278963375}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1541331047
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1541331048}
-  - component: {fileID: 1541331049}
-  m_Layer: 0
-  m_Name: GreenCoin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1541331048
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541331047}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1431847, y: 0.21387213, z: 9.988439}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1870171382}
-  - {fileID: 915485077}
-  - {fileID: 861854971}
-  - {fileID: 883842967}
-  - {fileID: 1749959457}
-  - {fileID: 1799632210}
-  - {fileID: 1475019493}
-  m_Father: {fileID: 1278963375}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1541331049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1541331047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 668578c4e170c214bbcd48bd580604e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: {r: 0.10980392, g: 1, b: 0, a: 0}
 --- !u!1 &1545437238
 GameObject:
   m_ObjectHideFlags: 0
@@ -19013,7 +18878,7 @@ GameObject:
   - component: {fileID: 1545437240}
   - component: {fileID: 1545437242}
   m_Layer: 0
-  m_Name: Platform-4 (1)
+  m_Name: Ground-22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19158,7 +19023,7 @@ GameObject:
   - component: {fileID: 1546974578}
   - component: {fileID: 1546974577}
   m_Layer: 0
-  m_Name: Spike-3 (9)
+  m_Name: Spike-1
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19358,11 +19223,48 @@ Transform:
   m_GameObject: {fileID: 1546974576}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.74, y: -21.1686, z: 0}
+  m_LocalPosition: {x: 52.55182, y: -21.394728, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1551575830
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551575831}
+  m_Layer: 0
+  m_Name: GreenPlatform-Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1551575831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551575830}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 710386124}
+  - {fileID: 1453921788}
+  - {fileID: 22186198}
+  - {fileID: 1340331643}
+  - {fileID: 560373654}
+  - {fileID: 1944195935}
+  m_Father: {fileID: 1955728418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1556049266
 GameObject:
@@ -19379,7 +19281,7 @@ GameObject:
   - component: {fileID: 1556049268}
   - component: {fileID: 1556049267}
   m_Layer: 0
-  m_Name: Spike-3 (22)
+  m_Name: Spike-19
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19579,11 +19481,11 @@ Transform:
   m_GameObject: {fileID: 1556049266}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 132.16, y: -18.6, z: 0}
+  m_LocalPosition: {x: 140.97182, y: -18.826128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567319192
 GameObject:
@@ -19598,7 +19500,7 @@ GameObject:
   - component: {fileID: 1567319194}
   - component: {fileID: 1567319196}
   m_Layer: 0
-  m_Name: Platform-4 (3)
+  m_Name: Ground-23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19826,7 +19728,7 @@ GameObject:
   - component: {fileID: 1576710453}
   - component: {fileID: 1576710452}
   m_Layer: 0
-  m_Name: VerticalRed (15)
+  m_Name: RedPlatform-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19840,12 +19742,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576710450}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 111.11003, y: -9.551399, z: 0}
-  m_LocalScale: {x: 8, y: 0.7, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 107.96684, y: -9.337527, z: 9.988439}
+  m_LocalScale: {x: 8, y: 0.6999999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 487927311}
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1576710452
 MonoBehaviour:
@@ -20052,6 +19954,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1607541398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1607541399}
+  m_Layer: 0
+  m_Name: Collectible
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1607541399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607541398}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 533301248}
+  - {fileID: 2078175138}
+  - {fileID: 1032429943}
+  m_Father: {fileID: 1278963375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1621023831
 GameObject:
   m_ObjectHideFlags: 0
@@ -20065,7 +20001,7 @@ GameObject:
   - component: {fileID: 1621023833}
   - component: {fileID: 1621023835}
   m_Layer: 0
-  m_Name: Platform-3 (3)
+  m_Name: Ground-10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20334,11 +20270,11 @@ Transform:
   m_GameObject: {fileID: 1622803142}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 68.21001, y: -22.02, z: 0}
+  m_LocalPosition: {x: 77.02182, y: -22.246128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1622803148
 MonoBehaviour:
@@ -20401,7 +20337,7 @@ GameObject:
   - component: {fileID: 1629589909}
   - component: {fileID: 1629589908}
   m_Layer: 0
-  m_Name: VerticalRed (14)
+  m_Name: RedPlatform-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20416,11 +20352,11 @@ Transform:
   m_GameObject: {fileID: 1629589906}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 43.81, y: -16.55, z: 0}
+  m_LocalPosition: {x: 40.666817, y: -16.336126, z: 9.988439}
   m_LocalScale: {x: 9, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 487927311}
+  m_Father: {fileID: 723320225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1629589908
 MonoBehaviour:
@@ -20648,7 +20584,7 @@ GameObject:
   - component: {fileID: 1650936570}
   - component: {fileID: 1650936572}
   m_Layer: 0
-  m_Name: Platform-5 (3)
+  m_Name: Ground-19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20778,6 +20714,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9162a3ebbbdd4c8cb20a231dcc02c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1674885294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1674885295}
+  m_Layer: 0
+  m_Name: BluePlatform-Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1674885295
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674885294}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1178871401}
+  - {fileID: 1212578483}
+  - {fileID: 1093645951}
+  - {fileID: 381154737}
+  - {fileID: 1523347744}
+  m_Father: {fileID: 1955728418}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687636539
 GameObject:
   m_ObjectHideFlags: 0
@@ -20793,7 +20765,7 @@ GameObject:
   - component: {fileID: 1687636541}
   - component: {fileID: 1687636540}
   m_Layer: 0
-  m_Name: Spike-3 (25)
+  m_Name: Spike-18
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20993,11 +20965,11 @@ Transform:
   m_GameObject: {fileID: 1687636539}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 131.22, y: -18.6, z: 0}
+  m_LocalPosition: {x: 140.03181, y: -18.826128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696176241
 GameObject:
@@ -21014,7 +20986,7 @@ GameObject:
   - component: {fileID: 1696176243}
   - component: {fileID: 1696176242}
   m_Layer: 0
-  m_Name: Spike-3 (10)
+  m_Name: Spike-28
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21214,11 +21186,11 @@ Transform:
   m_GameObject: {fileID: 1696176241}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 44.180004, y: -21.1686, z: 0}
+  m_LocalPosition: {x: 52.99182, y: -21.394728, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1696770054
 GameObject:
@@ -21233,7 +21205,7 @@ GameObject:
   - component: {fileID: 1696770056}
   - component: {fileID: 1696770058}
   m_Layer: 0
-  m_Name: Platform-4 (2)
+  m_Name: Ground-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21549,11 +21521,11 @@ Transform:
   m_GameObject: {fileID: 1701713538}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.09, y: -14.410001, z: 0}
+  m_LocalPosition: {x: 29.901815, y: -14.636128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1704987259
 GameObject:
@@ -21672,7 +21644,7 @@ GameObject:
   - component: {fileID: 1735609911}
   - component: {fileID: 1735609910}
   m_Layer: 0
-  m_Name: Spike-3 (37)
+  m_Name: Spike-31
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21872,48 +21844,11 @@ Transform:
   m_GameObject: {fileID: 1735609909}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.30312538, y: 0.6571415, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 66.01181, y: -19.826128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1740387702
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1740387703}
-  m_Layer: 0
-  m_Name: HorizontalGreen
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1740387703
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740387702}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.1431847, y: 0.21387213, z: 9.988439}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 710386124}
-  - {fileID: 1453921788}
-  - {fileID: 22186198}
-  - {fileID: 1340331643}
-  - {fileID: 560373654}
-  - {fileID: 1944195935}
-  m_Father: {fileID: 1532919478}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1749959456
 GameObject:
@@ -21929,7 +21864,7 @@ GameObject:
   - component: {fileID: 1749959459}
   - component: {fileID: 1749959458}
   m_Layer: 6
-  m_Name: GreenCoin (9)
+  m_Name: GreenCollectible-5
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21944,11 +21879,11 @@ Transform:
   m_GameObject: {fileID: 1749959456}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 231.1, y: -17.4486, z: 0}
+  m_LocalPosition: {x: 227.95682, y: -17.234728, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1541331048}
+  m_Father: {fileID: 1032429943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1749959458
 CircleCollider2D:
@@ -22109,7 +22044,7 @@ GameObject:
   - component: {fileID: 1759580309}
   - component: {fileID: 1759580308}
   m_Layer: 0
-  m_Name: Spike-3 (46)
+  m_Name: Spike-42
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22309,11 +22244,11 @@ Transform:
   m_GameObject: {fileID: 1759580307}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2506256, y: 0.6857136, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 70.44182, y: -19.806128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1777599302
 GameObject:
@@ -22330,7 +22265,7 @@ GameObject:
   - component: {fileID: 1777599304}
   - component: {fileID: 1777599303}
   m_Layer: 0
-  m_Name: Spike-3 (30)
+  m_Name: Spike-26
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22530,45 +22465,11 @@ Transform:
   m_GameObject: {fileID: 1777599302}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 91.95003, y: -17.87, z: 0}
+  m_LocalPosition: {x: 100.76184, y: -18.096128, z: 9.988439}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1779666193
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1779666194}
-  m_Layer: 0
-  m_Name: V_Blocks
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1779666194
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779666193}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 487927311}
-  - {fileID: 461684622}
-  - {fileID: 810378712}
-  m_Father: {fileID: 1278963375}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1799632209
 GameObject:
@@ -22584,7 +22485,7 @@ GameObject:
   - component: {fileID: 1799632212}
   - component: {fileID: 1799632211}
   m_Layer: 6
-  m_Name: GreenCoin (11)
+  m_Name: GreenCollectible-6
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22599,11 +22500,11 @@ Transform:
   m_GameObject: {fileID: 1799632209}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 241.05003, y: -17.2486, z: 0}
+  m_LocalPosition: {x: 237.90685, y: -17.034727, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1541331048}
+  m_Father: {fileID: 1032429943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1799632211
 CircleCollider2D:
@@ -22982,7 +22883,7 @@ GameObject:
   - component: {fileID: 1817153549}
   - component: {fileID: 1817153548}
   m_Layer: 0
-  m_Name: Spike-3 (8)
+  m_Name: Spike-27
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23182,11 +23083,11 @@ Transform:
   m_GameObject: {fileID: 1817153547}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.052006, y: -21.1686, z: 0}
+  m_LocalPosition: {x: 53.863823, y: -21.394728, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833071867
 GameObject:
@@ -23327,11 +23228,11 @@ Transform:
   m_GameObject: {fileID: 1833071867}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.67, y: -13.910002, z: 0}
+  m_LocalPosition: {x: 47.48181, y: -14.136129, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1833071873
 MonoBehaviour:
@@ -23395,7 +23296,7 @@ GameObject:
   - component: {fileID: 1843355729}
   - component: {fileID: 1843355728}
   m_Layer: 0
-  m_Name: Spike-3 (20)
+  m_Name: Spike-20
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23595,11 +23496,11 @@ Transform:
   m_GameObject: {fileID: 1843355727}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 105.26003, y: -18.02, z: 0}
+  m_LocalPosition: {x: 114.071846, y: -18.246128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1847159639
 GameObject:
@@ -23614,7 +23515,7 @@ GameObject:
   - component: {fileID: 1847159641}
   - component: {fileID: 1847159643}
   m_Layer: 0
-  m_Name: Platform-4 (23)
+  m_Name: Ground-18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23757,7 +23658,7 @@ GameObject:
   - component: {fileID: 1853937984}
   - component: {fileID: 1853937986}
   m_Layer: 0
-  m_Name: Platform-4 (13)
+  m_Name: Ground-13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23966,12 +23867,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860459059}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 72.03, y: -21.76, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 80.84181, y: -21.986128, z: 9.988439}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 847337178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1860459062
 MonoBehaviour:
@@ -24044,7 +23945,7 @@ GameObject:
   - component: {fileID: 1870171384}
   - component: {fileID: 1870171383}
   m_Layer: 6
-  m_Name: GreenCoin (4)
+  m_Name: GreenCollectible-1
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24059,11 +23960,11 @@ Transform:
   m_GameObject: {fileID: 1870171381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 23.130001, y: -21.516125, z: 0}
+  m_LocalPosition: {x: 19.986816, y: -21.302252, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1541331048}
+  m_Father: {fileID: 1032429943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1870171383
 CircleCollider2D:
@@ -24222,7 +24123,7 @@ GameObject:
   - component: {fileID: 1888864178}
   - component: {fileID: 1888864180}
   m_Layer: 0
-  m_Name: Platform-4 (20)
+  m_Name: Ground-16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24365,7 +24266,7 @@ GameObject:
   - component: {fileID: 1890524065}
   - component: {fileID: 1890524067}
   m_Layer: 0
-  m_Name: Platform-4 (8)
+  m_Name: Ground-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24508,7 +24409,7 @@ GameObject:
   - component: {fileID: 1914059742}
   - component: {fileID: 1914059744}
   m_Layer: 0
-  m_Name: Platform-4
+  m_Name: Ground-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24652,7 +24553,7 @@ GameObject:
   - component: {fileID: 1922426513}
   - component: {fileID: 1922426512}
   m_Layer: 6
-  m_Name: BlueCoin (10)
+  m_Name: BlueCollectible-1
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24667,11 +24568,11 @@ Transform:
   m_GameObject: {fileID: 1922426510}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.85, y: -24.04, z: 0}
+  m_LocalPosition: {x: 45.70681, y: -23.826128, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15101207}
+  m_Father: {fileID: 533301248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1922426512
 BoxCollider2D:
@@ -24832,7 +24733,7 @@ GameObject:
   - component: {fileID: 1938574779}
   - component: {fileID: 1938574778}
   m_Layer: 0
-  m_Name: Spike-3 (17)
+  m_Name: Spike-25
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25032,11 +24933,11 @@ Transform:
   m_GameObject: {fileID: 1938574777}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 250.25801, y: -9.817202, z: 0}
+  m_LocalPosition: {x: 259.06982, y: -10.043329, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1944195934
 GameObject:
@@ -25051,7 +24952,7 @@ GameObject:
   - component: {fileID: 1944195937}
   - component: {fileID: 1944195936}
   m_Layer: 0
-  m_Name: HorizontalGreen (7)
+  m_Name: GreenPlatform-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25066,11 +24967,11 @@ Transform:
   m_GameObject: {fileID: 1944195934}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 64.2, y: -16.6, z: 0}
-  m_LocalScale: {x: 0.7, y: 6, z: 1}
+  m_LocalPosition: {x: 61.05681, y: -16.386127, z: 9.988439}
+  m_LocalScale: {x: 0.6999999, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1740387703}
+  m_Father: {fileID: 1551575831}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1944195936
 MonoBehaviour:
@@ -25283,6 +25184,40 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1955728417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955728418}
+  m_Layer: 0
+  m_Name: ColorPlatform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1955728418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955728417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1674885295}
+  - {fileID: 1551575831}
+  - {fileID: 723320225}
+  m_Father: {fileID: 1278963375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1964257469
 GameObject:
   m_ObjectHideFlags: 0
@@ -25360,7 +25295,7 @@ GameObject:
   - component: {fileID: 1994359089}
   - component: {fileID: 1994359088}
   m_Layer: 0
-  m_Name: Spike-3 (6)
+  m_Name: Spike-7
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25560,11 +25495,11 @@ Transform:
   m_GameObject: {fileID: 1994359087}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.17, y: -21.46, z: 0}
+  m_LocalPosition: {x: 17.981815, y: -21.686127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2028185772
 GameObject:
@@ -25579,7 +25514,7 @@ GameObject:
   - component: {fileID: 2028185774}
   - component: {fileID: 2028185776}
   m_Layer: 0
-  m_Name: Platform-3 (5)
+  m_Name: Ground-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25724,7 +25659,7 @@ GameObject:
   - component: {fileID: 2052410055}
   - component: {fileID: 2052410054}
   m_Layer: 0
-  m_Name: Spike-3 (5)
+  m_Name: Spike-6
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25924,11 +25859,11 @@ Transform:
   m_GameObject: {fileID: 2052410053}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.800005, y: -21.46, z: 0}
+  m_LocalPosition: {x: 17.61182, y: -21.686127, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063066607
 GameObject:
@@ -25945,7 +25880,7 @@ GameObject:
   - component: {fileID: 2063066609}
   - component: {fileID: 2063066608}
   m_Layer: 0
-  m_Name: Spike-3 (44)
+  m_Name: Spike-39
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26145,11 +26080,11 @@ Transform:
   m_GameObject: {fileID: 2063066607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.30562592, y: 0.6857136, z: 0}
-  m_LocalScale: {x: 0.0625, y: 0.7142857, z: 0.5}
+  m_LocalPosition: {x: 70.88182, y: -19.806128, z: 9.988439}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1240711405}
+  m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2069615496
 GameObject:
@@ -26164,7 +26099,7 @@ GameObject:
   - component: {fileID: 2069615498}
   - component: {fileID: 2069615500}
   m_Layer: 0
-  m_Name: Platform-3 (2)
+  m_Name: Ground-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26294,6 +26229,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9162a3ebbbdd4c8cb20a231dcc02c6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2078175137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2078175138}
+  m_Layer: 0
+  m_Name: RedCollect-Parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2078175138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078175137}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1407820130}
+  - {fileID: 1295480026}
+  - {fileID: 1230042757}
+  - {fileID: 963258137}
+  - {fileID: 293197361}
+  m_Father: {fileID: 1607541399}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2082148019
 GameObject:
   m_ObjectHideFlags: 0
@@ -26307,7 +26278,7 @@ GameObject:
   - component: {fileID: 2082148021}
   - component: {fileID: 2082148023}
   m_Layer: 0
-  m_Name: Platform-4 (10)
+  m_Name: Ground-20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26451,7 +26422,7 @@ GameObject:
   - component: {fileID: 2099984607}
   - component: {fileID: 2099984606}
   m_Layer: 6
-  m_Name: BlueCoin (9)
+  m_Name: BlueCollectible-4
   m_TagString: Collectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26466,11 +26437,11 @@ Transform:
   m_GameObject: {fileID: 2099984604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 236.89001, y: -17.2486, z: 0}
+  m_LocalPosition: {x: 233.74683, y: -17.034727, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 15101207}
+  m_Father: {fileID: 533301248}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2099984606
 BoxCollider2D:
@@ -26631,7 +26602,7 @@ GameObject:
   - component: {fileID: 2102789322}
   - component: {fileID: 2102789321}
   m_Layer: 0
-  m_Name: Spike-3 (10)
+  m_Name: Spike-5
   m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26646,7 +26617,7 @@ Transform:
   m_GameObject: {fileID: 2102789319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 209.64001, y: -4.4514, z: 9.988439}
+  m_LocalPosition: {x: 209.64001, y: -4.451399, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27023,11 +26994,11 @@ Transform:
   m_GameObject: {fileID: 2112228645}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.36, y: -14.43, z: 0}
+  m_LocalPosition: {x: 31.171816, y: -14.656128, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114897389
 GameObject:
@@ -27041,7 +27012,7 @@ GameObject:
   - component: {fileID: 2114897392}
   - component: {fileID: 2114897391}
   m_Layer: 0
-  m_Name: Start
+  m_Name: Ground-25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27295,12 +27266,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142403323}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.87, y: -17.54, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.681815, y: -17.766129, z: 9.988439}
   m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 847337178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -27309,65 +27280,10 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1800634940}
   - {fileID: 1278963375}
-  - {fileID: 1964257471}
-  - {fileID: 1715861738}
-  - {fileID: 1017275462}
   - {fileID: 1634065029}
-  - {fileID: 1141061033}
-  - {fileID: 29965004}
-  - {fileID: 1701713544}
-  - {fileID: 617515372}
-  - {fileID: 125584395}
-  - {fileID: 1833071872}
-  - {fileID: 721435315}
-  - {fileID: 968490270}
-  - {fileID: 963857495}
-  - {fileID: 639211953}
-  - {fileID: 1207330177}
-  - {fileID: 777607438}
-  - {fileID: 1048514415}
-  - {fileID: 249790535}
-  - {fileID: 336686238}
-  - {fileID: 914739067}
-  - {fileID: 1622803147}
-  - {fileID: 1234857556}
-  - {fileID: 2052410059}
-  - {fileID: 1994359093}
-  - {fileID: 462317432}
-  - {fileID: 277173807}
-  - {fileID: 503615391}
-  - {fileID: 281437432}
-  - {fileID: 1456299693}
-  - {fileID: 638924876}
-  - {fileID: 1439755175}
-  - {fileID: 189316711}
-  - {fileID: 750490239}
-  - {fileID: 684425144}
-  - {fileID: 1687636545}
-  - {fileID: 1556049272}
-  - {fileID: 1843355733}
-  - {fileID: 548668235}
-  - {fileID: 834953543}
-  - {fileID: 555442855}
-  - {fileID: 141081043}
-  - {fileID: 1938574783}
-  - {fileID: 1777599308}
-  - {fileID: 1817153553}
-  - {fileID: 1696176247}
-  - {fileID: 1546974582}
-  - {fileID: 1459172541}
-  - {fileID: 318983048}
   - {fileID: 319251562}
   - {fileID: 1486277866}
-  - {fileID: 446011517}
-  - {fileID: 2112228651}
-  - {fileID: 752742920}
   - {fileID: 1952432548}
-  - {fileID: 1174451776}
-  - {fileID: 2142403327}
-  - {fileID: 1860459061}
-  - {fileID: 1102614157}
-  - {fileID: 658208729}
-  - {fileID: 1083947492}
-  - {fileID: 609870807}
-  - {fileID: 213888401}
+  - {fileID: 1964257471}
+  - {fileID: 1715861738}
+  - {fileID: 1141061033}
