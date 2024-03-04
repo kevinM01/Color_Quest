@@ -15,7 +15,7 @@ public class PlayerJump : MonoBehaviour
     public float health;
     public TextMeshProUGUI healthText;
 
-    public TextMeshProUGUI gameOverText;
+    // public TextMeshProUGUI gameOverText;
     private Coroutine damageCoroutine;
 
     private SendToGoogle sendToGoogle;
@@ -28,7 +28,7 @@ public class PlayerJump : MonoBehaviour
         // Initialize jumpsLeft with extraJumps + 1 to account for the initial ground jump.
         jumpsLeft = extraJumps + 1;
         health = 100f;
-        gameOverText.enabled = false;
+        // gameOverText.enabled = false;
         UpdateHealthText();
 
         sendToGoogle = FindObjectOfType<SendToGoogle>();
@@ -57,28 +57,28 @@ public class PlayerJump : MonoBehaviour
 
         UpdateHealthText();
 
-        // if (health <= 0)
-        // {
-        //     health=0;
-        //     UpdateHealthText();
-
-
-        //     CollectAnalytics();
-        //     gameOverText.enabled = true;
-
-        //     StartCoroutine(ShowGameOverTextForThreeSeconds());
-
-        //     // Stop the game and display game over text
-        //     Time.timeScale = 0f; // Stop time to freeze the game
-        //     return; // Exit the update loop
-        //     }
-        }
-
-        private IEnumerator ShowGameOverTextForThreeSeconds()
+        if (health <= 0)
         {
-            yield return new WaitForSeconds(3f); // Wait for 3 seconds
-            gameOverText.enabled = false; // Disable gameOverText after 3 seconds
+            health=0;
+            UpdateHealthText();
+
+
+            CollectAnalytics();
+            // gameOverText.enabled = true;
+
+            // StartCoroutine(ShowGameOverTextForThreeSeconds());
+
+            // // Stop the game and display game over text
+            // Time.timeScale = 0f; // Stop time to freeze the game
+            return; // Exit the update loop
+            }
         }
+
+        // private IEnumerator ShowGameOverTextForThreeSeconds()
+        // {
+        //     yield return new WaitForSeconds(3f); // Wait for 3 seconds
+        //     gameOverText.enabled = false; // Disable gameOverText after 3 seconds
+        // }
 
     private bool IsGrounded()
     {
@@ -119,9 +119,9 @@ public class PlayerJump : MonoBehaviour
             UpdateHealthText();
             if (health <= 0)
             {
-                gameOverText.enabled = true;
-                Time.timeScale = 0f;
-                yield return new WaitForSeconds(2f);
+                // gameOverText.enabled = true;
+                // Time.timeScale = 0f;
+                // yield return new WaitForSeconds(2f);
                 // Handle player death here if needed
                 int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
                 health = 100;
@@ -165,22 +165,25 @@ public class PlayerJump : MonoBehaviour
     {
         if (col.tag == "Fall")
         {
-            gameOverText.enabled = true;
-            StartCoroutine(ReloadSceneAfterDelay(2f));
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex);
+
+            CollectAnalytics();
+            // StartCoroutine(ReloadSceneAfterDelay(2f));
         }
     }
 
-    private IEnumerator ReloadSceneAfterDelay(float delay)
-    {
-        Time.timeScale = 0f;
-        yield return new WaitForSeconds(delay);
-        // Reload the scene
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
+    // private IEnumerator ReloadSceneAfterDelay(float delay)
+    // {
+    //     Time.timeScale = 0f;
+    //     yield return new WaitForSeconds(delay);
+    //     // Reload the scene
+    //     int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    //     SceneManager.LoadScene(currentSceneIndex);
 
-        // Collect analytics
-        CollectAnalytics();
-    }
+    //     // Collect analytics
+    //     CollectAnalytics();
+    // }
 
 
     private void CollectAnalytics()
