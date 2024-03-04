@@ -160,6 +160,31 @@ public class PlayerJump : MonoBehaviour
         }
     }
 
+    public void IncreaseHealthByAmount(float amount)
+    {
+        PointCounter pointCounter = FindObjectOfType<PointCounter>(); // Find the PointCounter instance
+        if (pointCounter != null)
+        {
+            if (pointCounter.points >= 5) // Check if the player has at least 5 points
+            {
+                // Check if the player's health is less than 100
+                if (health < 100)
+                {
+                    // Calculate the new health after adding 10
+                    float newHealth = health + 10;
+                    // If the new health exceeds 100, set it to 100
+                    health = Mathf.Min(newHealth, 100);
+                    UpdateHealthText();
+
+                    // Decrease points by 5 only if health increased
+                    pointCounter.points -= 5;
+                    pointCounter.points = Mathf.Max(0, pointCounter.points); // Ensure points cannot go below 0
+                    pointCounter.UpdatePointsText(); // Call the UpdatePointsText method
+                }
+            }
+        }
+    }
+
 
     void OnTriggerEnter2D(Collider2D col)
     {
