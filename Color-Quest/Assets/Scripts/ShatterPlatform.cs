@@ -13,7 +13,7 @@ public class ShatterPlatform : MonoBehaviour
     {
 
     GameObject player = GameObject.FindGameObjectWithTag("Player");
-    float xScale = player.transform.localScale.x;
+    float xScale = player.transform.localScale.y;
 
         if (player != null)
         {
