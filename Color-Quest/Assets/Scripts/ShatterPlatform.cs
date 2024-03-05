@@ -27,7 +27,7 @@ public class ShatterPlatform : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (4.5f < xScale)
+            if (3.6f < xScale)
             {
                 Debug.Log("Player's X Scale: " + xScale);
                 Shatter();
@@ -40,7 +40,10 @@ public class ShatterPlatform : MonoBehaviour
         Destroy(gameObject);
         
 
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex);
+
+
+
+
+        SceneManager.LoadScene("BigSize");
     }
 }

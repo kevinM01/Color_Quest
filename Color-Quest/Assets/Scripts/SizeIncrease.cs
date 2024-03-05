@@ -5,7 +5,7 @@ using UnityEngine;
 public class SizeIncrease : MonoBehaviour
 {
     // Start is called before the first frame update
-    private float sizeIncreaseAmount = 0.81f;
+    private float sizeIncreaseAmount = 0.45f;
 
     void Start()
     {

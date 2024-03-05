@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Win-Scene/Win3.unity
     guid: 19179ea3485a84e20a93746b7ed16dc9
+  - enabled: 1
+    path: Assets/Scenes/SmallSize.unity
+    guid: 1549d113848c743baaf1bb23b47ef6a5
+  - enabled: 1
+    path: Assets/Scenes/BigSize.unity
+    guid: 4962fc279b1124b5ca1cf7dd2dd010b6
   m_configObjects: {}
