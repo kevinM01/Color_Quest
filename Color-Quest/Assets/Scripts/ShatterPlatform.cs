@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class ShatterPlatform : MonoBehaviour
 {
+    private PlayerJump playerJump;
+
     // Start is called before the first frame update
 //    public float platformWeight = 2f;  
 //     public float playerWeight = 15f;    
 
+    void Start()
+    {
+        playerJump = FindObjectOfType<PlayerJump>();
+    }
     void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -30,18 +36,21 @@ public class ShatterPlatform : MonoBehaviour
             if (3.6f < xScale)
             {
                 Debug.Log("Player's X Scale: " + xScale);
+                playerJump.CollectAnalytics();
                 Shatter();
+
             }
         }
     }
 
+    
     void Shatter()
     {
         Destroy(gameObject);
+
+        //yield return new WaitForSeconds(0.2f);
+
         
-
-
-
 
 
         SceneManager.LoadScene("BigSize");
