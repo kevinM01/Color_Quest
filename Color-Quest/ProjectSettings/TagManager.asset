@@ -8,6 +8,7 @@ TagManager:
   - Collectible
   - Fall
   - Spike
+  - firstCoin
   layers:
   - Default
   - TransparentFX
