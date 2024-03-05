@@ -211,7 +211,7 @@ public class PlayerJump : MonoBehaviour
     // }
 
 
-    private void CollectAnalytics()
+    public void CollectAnalytics()
     {
         // x coord of the player at the time of his dehant (rip player, awks!)
         // collect current level at time of death

@@ -7,10 +7,11 @@ public class SizeDecrease : MonoBehaviour
 {
     // Start is called before the first frame update
     private float sizeDecreaseAmount = -0.27f;
+    private PlayerJump playerJump;
 
     void Start()
     {
-        
+        playerJump = FindObjectOfType<PlayerJump>();
     }
 
     // Update is called once per frame
@@ -20,7 +21,7 @@ public class SizeDecrease : MonoBehaviour
         float xScale = player.transform.localScale.y;
         if (xScale <= 0.3 )
         {
-            
+            playerJump.CollectAnalytics();
             SceneManager.LoadScene("SmallSize");
             Debug.Log("Die " + xScale);
         }
