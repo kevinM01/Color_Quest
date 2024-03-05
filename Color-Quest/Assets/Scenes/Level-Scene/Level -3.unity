@@ -22788,7 +22788,7 @@ Transform:
   m_GameObject: {fileID: 1800634938}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.049999237, y: -21.16, z: 0}
+  m_LocalPosition: {x: 0.049999237, y: -21.077, z: 0}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22922,6 +22922,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsText: {fileID: 758645133}
   points: 0
+  firstCoinText: {fileID: 0}
 --- !u!1 &1817153547
 GameObject:
   m_ObjectHideFlags: 0
@@ -27094,7 +27095,7 @@ Transform:
   m_GameObject: {fileID: 2114897389}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 7.0400047, y: -15.298698, z: 9.988439}
+  m_LocalPosition: {x: 7.0400047, y: -15.274, z: 9.988439}
   m_LocalScale: {x: 14.2857685, y: 0.9086323, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
