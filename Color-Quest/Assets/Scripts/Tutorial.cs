@@ -8,7 +8,7 @@ public class Tutorial : MonoBehaviour
 
     public void Start()
     {
-        Inventory.gameObject.SetActive(false);
+        Inventory.gameObject.SetActive(true);
     }
 
     public void Switch()
