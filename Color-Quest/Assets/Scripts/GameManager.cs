@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         AssignRandomColor(objectToColor);
     }
 
-    void AssignRandomColor(GameObject obj)
+    public void AssignRandomColor(GameObject obj)
     {
         if (obj != null)
         {

@@ -132,7 +132,7 @@ public class PlayerJump : MonoBehaviour
 
                 break;
             }
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(1.5f);
         }
     }
 
@@ -211,17 +211,18 @@ public class PlayerJump : MonoBehaviour
     // }
 
 
-    private void CollectAnalytics()
+    public void CollectAnalytics()
     {
         // x coord of the player at the time of his dehant (rip player, awks!)
         // collect current level at time of death
         Scene currentScene = SceneManager.GetActiveScene();
         Debug.Log("Current Scene Name: " + currentScene.name.GetType());
         float x_coord = transform.position.x;
+        float y_coord = transform.position.y;
         Debug.Log("Current X Position of the Player: " + x_coord);
         if (sendToGoogle != null)
         {
-            sendToGoogle.Send(x_coord, currentScene.name);
+            sendToGoogle.Send(x_coord, y_coord, currentScene.name);
         }
     }
 

@@ -15,21 +15,23 @@ public class SendToGoogle : MonoBehaviour
         _sessionID = System.DateTime.Now.Ticks;
     }
 
-    public void Send(float x_coord, string level)
+    public void Send(float x_coord, float y_coord, string level)
     {
         /*x_coord = Random.Range(0, 101);*/     // x coord of the player at the time of death
         /*level = 0;*/                          // level at the time of death
         x_coord = (float)System.Math.Floor(x_coord);
+        y_coord = (float)System.Math.Floor(y_coord);
         char levelNum = level[level.Length - 1];
-        StartCoroutine(Post(_sessionID.ToString(), x_coord.ToString(), levelNum.ToString()));
-        Debug.Log("Sendinggg Daa-taa" + levelNum);
+        StartCoroutine(Post(_sessionID.ToString(), x_coord.ToString(), y_coord.ToString(), levelNum.ToString()));
+        /*Debug.Log("Sendinggg Daa-taa" + levelNum);*/
     }
 
-    private IEnumerator Post(string _sessionID, string x_coord, string level)
+    private IEnumerator Post(string _sessionID, string x_coord, string y_coord, string level)
     {
         WWWForm form = new WWWForm();
         form.AddField("entry.1514008209", _sessionID);
         form.AddField("entry.835408423", x_coord);
+        form.AddField("entry.1056739513", y_coord);
         form.AddField("entry.1069011455", level);
 
         using (UnityWebRequest www = UnityWebRequest.Post(URL, form))
