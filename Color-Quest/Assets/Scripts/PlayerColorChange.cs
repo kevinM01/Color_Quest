@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerColorChange : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
+    private float timer = 0f;
 
     public enum Type
     {
@@ -16,6 +17,24 @@ public class PlayerColorChange : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
+    void Update()
+    {
+        if (timer > 0f)
+        {
+            timer -= Time.deltaTime; // Decrease timer based on game time
+            Debug.Log(timer);
+            if (timer <= 0f) // Timer finished
+            {
+                ChangeToRandomColor();  // change the color to random of Red, Green, Blue
+            }
+        }
+    }
+
+    void ChangeToRandomColor()
+    {
+        GameManager.Instance.AssignRandomColor(gameObject); // Use gameObject as the object to color
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -33,7 +52,17 @@ public class PlayerColorChange : MonoBehaviour
 
     void ChangePlayerColor(Color newColor)
     {
-        spriteRenderer.color = newColor;
+        if (newColor == Color.red || newColor == Color.green || newColor == Color.blue)
+        {
+            spriteRenderer.color = newColor;
+            timer = 0f;
+        }
+        else
+        {
+            spriteRenderer.color = Color.white;
+            timer = 5f; // Start timer for 5 seconds
+
+        }
     }
 
     private void Collect(PlayerColorChange player)
