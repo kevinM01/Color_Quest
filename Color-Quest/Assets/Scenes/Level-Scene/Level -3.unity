@@ -1407,7 +1407,7 @@ GameObject:
   - component: {fileID: 125584396}
   - component: {fileID: 125584397}
   m_Layer: 6
-  m_Name: Coin1 (3)
+  m_Name: Coin3
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2616,7 +2616,7 @@ GameObject:
   - component: {fileID: 249790536}
   - component: {fileID: 249790537}
   m_Layer: 6
-  m_Name: Coin1 (9)
+  m_Name: Coin12
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4524,7 +4524,7 @@ GameObject:
   - component: {fileID: 336686239}
   - component: {fileID: 336686240}
   m_Layer: 6
-  m_Name: Coin1 (10)
+  m_Name: Coin13
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5831,7 +5831,7 @@ GameObject:
   - component: {fileID: 446011513}
   - component: {fileID: 446011512}
   m_Layer: 6
-  m_Name: Coin1 (14)
+  m_Name: Coin17
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8795,7 +8795,7 @@ GameObject:
   - component: {fileID: 639211954}
   - component: {fileID: 639211955}
   m_Layer: 6
-  m_Name: Coin1 (7)
+  m_Name: Coin8
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10477,7 +10477,7 @@ GameObject:
   - component: {fileID: 721435316}
   - component: {fileID: 721435317}
   m_Layer: 6
-  m_Name: Coin1 (5)
+  m_Name: Coin5
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10930,7 +10930,7 @@ GameObject:
   - component: {fileID: 752742916}
   - component: {fileID: 752742915}
   m_Layer: 6
-  m_Name: Coin1 (18)
+  m_Name: Coin19
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11256,7 +11256,7 @@ GameObject:
   - component: {fileID: 777607434}
   - component: {fileID: 777607433}
   m_Layer: 6
-  m_Name: Coin1 (17)
+  m_Name: Coin10
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12205,7 +12205,7 @@ GameObject:
   - component: {fileID: 914739068}
   - component: {fileID: 914739069}
   m_Layer: 6
-  m_Name: Coin1 (11)
+  m_Name: Coin14
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13303,7 +13303,7 @@ GameObject:
   - component: {fileID: 963857496}
   - component: {fileID: 963857497}
   m_Layer: 6
-  m_Name: Coin1 (6)
+  m_Name: Coin7
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13495,7 +13495,7 @@ GameObject:
   - component: {fileID: 968490266}
   - component: {fileID: 968490265}
   m_Layer: 6
-  m_Name: Coin1 (16)
+  m_Name: Coin6
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13820,7 +13820,7 @@ GameObject:
   - component: {fileID: 1048514416}
   - component: {fileID: 1048514417}
   m_Layer: 6
-  m_Name: Coin1 (8)
+  m_Name: Coin11
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14646,7 +14646,7 @@ GameObject:
   - component: {fileID: 1167424818}
   - component: {fileID: 1167424817}
   m_Layer: 6
-  m_Name: Coin1 (19)
+  m_Name: Coin9
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15797,7 +15797,7 @@ GameObject:
   - component: {fileID: 1234857557}
   - component: {fileID: 1234857558}
   m_Layer: 6
-  m_Name: Coin1 (13)
+  m_Name: Coin16
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20797,7 +20797,7 @@ GameObject:
   - component: {fileID: 1622803148}
   - component: {fileID: 1622803149}
   m_Layer: 6
-  m_Name: Coin1 (12)
+  m_Name: Coin15
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22342,7 +22342,7 @@ GameObject:
   - component: {fileID: 1701713540}
   - component: {fileID: 1701713539}
   m_Layer: 6
-  m_Name: Coin1 (1)
+  m_Name: Coin2
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24200,7 +24200,7 @@ GameObject:
   - component: {fileID: 1833071873}
   - component: {fileID: 1833071874}
   m_Layer: 6
-  m_Name: Coin1 (4)
+  m_Name: Coin4
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27753,7 +27753,7 @@ GameObject:
   - component: {fileID: 2112228647}
   - component: {fileID: 2112228646}
   m_Layer: 6
-  m_Name: Coin1 (15)
+  m_Name: Coin18
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
