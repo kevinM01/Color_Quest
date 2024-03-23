@@ -74,11 +74,11 @@ public class PlayerJump : MonoBehaviour
             }
         }
 
-        // private IEnumerator ShowGameOverTextForThreeSeconds()
-        // {
-        //     yield return new WaitForSeconds(3f); // Wait for 3 seconds
-        //     gameOverText.enabled = false; // Disable gameOverText after 3 seconds
-        // }
+    // private IEnumerator ShowGameOverTextForThreeSeconds()
+    // {
+    //     yield return new WaitForSeconds(3f); // Wait for 3 seconds
+    //     gameOverText.enabled = false; // Disable gameOverText after 3 seconds
+    // }
 
     private bool IsGrounded()
     {
@@ -88,10 +88,10 @@ public class PlayerJump : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D  other)
     {
-        Debug.Log("Inside Spike Collder");
-        if (other.gameObject.CompareTag("Spike"))
+        /*Debug.Log("Inside Spike Collder");*/
+        if (other.gameObject.CompareTag("Spike") || other.gameObject.CompareTag("movingObs"))
         {
-        Debug.Log("Collided with Spike");
+        /*Debug.Log("Collided with Spike");*/
             if (damageCoroutine == null)
             {
                 damageCoroutine = StartCoroutine(ReduceHealthOverTime());
@@ -101,7 +101,7 @@ public class PlayerJump : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D  other)
     {
-        if (other.gameObject.CompareTag("Spike"))
+        if (other.gameObject.CompareTag("Spike") || other.gameObject.CompareTag("movingObs"))
         {
             if (damageCoroutine != null)
             {
@@ -111,11 +111,11 @@ public class PlayerJump : MonoBehaviour
         }
     }
 
-    IEnumerator ReduceHealthOverTime()
+    public IEnumerator ReduceHealthOverTime()
     {
         while (true)
         {
-            health -= 10f;
+            health -= 20f;
             UpdateHealthText();
             if (health <= 0)
             {
@@ -128,7 +128,7 @@ public class PlayerJump : MonoBehaviour
                 SceneManager.LoadScene(currentSceneIndex);
 
                 CollectAnalytics();
-                
+
 
                 break;
             }
@@ -170,8 +170,8 @@ public class PlayerJump : MonoBehaviour
                 // Check if the player's health is less than 100
                 if (health < 100)
                 {
-                    // Calculate the new health after adding 10
-                    float newHealth = health + 10;
+                    // Calculate the new health after adding 20
+                    float newHealth = health + 20;
                     // If the new health exceeds 100, set it to 100
                     health = Mathf.Min(newHealth, 100);
                     UpdateHealthText();
@@ -216,13 +216,12 @@ public class PlayerJump : MonoBehaviour
         // x coord of the player at the time of his dehant (rip player, awks!)
         // collect current level at time of death
         Scene currentScene = SceneManager.GetActiveScene();
-        Debug.Log("Current Scene Name: " + currentScene.name.GetType());
+        Debug.Log("Current Scene Name: " + currentScene.name);
         float x_coord = transform.position.x;
-        float y_coord = transform.position.y;
         Debug.Log("Current X Position of the Player: " + x_coord);
         if (sendToGoogle != null)
         {
-            sendToGoogle.Send(x_coord, y_coord, currentScene.name);
+            sendToGoogle.Send(x_coord, currentScene.name);
         }
     }
 
