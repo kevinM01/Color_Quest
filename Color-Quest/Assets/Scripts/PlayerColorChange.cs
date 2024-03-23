@@ -4,6 +4,7 @@ public class PlayerColorChange : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private float timer = 0f;
+    private Color previousColor; // Store the previous color before the timer
 
     public enum Type
     {
@@ -17,6 +18,7 @@ public class PlayerColorChange : MonoBehaviour
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        previousColor = spriteRenderer.color; // Initialize with initial color
     }
 
     void Update()
@@ -27,9 +29,14 @@ public class PlayerColorChange : MonoBehaviour
             Debug.Log(timer);
             if (timer <= 0f) // Timer finished
             {
-                ChangeToRandomColor();  // change the color to random of Red, Green, Blue
+                ChangeToPreviousColor(); // Change back to the previous color
             }
         }
+    }
+
+    void ChangeToPreviousColor()
+    {
+        spriteRenderer.color = previousColor; // Set back to the stored previous color
     }
 
     void ChangeToRandomColor()
@@ -55,13 +62,13 @@ public class PlayerColorChange : MonoBehaviour
         if (newColor == Color.red || newColor == Color.green || newColor == Color.blue)
         {
             spriteRenderer.color = newColor;
-            timer = 0f;
+            timer = 0f; // Start timer for 5 seconds
         }
         else
         {
+            previousColor = spriteRenderer.color; // Store the current color before changing
             spriteRenderer.color = Color.white;
-            timer = 5f; // Start timer for 5 seconds
-
+            timer = 5f; // Start timer for 5 seconds (optional, adjust based on your logic)
         }
     }
 
