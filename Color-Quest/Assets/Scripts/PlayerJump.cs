@@ -218,10 +218,11 @@ public class PlayerJump : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         Debug.Log("Current Scene Name: " + currentScene.name);
         float x_coord = transform.position.x;
+        float y_coord = transform.position.y;
         Debug.Log("Current X Position of the Player: " + x_coord);
         if (sendToGoogle != null)
         {
-            sendToGoogle.Send(x_coord, currentScene.name);
+            sendToGoogle.Send(x_coord, y_coord, currentScene.name);
         }
     }
 
