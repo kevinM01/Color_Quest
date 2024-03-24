@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 22186201}
   - component: {fileID: 22186200}
   - component: {fileID: 22186199}
+  - component: {fileID: 22186202}
   m_Layer: 0
   m_Name: GreenPlatform-3
   m_TagString: Untagged
@@ -409,6 +410,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &22186202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22186197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
 --- !u!1 &29964999
 GameObject:
   m_ObjectHideFlags: 0
@@ -4343,6 +4357,7 @@ GameObject:
   - component: {fileID: 320180716}
   - component: {fileID: 320180715}
   - component: {fileID: 320180714}
+  - component: {fileID: 320180717}
   m_Layer: 0
   m_Name: RedPlatform-6
   m_TagString: Untagged
@@ -4474,6 +4489,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &320180717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320180712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
 --- !u!1 &326096919
 GameObject:
   m_ObjectHideFlags: 0
@@ -10052,6 +10080,7 @@ GameObject:
   - component: {fileID: 711478816}
   - component: {fileID: 711478815}
   - component: {fileID: 711478814}
+  - component: {fileID: 711478817}
   m_Layer: 0
   m_Name: RedPlatform-5
   m_TagString: Untagged
@@ -10183,6 +10212,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &711478817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711478812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
 --- !u!1 &721435310
 GameObject:
   m_ObjectHideFlags: 0
@@ -13927,6 +13969,7 @@ GameObject:
   - component: {fileID: 1178871404}
   - component: {fileID: 1178871406}
   - component: {fileID: 1178871405}
+  - component: {fileID: 1178871407}
   m_Layer: 0
   m_Name: BluePlatform-1
   m_TagString: Untagged
@@ -14082,6 +14125,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b10752fdadd4b2b47b9b950df35945ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1178871407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178871400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
 --- !u!1 &1212578482
 GameObject:
   m_ObjectHideFlags: 0
