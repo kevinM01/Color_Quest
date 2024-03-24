@@ -859,7 +859,6 @@ GameObject:
   - component: {fileID: 51204738}
   - component: {fileID: 51204741}
   - component: {fileID: 51204740}
-  - component: {fileID: 51204742}
   - component: {fileID: 51204739}
   m_Layer: 0
   m_Name: RedPlatform-1
@@ -992,18 +991,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &51204742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51204737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9162a3ebbbdd4c8cb20a231dcc02c6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &91770484
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,6 +4777,7 @@ GameObject:
   - component: {fileID: 381154741}
   - component: {fileID: 381154738}
   - component: {fileID: 381154742}
+  - component: {fileID: 381154743}
   m_Layer: 0
   m_Name: BluePlatform-4
   m_TagString: Untagged
@@ -4943,6 +4931,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &381154743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381154736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -7453,6 +7454,7 @@ GameObject:
   - component: {fileID: 560373656}
   - component: {fileID: 560373655}
   - component: {fileID: 560373660}
+  - component: {fileID: 560373661}
   m_Layer: 0
   m_Name: GreenPlatform-5
   m_TagString: Untagged
@@ -7618,6 +7620,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &560373661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560373653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -11169,7 +11184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1157, y: -98}
+  m_AnchoredPosition: {x: -672, y: -82}
   m_SizeDelta: {x: 226.1409, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758645133
@@ -14297,6 +14312,7 @@ GameObject:
   - component: {fileID: 1093645955}
   - component: {fileID: 1093645952}
   - component: {fileID: 1093645956}
+  - component: {fileID: 1093645957}
   m_Layer: 0
   m_Name: BluePlatform-3
   m_TagString: Untagged
@@ -14450,6 +14466,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &1093645957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093645950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -15024,6 +15053,7 @@ GameObject:
   - component: {fileID: 1178871406}
   - component: {fileID: 1178871405}
   - component: {fileID: 1178871408}
+  - component: {fileID: 1178871409}
   m_Layer: 0
   m_Name: BluePlatform-1
   m_TagString: Untagged
@@ -15201,6 +15231,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &1178871409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178871400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -21041,7 +21084,6 @@ GameObject:
   - component: {fileID: 1629589907}
   - component: {fileID: 1629589911}
   - component: {fileID: 1629589910}
-  - component: {fileID: 1629589912}
   - component: {fileID: 1629589909}
   - component: {fileID: 1629589908}
   m_Layer: 0
@@ -21187,18 +21229,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1629589912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629589906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9162a3ebbbdd4c8cb20a231dcc02c6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1634065027
 GameObject:
   m_ObjectHideFlags: 0

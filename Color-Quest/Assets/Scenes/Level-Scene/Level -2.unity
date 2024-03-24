@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 22186200}
   - component: {fileID: 22186199}
   - component: {fileID: 22186202}
+  - component: {fileID: 22186203}
   m_Layer: 0
   m_Name: GreenPlatform-3
   m_TagString: Untagged
@@ -420,6 +421,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &22186203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22186197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -4358,6 +4372,7 @@ GameObject:
   - component: {fileID: 320180715}
   - component: {fileID: 320180714}
   - component: {fileID: 320180717}
+  - component: {fileID: 320180718}
   m_Layer: 0
   m_Name: RedPlatform-6
   m_TagString: Untagged
@@ -4499,6 +4514,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &320180718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320180712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -10081,6 +10109,7 @@ GameObject:
   - component: {fileID: 711478815}
   - component: {fileID: 711478814}
   - component: {fileID: 711478817}
+  - component: {fileID: 711478818}
   m_Layer: 0
   m_Name: RedPlatform-5
   m_TagString: Untagged
@@ -10097,7 +10126,7 @@ Transform:
   m_GameObject: {fileID: 711478812}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 187.69682, y: 2.8338742, z: 9.988439}
+  m_LocalPosition: {x: 185.27, y: 2.8338742, z: 9.988439}
   m_LocalScale: {x: 5, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10222,6 +10251,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &711478818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711478812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -10876,7 +10918,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1170, y: -98}
+  m_AnchoredPosition: {x: -689, y: -83}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758645133
@@ -13968,8 +14010,8 @@ GameObject:
   - component: {fileID: 1178871403}
   - component: {fileID: 1178871404}
   - component: {fileID: 1178871406}
-  - component: {fileID: 1178871405}
   - component: {fileID: 1178871407}
+  - component: {fileID: 1178871408}
   m_Layer: 0
   m_Name: BluePlatform-1
   m_TagString: Untagged
@@ -14101,18 +14143,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0c088dbeb70d14a81c5db68b557795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1178871405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178871400}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b10752fdadd4b2b47b9b950df35945ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1178871406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14135,6 +14165,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &1178871408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178871400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -14440,7 +14483,7 @@ Transform:
   m_GameObject: {fileID: 1230042756}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 188.9032, y: 3.7779489, z: 9.988439}
+  m_LocalPosition: {x: 186.47638, y: 3.7779489, z: 9.988439}
   m_LocalScale: {x: 0.3, y: 0.24375, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17222,7 +17265,7 @@ Transform:
   m_GameObject: {fileID: 1453921787}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 182.66682, y: 2.8338742, z: 9.988439}
+  m_LocalPosition: {x: 180.24, y: 2.8338742, z: 9.988439}
   m_LocalScale: {x: 0.6999999, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19630,7 +19673,7 @@ Transform:
   m_GameObject: {fileID: 1622803142}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 183.30183, y: 4.203873, z: 9.988439}
+  m_LocalPosition: {x: 180.87502, y: 4.203873, z: 9.988439}
   m_LocalScale: {x: 0.5, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

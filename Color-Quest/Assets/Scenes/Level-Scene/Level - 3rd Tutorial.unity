@@ -12883,6 +12883,7 @@ GameObject:
   - component: {fileID: 710386126}
   - component: {fileID: 710386125}
   - component: {fileID: 710386128}
+  - component: {fileID: 710386129}
   m_Layer: 0
   m_Name: HorizontalGreen (3)
   m_TagString: Untagged
@@ -13027,6 +13028,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
+--- !u!114 &710386129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710386123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
 --- !u!1 &711478812
 GameObject:
   m_ObjectHideFlags: 0
@@ -13040,6 +13054,7 @@ GameObject:
   - component: {fileID: 711478815}
   - component: {fileID: 711478814}
   - component: {fileID: 711478817}
+  - component: {fileID: 711478818}
   m_Layer: 0
   m_Name: VerticalRed (11)
   m_TagString: Untagged
@@ -13181,6 +13196,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &711478818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711478812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -13797,7 +13825,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -68, y: -40}
+  m_AnchoredPosition: {x: -686, y: -84}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758645133
@@ -13820,7 +13848,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Points: '
+  m_text: 'Coins:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18154,6 +18182,7 @@ GameObject:
   - component: {fileID: 1178871406}
   - component: {fileID: 1178871405}
   - component: {fileID: 1178871407}
+  - component: {fileID: 1178871408}
   m_Layer: 0
   m_Name: HorizontalBlue (3)
   m_TagString: Untagged
@@ -18319,6 +18348,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &1178871408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178871400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
@@ -18777,6 +18819,7 @@ GameObject:
   - component: {fileID: 1212578485}
   - component: {fileID: 1212578484}
   - component: {fileID: 1212578487}
+  - component: {fileID: 1212578488}
   m_Layer: 0
   m_Name: HorizontalBlue (11)
   m_TagString: Untagged
@@ -18918,6 +18961,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e56fcd2d32cc4e42900c4bc3fc1523d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colorChangeInterval: 2
+--- !u!114 &1212578488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212578482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cdae90ad49e24dd680a7212dd55d394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   colorChangeInterval: 2
