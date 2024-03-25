@@ -3,14 +3,16 @@ using UnityEngine;
 public class MovingObstacle : MonoBehaviour
 {
     [SerializeField] private float speed = 2.0f; // Movement speed of the obstacle
-    [SerializeField] private float minX = -5.0f; // Minimum boundary for horizontal movement
-    [SerializeField] private float maxX = 5.0f; // Maximum boundary for horizontal movement
-    private float currentX;
+    /*[SerializeField] private float minX = -5.0f; // Minimum boundary for horizontal movement
+    [SerializeField] private float maxX = 5.0f; // Maximum boundary for horizontal movement*/
+    public float currentX;
+    public float startPos;
     private bool movingRight = true; // Flag to track movement direction
 
     private void Start()
     {
         currentX = transform.position.x; // Store initial position
+        startPos = currentX;
     }
 
     private void Update()
@@ -19,7 +21,7 @@ public class MovingObstacle : MonoBehaviour
         if (movingRight)
         {
             currentX += speed * Time.deltaTime;
-            if (currentX >= maxX)
+            if (currentX >= startPos + 5.0f)
             {
                 movingRight = false;
             }
@@ -27,7 +29,7 @@ public class MovingObstacle : MonoBehaviour
         else
         {
             currentX -= speed * Time.deltaTime;
-            if (currentX <= minX)
+            if (currentX <= startPos - 5.0f)
             {
                 movingRight = true;
             }
