@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level2 : MonoBehaviour
+public class Win4 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,8 +17,11 @@ public class Level2 : MonoBehaviour
         
     }
 
-    public void LoadGame()
+     void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene("Instruction-Level 2");
-    }
+         if (collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Win4");
+        }
+}
 }

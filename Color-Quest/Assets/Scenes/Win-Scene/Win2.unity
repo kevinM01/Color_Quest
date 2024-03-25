@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 2082871529}
   - component: {fileID: 2082871528}
   - component: {fileID: 2082871527}
-  - component: {fileID: 2082871531}
+  - component: {fileID: 2082871530}
   m_Layer: 0
   m_Name: NextLevel
   m_TagString: Untagged
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2082871531}
+      - m_Target: {fileID: 2082871530}
         m_TargetAssemblyTypeName: Level3, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
@@ -1070,7 +1070,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082871525}
   m_CullTransparentMesh: 1
---- !u!114 &2082871531
+--- !u!114 &2082871530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2082871525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d7e00c20960b441c943d6ecd890d8a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 935e30a5e51964c09a0e5b2f6c98974f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807

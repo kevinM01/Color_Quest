@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Win-Scene/Win2.unity
     guid: 69e9cf78aed8c402e8f9db3716cbfd5e
   - enabled: 1
-    path: Assets/Scenes/Level-Scene/Level -3.unity
+    path: Assets/Scenes/Level-Scene/Level -4.unity
     guid: 867c7ba6c1e1b2649b9a78dc4ca1aebb
   - enabled: 1
     path: Assets/Scenes/Win-Scene/Win3.unity
@@ -39,6 +39,18 @@ EditorBuildSettings:
     path: Assets/Scenes/BigSize.unity
     guid: 4962fc279b1124b5ca1cf7dd2dd010b6
   - enabled: 1
-    path: Assets/Scenes/Level-Scene/Level -4.unity
+    path: Assets/Scenes/Level-Scene/Level -3.unity
     guid: ea75158dcef940447abd5ff468a6eb1e
+  - enabled: 1
+    path: Assets/Scenes/Instruction-Scene/Instruction-Level 1.unity
+    guid: 68efb882cf85cce4c83ec254ab8a8730
+  - enabled: 1
+    path: Assets/Scenes/Instruction-Scene/Instruction-Level 2.unity
+    guid: 1e80c675aa182164baacefdbb9c333e9
+  - enabled: 1
+    path: Assets/Scenes/Instruction-Scene/Instruction-Level 3.unity
+    guid: 01dc654183247e64197d9547e1866fc6
+  - enabled: 1
+    path: Assets/Scenes/Instruction-Scene/Instruction-Level 4.unity
+    guid: f857abbdb2d7d264cac9b0aecf4b0873
   m_configObjects: {}

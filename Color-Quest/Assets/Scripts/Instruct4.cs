@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level3tutorial : MonoBehaviour
+public class Instruct4 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,8 +17,8 @@ public class Level3tutorial : MonoBehaviour
         
     }
 
-     public void LoadGame()
+      public void LoadGame()
     {
-        SceneManager.LoadScene("Level - 3rd Tutorial");
+        SceneManager.LoadScene("Level -4");
     }
 }

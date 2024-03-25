@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level2 : MonoBehaviour
+public class Instruct3 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,8 +17,8 @@ public class Level2 : MonoBehaviour
         
     }
 
-    public void LoadGame()
+      public void LoadGame()
     {
-        SceneManager.LoadScene("Instruction-Level 2");
+        SceneManager.LoadScene("Level -3");
     }
 }
