@@ -814,7 +814,7 @@ GameObject:
   - component: {fileID: 1752784513}
   - component: {fileID: 1752784512}
   - component: {fileID: 1752784511}
-  - component: {fileID: 1752784514}
+  - component: {fileID: 1752784515}
   m_Layer: 0
   m_Name: NextLevel
   m_TagString: Untagged
@@ -886,8 +886,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1752784514}
-        m_TargetAssemblyTypeName: Level4, Assembly-CSharp
+      - m_Target: {fileID: 1752784515}
+        m_TargetAssemblyTypeName: Instruct4, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
@@ -936,7 +936,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752784509}
   m_CullTransparentMesh: 1
---- !u!114 &1752784514
+--- !u!114 &1752784515
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1752784509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d7e00c20960b441c943d6ecd890d8a7, type: 3}
+  m_Script: {fileID: 11500000, guid: 0b3382215d11f4609b46d7468bade076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2021089363

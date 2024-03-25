@@ -1021,7 +1021,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2082871530}
-        m_TargetAssemblyTypeName: Level3, Assembly-CSharp
+        m_TargetAssemblyTypeName: Instruct3, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2082871525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 935e30a5e51964c09a0e5b2f6c98974f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d4471182c38e4dad8b2395073f6ffc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
