@@ -39,6 +39,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BigSize.unity
     guid: 4962fc279b1124b5ca1cf7dd2dd010b6
   - enabled: 1
-    path: Assets/Scenes/Level-Scene/Level - 3rd Tutorial.unity
+    path: Assets/Scenes/Level-Scene/Level -4.unity
     guid: ea75158dcef940447abd5ff468a6eb1e
   m_configObjects: {}
