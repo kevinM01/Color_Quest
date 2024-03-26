@@ -509,7 +509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -251.86584, y: -155}
+  m_AnchoredPosition: {x: -251.86584, y: -149}
   m_SizeDelta: {x: 267.909, y: 55.8042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &215884638
@@ -545,7 +545,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collect Special PowerUp
+  m_Text: "Collect Special \n5-second PowerUp"
 --- !u!222 &215884639
 CanvasRenderer:
   m_ObjectHideFlags: 0
