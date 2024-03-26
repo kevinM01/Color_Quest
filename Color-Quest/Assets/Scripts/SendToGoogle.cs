@@ -21,8 +21,9 @@ public class SendToGoogle : MonoBehaviour
         /*level = 0;*/                          // level at the time of death
         x_coord = (float)System.Math.Floor(x_coord);
         y_coord = (float)System.Math.Floor(y_coord);
-        char levelNum = level[level.Length - 1];
-        StartCoroutine(Post(_sessionID.ToString(), x_coord.ToString(), y_coord.ToString(), levelNum.ToString()));
+        // char levelNum = level[level.Length - 1];
+        // StartCoroutine(Post(_sessionID.ToString(), x_coord.ToString(), y_coord.ToString(), levelNum.ToString()));
+        StartCoroutine(Post(_sessionID.ToString(), x_coord.ToString(), y_coord.ToString(), level.ToString()));
         /*Debug.Log("Sendinggg Daa-taa" + levelNum);*/
     }
 
