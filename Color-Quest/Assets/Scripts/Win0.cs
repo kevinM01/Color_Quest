@@ -1,10 +1,9 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Instruct_Tut : MonoBehaviour
+public class Win0 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -18,8 +17,11 @@ public class Instruct_Tut : MonoBehaviour
         
     }
 
-      public void LoadGame()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene("Tutorial");
+         if (collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("Win0");
+        }
     }
 }
