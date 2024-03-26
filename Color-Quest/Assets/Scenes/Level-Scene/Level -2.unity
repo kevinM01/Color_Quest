@@ -6627,7 +6627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f184b83e64f521489974e6eb8f44cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   currentX: 0
   startPos: 0
 --- !u!114 &517615087
@@ -15295,7 +15295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f184b83e64f521489974e6eb8f44cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   currentX: 0
   startPos: 0
 --- !u!114 &1073243536
@@ -21838,7 +21838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f184b83e64f521489974e6eb8f44cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   currentX: 0
   startPos: 0
 --- !u!114 &1601178298
@@ -26609,7 +26609,7 @@ Transform:
   m_GameObject: {fileID: 1935931094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.85, y: -16.846127, z: 9.988439}
+  m_LocalPosition: {x: 10.85, y: -16.93, z: 9.988439}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26701,7 +26701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f184b83e64f521489974e6eb8f44cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   currentX: 0
   startPos: 0
 --- !u!1 &1937713982
@@ -27461,7 +27461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f184b83e64f521489974e6eb8f44cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   currentX: 0
   startPos: 0
 --- !u!114 &1968910897
