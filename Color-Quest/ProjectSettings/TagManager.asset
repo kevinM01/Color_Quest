@@ -10,6 +10,7 @@ TagManager:
   - Spike
   - firstCoin
   - movingObs
+  - PowerUp
   layers:
   - Default
   - TransparentFX

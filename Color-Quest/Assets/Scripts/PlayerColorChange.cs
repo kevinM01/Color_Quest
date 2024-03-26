@@ -26,7 +26,7 @@ public class PlayerColorChange : MonoBehaviour
         if (timer > 0f)
         {
             timer -= Time.deltaTime; // Decrease timer based on game time
-            Debug.Log(timer);
+            // Debug.Log(timer);
             if (timer <= 0f) // Timer finished
             {
                 ChangeToPreviousColor(); // Change back to the previous color
