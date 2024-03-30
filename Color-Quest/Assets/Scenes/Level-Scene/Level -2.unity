@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 21188414}
   - component: {fileID: 21188413}
   - component: {fileID: 21188412}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 22186199}
   - component: {fileID: 22186202}
   - component: {fileID: 22186203}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 26664576}
   - component: {fileID: 26664575}
   - component: {fileID: 26664574}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: BlueCollectible-7
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -630,7 +630,7 @@ GameObject:
   - component: {fileID: 29965000}
   - component: {fileID: 29965005}
   - component: {fileID: 29965006}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-1
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -822,7 +822,7 @@ GameObject:
   - component: {fileID: 36419444}
   - component: {fileID: 36419443}
   - component: {fileID: 36419442}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-47
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -1041,7 +1041,7 @@ GameObject:
   - component: {fileID: 51204741}
   - component: {fileID: 51204740}
   - component: {fileID: 51204739}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1186,7 +1186,7 @@ GameObject:
   - component: {fileID: 89729317}
   - component: {fileID: 89729316}
   - component: {fileID: 89729315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-16
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -1404,7 +1404,7 @@ GameObject:
   - component: {fileID: 93472112}
   - component: {fileID: 93472114}
   - component: {fileID: 93472113}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1534,7 +1534,7 @@ GameObject:
   - component: {fileID: 96133403}
   - component: {fileID: 96133405}
   - component: {fileID: 96133404}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,7 +1667,7 @@ GameObject:
   - component: {fileID: 100121845}
   - component: {fileID: 100121844}
   - component: {fileID: 100121843}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-17
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -1883,7 +1883,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 116406138}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Collectible
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1919,7 +1919,7 @@ GameObject:
   - component: {fileID: 116587020}
   - component: {fileID: 116587022}
   - component: {fileID: 116587021}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2052,7 +2052,7 @@ GameObject:
   - component: {fileID: 125584391}
   - component: {fileID: 125584396}
   - component: {fileID: 125584397}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-3
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -2244,7 +2244,7 @@ GameObject:
   - component: {fileID: 141081040}
   - component: {fileID: 141081039}
   - component: {fileID: 141081038}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-23
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -2462,7 +2462,7 @@ GameObject:
   - component: {fileID: 146780244}
   - component: {fileID: 146780246}
   - component: {fileID: 146780245}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2595,7 +2595,7 @@ GameObject:
   - component: {fileID: 189316708}
   - component: {fileID: 189316707}
   - component: {fileID: 189316706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-10
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -2802,81 +2802,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 995770460}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &197357747
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 197357748}
-  - component: {fileID: 197357750}
-  - component: {fileID: 197357749}
-  m_Layer: 5
-  m_Name: Red
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &197357748
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197357747}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1909186333}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 570, y: 40}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &197357749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197357747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &197357750
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197357747}
-  m_CullTransparentMesh: 1
 --- !u!1 &218513081
 GameObject:
   m_ObjectHideFlags: 0
@@ -2889,7 +2814,7 @@ GameObject:
   - component: {fileID: 218513085}
   - component: {fileID: 218513084}
   - component: {fileID: 218513083}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3032,7 +2957,7 @@ GameObject:
   - component: {fileID: 221219406}
   - component: {fileID: 221219405}
   - component: {fileID: 221219404}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3255,7 +3180,7 @@ GameObject:
   - component: {fileID: 239840167}
   - component: {fileID: 239840166}
   - component: {fileID: 239840165}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: BlueCollectible-2
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -3435,7 +3360,7 @@ GameObject:
   - component: {fileID: 249790531}
   - component: {fileID: 249790536}
   - component: {fileID: 249790537}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-9
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -3622,7 +3547,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 254635648}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3665,7 +3590,7 @@ GameObject:
   - component: {fileID: 256666473}
   - component: {fileID: 256666472}
   - component: {fileID: 256666474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3798,7 +3723,7 @@ GameObject:
   - component: {fileID: 283729337}
   - component: {fileID: 283729336}
   - component: {fileID: 283729335}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-3
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -4018,7 +3943,7 @@ GameObject:
   - component: {fileID: 310863979}
   - component: {fileID: 310863978}
   - component: {fileID: 310863977}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: RedCollectible-1
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -4198,7 +4123,7 @@ GameObject:
   - component: {fileID: 318983045}
   - component: {fileID: 318983044}
   - component: {fileID: 318983043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-31
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -4522,7 +4447,7 @@ GameObject:
   - component: {fileID: 320011489}
   - component: {fileID: 320011488}
   - component: {fileID: 320011487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-15
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -4743,7 +4668,7 @@ GameObject:
   - component: {fileID: 320180714}
   - component: {fileID: 320180717}
   - component: {fileID: 320180718}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4914,7 +4839,7 @@ GameObject:
   - component: {fileID: 326096923}
   - component: {fileID: 326096922}
   - component: {fileID: 326096921}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-57
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -5121,6 +5046,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &326487267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326487268}
+  - component: {fileID: 326487270}
+  - component: {fileID: 326487269}
+  m_Layer: 5
+  m_Name: Green
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &326487268
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326487267}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1268804379}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 570, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &326487269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326487267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 0
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &326487270
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326487267}
+  m_CullTransparentMesh: 1
 --- !u!1 &336686233
 GameObject:
   m_ObjectHideFlags: 0
@@ -5135,7 +5135,7 @@ GameObject:
   - component: {fileID: 336686234}
   - component: {fileID: 336686239}
   - component: {fileID: 336686240}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-10
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -5325,7 +5325,7 @@ GameObject:
   - component: {fileID: 381154740}
   - component: {fileID: 381154739}
   - component: {fileID: 381154738}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5470,7 +5470,7 @@ GameObject:
   - component: {fileID: 385114455}
   - component: {fileID: 385114454}
   - component: {fileID: 385114453}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-64
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -5691,7 +5691,7 @@ GameObject:
   - component: {fileID: 388696386}
   - component: {fileID: 388696385}
   - component: {fileID: 388696384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-50
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -5912,7 +5912,7 @@ GameObject:
   - component: {fileID: 406346157}
   - component: {fileID: 406346156}
   - component: {fileID: 406346155}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-2
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -6133,7 +6133,7 @@ GameObject:
   - component: {fileID: 417866550}
   - component: {fileID: 417866549}
   - component: {fileID: 417866548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-46
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -6349,7 +6349,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 423094383}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: BlueCollect-Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6389,7 +6389,7 @@ GameObject:
   - component: {fileID: 482118298}
   - component: {fileID: 482118300}
   - component: {fileID: 482118299}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6606,7 +6606,7 @@ GameObject:
   - component: {fileID: 517615086}
   - component: {fileID: 517615085}
   - component: {fileID: 517615084}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Moving Obstacle-3
   m_TagString: movingObs
   m_Icon: {fileID: 0}
@@ -6653,7 +6653,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &517615085
 CircleCollider2D:
@@ -7043,7 +7043,7 @@ GameObject:
   - component: {fileID: 535444467}
   - component: {fileID: 535444466}
   - component: {fileID: 535444465}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-15
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -7235,7 +7235,7 @@ GameObject:
   - component: {fileID: 548563341}
   - component: {fileID: 548563340}
   - component: {fileID: 548563339}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-42
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -7456,7 +7456,7 @@ GameObject:
   - component: {fileID: 548668232}
   - component: {fileID: 548668231}
   - component: {fileID: 548668230}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-20
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -7677,7 +7677,7 @@ GameObject:
   - component: {fileID: 555442852}
   - component: {fileID: 555442851}
   - component: {fileID: 555442850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-22
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -8116,7 +8116,7 @@ GameObject:
   - component: {fileID: 574561919}
   - component: {fileID: 574561918}
   - component: {fileID: 574561917}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-54
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -8336,7 +8336,7 @@ GameObject:
   - component: {fileID: 613044336}
   - component: {fileID: 613044335}
   - component: {fileID: 613044334}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: RedCollectible-6
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -8516,7 +8516,7 @@ GameObject:
   - component: {fileID: 617515368}
   - component: {fileID: 617515373}
   - component: {fileID: 617515374}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-2
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -8707,7 +8707,7 @@ GameObject:
   - component: {fileID: 619519097}
   - component: {fileID: 619519096}
   - component: {fileID: 619519095}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: BlueCollectible-5
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -8887,7 +8887,7 @@ GameObject:
   - component: {fileID: 627961020}
   - component: {fileID: 627961019}
   - component: {fileID: 627961018}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-14
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -9079,7 +9079,7 @@ GameObject:
   - component: {fileID: 638924873}
   - component: {fileID: 638924872}
   - component: {fileID: 638924871}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-8
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -9300,7 +9300,7 @@ GameObject:
   - component: {fileID: 639211949}
   - component: {fileID: 639211954}
   - component: {fileID: 639211955}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-7
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -9492,7 +9492,7 @@ GameObject:
   - component: {fileID: 648338900}
   - component: {fileID: 648338899}
   - component: {fileID: 648338898}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-56
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -9713,7 +9713,7 @@ GameObject:
   - component: {fileID: 651528122}
   - component: {fileID: 651528121}
   - component: {fileID: 651528120}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-44
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -10062,7 +10062,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 654981112}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform-Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10105,7 +10105,7 @@ GameObject:
   - component: {fileID: 672396960}
   - component: {fileID: 672396959}
   - component: {fileID: 672396958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-55
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -10325,7 +10325,7 @@ GameObject:
   - component: {fileID: 682094819}
   - component: {fileID: 682094818}
   - component: {fileID: 682094817}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10482,7 +10482,7 @@ GameObject:
   - component: {fileID: 684425141}
   - component: {fileID: 684425140}
   - component: {fileID: 684425139}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-12
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -10703,7 +10703,7 @@ GameObject:
   - component: {fileID: 698581581}
   - component: {fileID: 698581580}
   - component: {fileID: 698581579}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-62
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -11056,7 +11056,7 @@ GameObject:
   - component: {fileID: 710386127}
   - component: {fileID: 710386126}
   - component: {fileID: 710386125}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11201,7 +11201,7 @@ GameObject:
   - component: {fileID: 711478814}
   - component: {fileID: 711478817}
   - component: {fileID: 711478818}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11372,7 +11372,7 @@ GameObject:
   - component: {fileID: 721435311}
   - component: {fileID: 721435316}
   - component: {fileID: 721435317}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-5
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -11768,7 +11768,7 @@ GameObject:
   - component: {fileID: 750490236}
   - component: {fileID: 750490235}
   - component: {fileID: 750490234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-11
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -12118,7 +12118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 777688779}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12162,7 +12162,7 @@ GameObject:
   - component: {fileID: 778607140}
   - component: {fileID: 778607139}
   - component: {fileID: 778607138}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-41
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -12526,7 +12526,7 @@ GameObject:
   - component: {fileID: 834953540}
   - component: {fileID: 834953539}
   - component: {fileID: 834953538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-21
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -12745,7 +12745,7 @@ GameObject:
   - component: {fileID: 842824824}
   - component: {fileID: 842824823}
   - component: {fileID: 842824822}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12890,7 +12890,7 @@ GameObject:
   - component: {fileID: 856738539}
   - component: {fileID: 856738538}
   - component: {fileID: 856738537}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-16
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -13082,7 +13082,7 @@ GameObject:
   - component: {fileID: 914739063}
   - component: {fileID: 914739068}
   - component: {fileID: 914739069}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-11
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -13273,7 +13273,7 @@ GameObject:
   - component: {fileID: 915485080}
   - component: {fileID: 915485079}
   - component: {fileID: 915485078}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: GreenCollectible-2
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -13453,7 +13453,7 @@ GameObject:
   - component: {fileID: 920307039}
   - component: {fileID: 920307038}
   - component: {fileID: 920307037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-65
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -13674,7 +13674,7 @@ GameObject:
   - component: {fileID: 931543889}
   - component: {fileID: 931543888}
   - component: {fileID: 931543887}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-59
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -13894,7 +13894,7 @@ GameObject:
   - component: {fileID: 942776936}
   - component: {fileID: 942776935}
   - component: {fileID: 942776934}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: BlueCollectible-4
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -14074,7 +14074,7 @@ GameObject:
   - component: {fileID: 943599018}
   - component: {fileID: 943599017}
   - component: {fileID: 943599016}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14242,7 +14242,7 @@ GameObject:
   - component: {fileID: 947286316}
   - component: {fileID: 947286318}
   - component: {fileID: 947286317}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14374,7 +14374,7 @@ GameObject:
   - component: {fileID: 963258140}
   - component: {fileID: 963258139}
   - component: {fileID: 963258138}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: RedCollectible-5
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -14554,7 +14554,7 @@ GameObject:
   - component: {fileID: 963857491}
   - component: {fileID: 963857496}
   - component: {fileID: 963857497}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-6
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -14746,7 +14746,7 @@ GameObject:
   - component: {fileID: 969778984}
   - component: {fileID: 969778983}
   - component: {fileID: 969778982}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-49
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -14953,108 +14953,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &973160029
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 973160033}
-  - component: {fileID: 973160032}
-  - component: {fileID: 973160031}
-  - component: {fileID: 973160030}
-  m_Layer: 5
-  m_Name: HealthBarCanvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &973160030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973160029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &973160031
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973160029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &973160032
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973160029}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &973160033
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 973160029}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1909186333}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1 &995770459
 GameObject:
   m_ObjectHideFlags: 0
@@ -15064,7 +14962,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 995770460}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15184,7 +15082,7 @@ GameObject:
   - component: {fileID: 1048514411}
   - component: {fileID: 1048514416}
   - component: {fileID: 1048514417}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-8
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -15376,7 +15274,7 @@ GameObject:
   - component: {fileID: 1073243535}
   - component: {fileID: 1073243534}
   - component: {fileID: 1073243533}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Moving Obstacle-2
   m_TagString: movingObs
   m_Icon: {fileID: 0}
@@ -15423,7 +15321,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &1073243534
 CircleCollider2D:
@@ -15667,7 +15565,7 @@ GameObject:
   - component: {fileID: 1087754622}
   - component: {fileID: 1087754621}
   - component: {fileID: 1087754620}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: BlueCollectible-6
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -15845,7 +15743,7 @@ GameObject:
   - component: {fileID: 1093645954}
   - component: {fileID: 1093645953}
   - component: {fileID: 1093645952}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16068,7 +15966,7 @@ GameObject:
   - component: {fileID: 1178871406}
   - component: {fileID: 1178871407}
   - component: {fileID: 1178871408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform-1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16249,7 +16147,7 @@ GameObject:
   - component: {fileID: 1212578486}
   - component: {fileID: 1212578485}
   - component: {fileID: 1212578484}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16391,7 +16289,7 @@ GameObject:
   - component: {fileID: 1214298952}
   - component: {fileID: 1214298954}
   - component: {fileID: 1214298953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-25
   m_TagString: Finish
   m_Icon: {fileID: 0}
@@ -16510,6 +16408,81 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1217133787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217133788}
+  - component: {fileID: 1217133790}
+  - component: {fileID: 1217133789}
+  m_Layer: 5
+  m_Name: Red
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1217133788
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217133787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1268804379}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 570, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1217133789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217133787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1217133790
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217133787}
+  m_CullTransparentMesh: 1
 --- !u!1 &1230042756
 GameObject:
   m_ObjectHideFlags: 0
@@ -16523,7 +16496,7 @@ GameObject:
   - component: {fileID: 1230042760}
   - component: {fileID: 1230042759}
   - component: {fileID: 1230042758}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: RedCollectible-4
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -16703,7 +16676,7 @@ GameObject:
   - component: {fileID: 1234857552}
   - component: {fileID: 1234857557}
   - component: {fileID: 1234857558}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-13
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -16894,7 +16867,7 @@ GameObject:
   - component: {fileID: 1240711407}
   - component: {fileID: 1240711406}
   - component: {fileID: 1240711409}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17051,7 +17024,7 @@ GameObject:
   - component: {fileID: 1248277744}
   - component: {fileID: 1248277743}
   - component: {fileID: 1248277742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-1
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -17258,7 +17231,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1268176043
+--- !u!1 &1268804378
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17266,56 +17239,58 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1268176044}
-  - component: {fileID: 1268176046}
-  - component: {fileID: 1268176045}
+  - component: {fileID: 1268804379}
+  - component: {fileID: 1268804381}
+  - component: {fileID: 1268804380}
   m_Layer: 5
-  m_Name: Green
+  m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1268176044
+--- !u!224 &1268804379
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268176043}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 1268804378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1909186333}
+  m_Children:
+  - {fileID: 1217133788}
+  - {fileID: 326487268}
+  m_Father: {fileID: 2137561513}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 570, y: 40}
+  m_AnchoredPosition: {x: -604, y: 250}
+  m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1268176045
+--- !u!114 &1268804380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268176043}
+  m_GameObject: {fileID: 1268804378}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17325,13 +17300,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1268176046
+--- !u!222 &1268804381
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1268176043}
+  m_GameObject: {fileID: 1268804378}
   m_CullTransparentMesh: 1
 --- !u!1 &1278963374
 GameObject:
@@ -17384,7 +17359,7 @@ GameObject:
   - component: {fileID: 1279808400}
   - component: {fileID: 1279808399}
   - component: {fileID: 1279808398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-45
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -17600,7 +17575,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1280616776}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ColorPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17638,7 +17613,7 @@ GameObject:
   - component: {fileID: 1294981697}
   - component: {fileID: 1294981696}
   - component: {fileID: 1294981695}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: GreenCollectible-3
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -17817,7 +17792,7 @@ GameObject:
   - component: {fileID: 1295480029}
   - component: {fileID: 1295480028}
   - component: {fileID: 1295480027}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: RedCollectible-3
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -18144,7 +18119,7 @@ GameObject:
   - component: {fileID: 1337445181}
   - component: {fileID: 1337445180}
   - component: {fileID: 1337445179}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-52
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -18365,7 +18340,7 @@ GameObject:
   - component: {fileID: 1342031183}
   - component: {fileID: 1342031182}
   - component: {fileID: 1342031181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-53
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -18586,7 +18561,7 @@ GameObject:
   - component: {fileID: 1365729821}
   - component: {fileID: 1365729820}
   - component: {fileID: 1365729819}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-48
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -18805,7 +18780,7 @@ GameObject:
   - component: {fileID: 1376232135}
   - component: {fileID: 1376232134}
   - component: {fileID: 1376232133}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18948,7 +18923,7 @@ GameObject:
   - component: {fileID: 1383345881}
   - component: {fileID: 1383345880}
   - component: {fileID: 1383345879}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19092,7 +19067,7 @@ GameObject:
   - component: {fileID: 1407820133}
   - component: {fileID: 1407820132}
   - component: {fileID: 1407820131}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: RedCollectible-2
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -19272,7 +19247,7 @@ GameObject:
   - component: {fileID: 1439755172}
   - component: {fileID: 1439755171}
   - component: {fileID: 1439755170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-9
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -19490,7 +19465,7 @@ GameObject:
   - component: {fileID: 1442011431}
   - component: {fileID: 1442011433}
   - component: {fileID: 1442011432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19618,7 +19593,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1446591526}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19670,7 +19645,7 @@ GameObject:
   - component: {fileID: 1453921791}
   - component: {fileID: 1453921790}
   - component: {fileID: 1453921789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19815,7 +19790,7 @@ GameObject:
   - component: {fileID: 1456299690}
   - component: {fileID: 1456299689}
   - component: {fileID: 1456299688}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-7
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -20036,7 +20011,7 @@ GameObject:
   - component: {fileID: 1459172538}
   - component: {fileID: 1459172537}
   - component: {fileID: 1459172536}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-30
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -20252,7 +20227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1471438719}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20311,7 +20286,7 @@ GameObject:
   - component: {fileID: 1475019496}
   - component: {fileID: 1475019495}
   - component: {fileID: 1475019494}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: GreenCollectible-6
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -20590,7 +20565,7 @@ GameObject:
   - component: {fileID: 1523347747}
   - component: {fileID: 1523347746}
   - component: {fileID: 1523347745}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BluePlatform-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20732,7 +20707,7 @@ GameObject:
   - component: {fileID: 1527699059}
   - component: {fileID: 1527699061}
   - component: {fileID: 1527699060}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20862,7 +20837,7 @@ GameObject:
   - component: {fileID: 1545437239}
   - component: {fileID: 1545437241}
   - component: {fileID: 1545437240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20995,7 +20970,7 @@ GameObject:
   - component: {fileID: 1546974579}
   - component: {fileID: 1546974578}
   - component: {fileID: 1546974577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-29
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -21216,7 +21191,7 @@ GameObject:
   - component: {fileID: 1556049269}
   - component: {fileID: 1556049268}
   - component: {fileID: 1556049267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-14
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -21434,7 +21409,7 @@ GameObject:
   - component: {fileID: 1567319193}
   - component: {fileID: 1567319195}
   - component: {fileID: 1567319194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21753,7 +21728,7 @@ GameObject:
   - component: {fileID: 1588682673}
   - component: {fileID: 1588682672}
   - component: {fileID: 1588682671}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21994,7 +21969,7 @@ GameObject:
   - component: {fileID: 1601178297}
   - component: {fileID: 1601178296}
   - component: {fileID: 1601178295}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Moving Obstacle-4
   m_TagString: movingObs
   m_Icon: {fileID: 0}
@@ -22041,7 +22016,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &1601178296
 CircleCollider2D:
@@ -22168,7 +22143,7 @@ GameObject:
   - component: {fileID: 1621023832}
   - component: {fileID: 1621023834}
   - component: {fileID: 1621023833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22301,7 +22276,7 @@ GameObject:
   - component: {fileID: 1622803143}
   - component: {fileID: 1622803148}
   - component: {fileID: 1622803149}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-12
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -22492,7 +22467,7 @@ GameObject:
   - component: {fileID: 1629589910}
   - component: {fileID: 1629589909}
   - component: {fileID: 1629589908}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RedPlatform-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22872,7 +22847,7 @@ GameObject:
   - component: {fileID: 1650936569}
   - component: {fileID: 1650936571}
   - component: {fileID: 1650936570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23005,7 +22980,7 @@ GameObject:
   - component: {fileID: 1687636542}
   - component: {fileID: 1687636541}
   - component: {fileID: 1687636540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-13
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -23226,7 +23201,7 @@ GameObject:
   - component: {fileID: 1695377042}
   - component: {fileID: 1695377041}
   - component: {fileID: 1695377040}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-63
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -23447,7 +23422,7 @@ GameObject:
   - component: {fileID: 1696176244}
   - component: {fileID: 1696176243}
   - component: {fileID: 1696176242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-28
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -23665,7 +23640,7 @@ GameObject:
   - component: {fileID: 1696770055}
   - component: {fileID: 1696770057}
   - component: {fileID: 1696770056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23865,7 +23840,7 @@ GameObject:
   - component: {fileID: 1747954413}
   - component: {fileID: 1747954412}
   - component: {fileID: 1747954411}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24021,7 +23996,7 @@ GameObject:
   - component: {fileID: 1749959460}
   - component: {fileID: 1749959459}
   - component: {fileID: 1749959458}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: GreenCollectible-4
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -24201,7 +24176,7 @@ GameObject:
   - component: {fileID: 1774867035}
   - component: {fileID: 1774867034}
   - component: {fileID: 1774867033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-61
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -24421,7 +24396,7 @@ GameObject:
   - component: {fileID: 1799632213}
   - component: {fileID: 1799632212}
   - component: {fileID: 1799632211}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: GreenCollectible-5
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -24603,7 +24578,7 @@ GameObject:
   - component: {fileID: 1800634946}
   - component: {fileID: 1800634947}
   - component: {fileID: 1800634948}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -24745,7 +24720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  healthBar: {fileID: 1268176045}
+  healthBar: {fileID: 326487269}
   healthText: {fileID: 703078527}
 --- !u!61 &1800634947
 BoxCollider2D:
@@ -24821,7 +24796,7 @@ GameObject:
   - component: {fileID: 1817153550}
   - component: {fileID: 1817153549}
   - component: {fileID: 1817153548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-27
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -25042,7 +25017,7 @@ GameObject:
   - component: {fileID: 1833071868}
   - component: {fileID: 1833071873}
   - component: {fileID: 1833071874}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-4
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -25234,7 +25209,7 @@ GameObject:
   - component: {fileID: 1843355730}
   - component: {fileID: 1843355729}
   - component: {fileID: 1843355728}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-19
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -25452,7 +25427,7 @@ GameObject:
   - component: {fileID: 1847159640}
   - component: {fileID: 1847159642}
   - component: {fileID: 1847159641}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25582,7 +25557,7 @@ GameObject:
   - component: {fileID: 1853937983}
   - component: {fileID: 1853937985}
   - component: {fileID: 1853937984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25710,7 +25685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1858707980}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Moving Obstacle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25750,7 +25725,7 @@ GameObject:
   - component: {fileID: 1870171385}
   - component: {fileID: 1870171384}
   - component: {fileID: 1870171383}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: GreenCollectible-1
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -25930,7 +25905,7 @@ GameObject:
   - component: {fileID: 1876866461}
   - component: {fileID: 1876866460}
   - component: {fileID: 1876866459}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-60
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -26146,7 +26121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1883273649}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RedCollect-Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26185,7 +26160,7 @@ GameObject:
   - component: {fileID: 1888864177}
   - component: {fileID: 1888864179}
   - component: {fileID: 1888864178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26315,7 +26290,7 @@ GameObject:
   - component: {fileID: 1890524064}
   - component: {fileID: 1890524066}
   - component: {fileID: 1890524065}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26434,83 +26409,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1909186332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1909186333}
-  - component: {fileID: 1909186335}
-  - component: {fileID: 1909186334}
-  m_Layer: 5
-  m_Name: HealthBar
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1909186333
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909186332}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 197357748}
-  - {fileID: 1268176044}
-  m_Father: {fileID: 973160033}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -670, y: 250}
-  m_SizeDelta: {x: 600, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1909186334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909186332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 0
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1909186335
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909186332}
-  m_CullTransparentMesh: 1
 --- !u!1 &1914059740
 GameObject:
   m_ObjectHideFlags: 0
@@ -26522,7 +26420,7 @@ GameObject:
   - component: {fileID: 1914059741}
   - component: {fileID: 1914059743}
   - component: {fileID: 1914059742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26650,7 +26548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1919751972}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: GreenCollect-Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26691,7 +26589,7 @@ GameObject:
   - component: {fileID: 1922426514}
   - component: {fileID: 1922426513}
   - component: {fileID: 1922426512}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: BlueCollectible-1
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -26773,7 +26671,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -26871,7 +26769,7 @@ GameObject:
   - component: {fileID: 1935931100}
   - component: {fileID: 1935931098}
   - component: {fileID: 1935931099}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Moving Obstacle-1
   m_TagString: movingObs
   m_Icon: {fileID: 0}
@@ -26939,7 +26837,7 @@ Transform:
   m_GameObject: {fileID: 1935931094}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.85, y: -16.93, z: 9.988439}
+  m_LocalPosition: {x: 10.85, y: -15.7, z: 9.988439}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27017,7 +26915,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &1935931100
 MonoBehaviour:
@@ -27048,7 +26946,7 @@ GameObject:
   - component: {fileID: 1937713986}
   - component: {fileID: 1937713985}
   - component: {fileID: 1937713984}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-58
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -27269,7 +27167,7 @@ GameObject:
   - component: {fileID: 1938574780}
   - component: {fileID: 1938574779}
   - component: {fileID: 1938574778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-24
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -27488,7 +27386,7 @@ GameObject:
   - component: {fileID: 1944195938}
   - component: {fileID: 1944195937}
   - component: {fileID: 1944195936}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27695,7 +27593,7 @@ GameObject:
   - component: {fileID: 1968910896}
   - component: {fileID: 1968910895}
   - component: {fileID: 1968910894}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Moving Obstacle-5
   m_TagString: movingObs
   m_Icon: {fileID: 0}
@@ -27742,7 +27640,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!58 &1968910895
 CircleCollider2D:
@@ -27872,7 +27770,7 @@ GameObject:
   - component: {fileID: 1994359090}
   - component: {fileID: 1994359089}
   - component: {fileID: 1994359088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-6
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -28227,7 +28125,7 @@ GameObject:
   - component: {fileID: 2015847241}
   - component: {fileID: 2015847240}
   - component: {fileID: 2015847239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-51
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -28445,7 +28343,7 @@ GameObject:
   - component: {fileID: 2028185773}
   - component: {fileID: 2028185775}
   - component: {fileID: 2028185774}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28578,7 +28476,7 @@ GameObject:
   - component: {fileID: 2031760431}
   - component: {fileID: 2031760430}
   - component: {fileID: 2031760429}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-43
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -28799,7 +28697,7 @@ GameObject:
   - component: {fileID: 2052410056}
   - component: {fileID: 2052410055}
   - component: {fileID: 2052410054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-5
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -29019,7 +28917,7 @@ GameObject:
   - component: {fileID: 2055850061}
   - component: {fileID: 2055850060}
   - component: {fileID: 2055850063}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GreenPlatform-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29173,7 +29071,7 @@ GameObject:
   - component: {fileID: 2069615497}
   - component: {fileID: 2069615499}
   - component: {fileID: 2069615498}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29303,7 +29201,7 @@ GameObject:
   - component: {fileID: 2082148020}
   - component: {fileID: 2082148022}
   - component: {fileID: 2082148021}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29435,7 +29333,7 @@ GameObject:
   - component: {fileID: 2099984608}
   - component: {fileID: 2099984607}
   - component: {fileID: 2099984606}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: BlueCollectible-3
   m_TagString: Collectible
   m_Icon: {fileID: 0}
@@ -29615,7 +29513,7 @@ GameObject:
   - component: {fileID: 2102789323}
   - component: {fileID: 2102789322}
   - component: {fileID: 2102789321}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Spike-4
   m_TagString: Spike
   m_Icon: {fileID: 0}
@@ -29833,7 +29731,7 @@ GameObject:
   - component: {fileID: 2114897390}
   - component: {fileID: 2114897392}
   - component: {fileID: 2114897391}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground-26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29966,7 +29864,7 @@ GameObject:
   - component: {fileID: 2125508931}
   - component: {fileID: 2125508930}
   - component: {fileID: 2125508929}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-14
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -30158,7 +30056,7 @@ GameObject:
   - component: {fileID: 2127369512}
   - component: {fileID: 2127369511}
   - component: {fileID: 2127369510}
-  m_Layer: 6
+  m_Layer: 11
   m_Name: Coin-14
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -30336,6 +30234,108 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2137561509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2137561513}
+  - component: {fileID: 2137561512}
+  - component: {fileID: 2137561511}
+  - component: {fileID: 2137561510}
+  m_Layer: 5
+  m_Name: HealthBarCanvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2137561510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137561509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2137561511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137561509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &2137561512
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137561509}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &2137561513
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137561509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1268804379}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -30353,4 +30353,4 @@ SceneRoots:
   - {fileID: 1715861738}
   - {fileID: 1141061033}
   - {fileID: 1573271618}
-  - {fileID: 973160033}
+  - {fileID: 2137561513}
