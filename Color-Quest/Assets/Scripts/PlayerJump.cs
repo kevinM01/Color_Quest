@@ -137,6 +137,15 @@ public class PlayerJump : MonoBehaviour
             UpdateHealthBar();
             IncreaseHealthByAmount(20);
             /*sendHealthDamageToGoogle();*/
+            Scene currentScene = SceneManager.GetActiveScene();
+            Debug.Log("Current Scene Name: " + currentScene.name);
+            float x_coord = transform.position.x;
+            float y_coord = transform.position.y;
+
+            if (sendHealthDamageToGoogle != null)
+            {
+                sendHealthDamageToGoogle.Send(x_coord, y_coord, currentScene.name);
+            }
 
             if (health <= 0)
             {
