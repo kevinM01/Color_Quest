@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using TMPro;
 
 public class PlayerJump : MonoBehaviour
@@ -13,6 +14,7 @@ public class PlayerJump : MonoBehaviour
     private int extraJumps = 1;
     private int jumpsLeft;
     public float health;
+    public Image healthBar;
     public TextMeshProUGUI healthText;
 
     // public TextMeshProUGUI gameOverText;
@@ -30,7 +32,8 @@ public class PlayerJump : MonoBehaviour
         jumpsLeft = extraJumps + 1;
         health = 100f;
         // gameOverText.enabled = false;
-        UpdateHealthText();
+        /*UpdateHealthText();*/
+        UpdateHealthBar();
 
         sendToGoogle = FindObjectOfType<SendToGoogle>();
     }
@@ -56,12 +59,14 @@ public class PlayerJump : MonoBehaviour
             jumpsLeft--;
         }
 
-        UpdateHealthText();
+        /*UpdateHealthText();*/
+        UpdateHealthBar();
 
         if (health <= 0)
         {
             health=0;
-            UpdateHealthText();
+            /*UpdateHealthText();*/
+            UpdateHealthBar();
 
 
             CollectAnalytics();
@@ -126,6 +131,10 @@ public class PlayerJump : MonoBehaviour
                 sendHealthDamageToGoogle.Send(x_coord, y_coord, currentScene.name);
             }
             UpdateHealthText();
+
+            /*UpdateHealthText();*/
+            UpdateHealthBar();
+
             if (health <= 0)
             {
                 // gameOverText.enabled = true;
@@ -169,6 +178,20 @@ public class PlayerJump : MonoBehaviour
         }
     }
 
+    public void UpdateHealthBar()
+    {
+        healthBar.fillAmount = health / 100f; // Scale health value to fill amount
+
+        if (health <= 20)
+        {
+            if (blinkCoroutine == null)
+            {
+                // Start the coroutine only if it's not already running
+                blinkCoroutine = StartCoroutine(BlinkHealthText());
+            }
+        }
+    }
+
     public void IncreaseHealthByAmount(float amount)
     {
         PointCounter pointCounter = FindObjectOfType<PointCounter>(); // Find the PointCounter instance
@@ -183,7 +206,8 @@ public class PlayerJump : MonoBehaviour
                     float newHealth = health + 20;
                     // If the new health exceeds 100, set it to 100
                     health = Mathf.Min(newHealth, 100);
-                    UpdateHealthText();
+                    /*UpdateHealthText();*/
+                    UpdateHealthBar();
 
                     // Decrease points by 5 only if health increased
                     pointCounter.points -= 5;

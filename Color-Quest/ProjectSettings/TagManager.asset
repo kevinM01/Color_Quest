@@ -18,12 +18,12 @@ TagManager:
   - 
   - Water
   - UI
+  - Background
+  - Player
+  - Ground
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ColorPlatforms
+  - Collectibles
   - 
   - 
   - 
