@@ -36,6 +36,7 @@ public class PlayerJump : MonoBehaviour
         UpdateHealthBar();
 
         sendToGoogle = FindObjectOfType<SendToGoogle>();
+        sendHealthDamageToGoogle = FindObjectOfType<SendHealthDamageToGoogle>();
     }
 
     private void Update()
@@ -126,6 +127,7 @@ public class PlayerJump : MonoBehaviour
             Debug.Log("Current Scene Name: " + currentScene.name);
             float x_coord = transform.position.x;
             float y_coord = transform.position.y;
+            
             if (sendHealthDamageToGoogle != null)
             {
                 sendHealthDamageToGoogle.Send(x_coord, y_coord, currentScene.name);
