@@ -16,17 +16,20 @@ public class PlayerJump : MonoBehaviour
     public float health;
     public Image healthBar;
     public TextMeshProUGUI healthText;
+    public TextMeshProUGUI checkpointText;
+
 
     // public TextMeshProUGUI gameOverText;
     private Coroutine damageCoroutine;
 
     private SendToGoogle sendToGoogle;
-    private SendHealthDamageToGoogle sendHealthDamageToGoogle;
     private Coroutine blinkCoroutine;
 
+    private Vector2 respawnPoint = Vector2.negativeInfinity;
 
     private void Start()
     {
+        //respawnPoint = transform.position;
         rb = GetComponent<Rigidbody2D>();
         // Initialize jumpsLeft with extraJumps + 1 to account for the initial ground jump.
         jumpsLeft = extraJumps + 1;
@@ -36,7 +39,6 @@ public class PlayerJump : MonoBehaviour
         UpdateHealthBar();
 
         sendToGoogle = FindObjectOfType<SendToGoogle>();
-        sendHealthDamageToGoogle = FindObjectOfType<SendHealthDamageToGoogle>();
     }
 
     private void Update()
@@ -117,39 +119,29 @@ public class PlayerJump : MonoBehaviour
             }
         }
     }
-
     public IEnumerator ReduceHealthOverTime()
     {
         while (true)
         {
             health -= 20f;
-            Scene currentScene = SceneManager.GetActiveScene();
-            Debug.Log("Current Scene Name: " + currentScene.name);
-            float x_coord = transform.position.x;
-            float y_coord = transform.position.y;
-            
-            if (sendHealthDamageToGoogle != null)
-            {
-                sendHealthDamageToGoogle.Send(x_coord, y_coord, currentScene.name);
-            }
             UpdateHealthText();
-
-            /*UpdateHealthText();*/
             UpdateHealthBar();
 
             if (health <= 0)
             {
-                // gameOverText.enabled = true;
-                // Time.timeScale = 0f;
-                // yield return new WaitForSeconds(2f);
-                // Handle player death here if needed
-                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                if (IsValidRespawnPoint())
+                {
+                    RespawnPlayer();
+                    Debug.Log("Player respawned at checkpoint");
+                }
+                else
+                {
+                    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                    SceneManager.LoadScene(currentSceneIndex);
+                    Debug.Log("Player respawned at the beginning of the level");
+                }
+
                 health = 100;
-                SceneManager.LoadScene(currentSceneIndex);
-
-                CollectAnalytics();
-
-
                 break;
             }
             yield return new WaitForSeconds(1.5f);
@@ -223,16 +215,54 @@ public class PlayerJump : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Fall")
+        if (col.CompareTag("Fall")) // Check if the player has fallen
         {
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(currentSceneIndex);
-
-            CollectAnalytics();
-            // StartCoroutine(ReloadSceneAfterDelay(2f));
+            Debug.Log(respawnPoint);
+            // Respawn the player at the checkpoint if available, else reload the scene
+            if (IsValidRespawnPoint())
+            {
+                RespawnPlayer();
+                Debug.Log("Player respawned at checkpoint");
+            }
+            else
+            {
+                int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentSceneIndex);
+                Debug.Log("Player respawned at the beginning of the level");
+            }
+        }
+        else if (col.CompareTag("Checkpoint")) // Check if the player has crossed a checkpoint
+        {
+            // Update the respawn point to the position of the checkpoint
+            respawnPoint = col.transform.position;
+            Debug.Log("Checkpoint reached");
+            StartCoroutine(ShowCheckpointMessage());
         }
     }
 
+    IEnumerator ShowCheckpointMessage()
+    {
+        checkpointText.enabled = true;
+        checkpointText.text = "Checkpoint Reached";
+
+        yield return new WaitForSeconds(2f);
+
+        checkpointText.enabled = false; 
+    }
+
+    bool IsValidRespawnPoint()
+    {
+        // Check if the respawnPoint is not set to negative infinity
+        return respawnPoint.x != Mathf.NegativeInfinity && respawnPoint.y != Mathf.NegativeInfinity;
+    }
+
+
+    void RespawnPlayer()
+    {
+        // Set player position to the stored checkpoint position
+        transform.position = respawnPoint;
+
+    }
     // private IEnumerator ReloadSceneAfterDelay(float delay)
     // {
     //     Time.timeScale = 0f;
@@ -250,6 +280,8 @@ public class PlayerJump : MonoBehaviour
     {
         // x coord of the player at the time of his dehant (rip player, awks!)
         // collect current level at time of death
+        //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        //SceneManager.LoadScene(currentSceneIndex);
         Scene currentScene = SceneManager.GetActiveScene();
         Debug.Log("Current Scene Name: " + currentScene.name);
         float x_coord = transform.position.x;

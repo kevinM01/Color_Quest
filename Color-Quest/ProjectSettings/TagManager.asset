@@ -11,6 +11,7 @@ TagManager:
   - firstCoin
   - movingObs
   - PowerUp
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
