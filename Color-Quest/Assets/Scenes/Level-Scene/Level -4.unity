@@ -15943,6 +15943,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b35a34ba3db458e4db575609881ff8c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerUpText: {fileID: 0}
 --- !u!1 &1167424815
 GameObject:
   m_ObjectHideFlags: 0
@@ -28136,6 +28137,7 @@ GameObject:
   - component: {fileID: 1964257471}
   - component: {fileID: 1964257470}
   - component: {fileID: 1964257472}
+  - component: {fileID: 1964257473}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -28187,6 +28189,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   URL: 'https://docs.google.com/forms/u/1/d/e/1FAIpQLSf-oQ_ZySGkvnK0QaX55nuylhUuuUN3Y-i9Ji35RLwiXd3HHQ/formResponse '
+--- !u!114 &1964257473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964257469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad25989539ff7428e80c9f5543a98d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  URL: https://docs.google.com/forms/u/1/d/e/1FAIpQLScAEHTJdxgqjVaepuDc2WnrKcw7tXaPYhlQKl17Vb8DTN1M4w/formResponse
 --- !u!1 &1994359087
 GameObject:
   m_ObjectHideFlags: 0
