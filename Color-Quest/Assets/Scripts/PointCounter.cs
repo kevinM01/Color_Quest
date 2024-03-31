@@ -27,7 +27,13 @@ public class PointCounter : MonoBehaviour
             points++;
             UpdatePointsText();
 
-            if(points == 1 && !flag)
+            /*// Call SendNewAnalyticsData from PlayerJump script
+            if (playerJump != null)
+            {
+                playerJump.();
+            }*/
+
+            if (points == 1 && !flag)
             {
                 StartCoroutine(ShowFirstCoinText());
                 flag = true;
@@ -37,7 +43,7 @@ public class PointCounter : MonoBehaviour
             if (points >= 5)
             {
                 // Invoke a method to increase the player's health by 10
-                playerJump.IncreaseHealthByAmount(10);
+                playerJump.IncreaseHealthByAmount(20);
             }
         }
 

@@ -18,11 +18,16 @@ public class PlayerJump : MonoBehaviour
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI checkpointText;
 
+    public int totalCoinsCollected = 0;
+    public int healthRegains = 0;
 
     // public TextMeshProUGUI gameOverText;
     private Coroutine damageCoroutine;
 
     private SendToGoogle sendToGoogle;
+    private SendHealthDamageToGoogle sendHealthDamageToGoogle;
+    private SendCoinXHealthToGoogle sendCoinXHealthToGoogle;
+    private PointCounter pointCounter;
     private Coroutine blinkCoroutine;
 
     private Vector2 respawnPoint = Vector2.negativeInfinity;
@@ -39,6 +44,10 @@ public class PlayerJump : MonoBehaviour
         UpdateHealthBar();
 
         sendToGoogle = FindObjectOfType<SendToGoogle>();
+        sendHealthDamageToGoogle = FindObjectOfType<SendHealthDamageToGoogle>();
+        sendCoinXHealthToGoogle = FindObjectOfType<SendCoinXHealthToGoogle>();
+        pointCounter = FindObjectOfType<PointCounter>(); // Find the PointCounter instance
+
     }
 
     private void Update()
@@ -71,7 +80,7 @@ public class PlayerJump : MonoBehaviour
             /*UpdateHealthText();*/
             UpdateHealthBar();
 
-
+            SendCoinXHealthAnalytics();
             CollectAnalytics();
             // gameOverText.enabled = true;
 
@@ -126,9 +135,13 @@ public class PlayerJump : MonoBehaviour
             health -= 20f;
             UpdateHealthText();
             UpdateHealthBar();
+            IncreaseHealthByAmount(20);
+            /*sendHealthDamageToGoogle();*/
 
             if (health <= 0)
             {
+                SendCoinXHealthAnalytics();
+                CollectAnalytics();
                 if (IsValidRespawnPoint())
                 {
                     RespawnPlayer();
@@ -145,6 +158,17 @@ public class PlayerJump : MonoBehaviour
                 break;
             }
             yield return new WaitForSeconds(1.5f);
+        }
+    }
+
+    public void SendCoinXHealthAnalytics()
+    {
+        totalCoinsCollected = pointCounter.points + (healthRegains * 5);
+        if (sendCoinXHealthToGoogle != null)
+        {
+            Scene currentScene = SceneManager.GetActiveScene();
+            string sceneName = currentScene.name;
+            sendCoinXHealthToGoogle.Send(totalCoinsCollected, healthRegains, sceneName);
         }
     }
 
@@ -188,7 +212,6 @@ public class PlayerJump : MonoBehaviour
 
     public void IncreaseHealthByAmount(float amount)
     {
-        PointCounter pointCounter = FindObjectOfType<PointCounter>(); // Find the PointCounter instance
         if (pointCounter != null)
         {
             if (pointCounter.points >= 5) // Check if the player has at least 5 points
@@ -202,6 +225,8 @@ public class PlayerJump : MonoBehaviour
                     health = Mathf.Min(newHealth, 100);
                     /*UpdateHealthText();*/
                     UpdateHealthBar();
+
+                    healthRegains += 1;
 
                     // Decrease points by 5 only if health increased
                     pointCounter.points -= 5;
@@ -218,6 +243,9 @@ public class PlayerJump : MonoBehaviour
         if (col.CompareTag("Fall")) // Check if the player has fallen
         {
             Debug.Log(respawnPoint);
+            SendCoinXHealthAnalytics();
+            Debug.Log("Reocrded");
+            CollectAnalytics();
             // Respawn the player at the checkpoint if available, else reload the scene
             if (IsValidRespawnPoint())
             {

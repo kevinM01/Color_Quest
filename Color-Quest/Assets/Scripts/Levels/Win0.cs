@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Win0 : MonoBehaviour
 {
+    private PlayerJump playerJump;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerJump = FindObjectOfType<PlayerJump>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class Win0 : MonoBehaviour
     {
          if (collision.gameObject.CompareTag("Player"))
         {
+            playerJump.SendCoinXHealthAnalytics();
             SceneManager.LoadScene("Win0");
         }
     }
