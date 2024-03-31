@@ -19,6 +19,7 @@ public class PlayerJump : MonoBehaviour
     private Coroutine damageCoroutine;
 
     private SendToGoogle sendToGoogle;
+    private SendHealthDamageToGoogle sendHealthDamageToGoogle;
     private Coroutine blinkCoroutine;
 
 
@@ -116,6 +117,14 @@ public class PlayerJump : MonoBehaviour
         while (true)
         {
             health -= 20f;
+            Scene currentScene = SceneManager.GetActiveScene();
+            Debug.Log("Current Scene Name: " + currentScene.name);
+            float x_coord = transform.position.x;
+            float y_coord = transform.position.y;
+            if (sendHealthDamageToGoogle != null)
+            {
+                sendHealthDamageToGoogle.Send(x_coord, y_coord, currentScene.name);
+            }
             UpdateHealthText();
             if (health <= 0)
             {
