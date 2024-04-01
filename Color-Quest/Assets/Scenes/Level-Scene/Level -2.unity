@@ -25522,7 +25522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 46926310}
   healthText: {fileID: 703078527}
   checkpointText: {fileID: 672917273}
   totalCoinsCollected: 0

@@ -9398,7 +9398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 415463837}
   healthText: {fileID: 4966583}
   checkpointText: {fileID: 165553108}
   totalCoinsCollected: 0

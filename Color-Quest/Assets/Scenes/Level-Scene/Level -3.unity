@@ -25928,7 +25928,7 @@ Transform:
   m_GameObject: {fileID: 1800634938}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.7, y: -20.1, z: 0}
+  m_LocalPosition: {x: -87, y: -20.1, z: 0}
   m_LocalScale: {x: 0.5, y: 0.8125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26002,7 +26002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 393979734}
   healthText: {fileID: 427767480}
   checkpointText: {fileID: 251230131}
   totalCoinsCollected: 0
