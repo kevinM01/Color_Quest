@@ -68,7 +68,8 @@ public class PointCounter : MonoBehaviour
     public void UpdatePointsText()
     {
         // Update the points text UI element
-        pointsText.text = "Coins: " + points.ToString();
+        /*pointsText.text = "Coins: " + points.ToString();*/
+        pointsText.text = ": " + points.ToString();
     }
 
     IEnumerator ShowFirstCoinText()
