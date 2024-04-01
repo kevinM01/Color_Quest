@@ -58,7 +58,7 @@ public class PlayerJump : MonoBehaviour
         groundedPlayer = IsGrounded();
 
          analyticsTimer += Time.deltaTime;
-    if (analyticsTimer >= 5f) // Check if 1 second has passed
+    if (analyticsTimer >= 2f) // Check if 1 second has passed
     {
         SendPlayerPositionAnalytics(); // Call your function
         analyticsTimer = 0f; // Reset the timer
