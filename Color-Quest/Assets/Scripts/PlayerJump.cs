@@ -53,8 +53,7 @@ public class PlayerJump : MonoBehaviour
     private void Update()
     {
         groundedPlayer = IsGrounded();
-
-        if (groundedPlayer && Mathf.Approximately(rb.velocity.y, 0f))
+        if (groundedPlayer && Mathf.Abs(rb.velocity.y) < 0.01f)
         {
             // Reset jumps when grounded and not currently moving upwards
             jumpsLeft = extraJumps + 1; // Allows player for the initial jump without consuming extra jumps
@@ -100,7 +99,7 @@ public class PlayerJump : MonoBehaviour
 
     private bool IsGrounded()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.1f);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f);
         return hit.collider != null;
     }
 
@@ -151,7 +150,7 @@ public class PlayerJump : MonoBehaviour
             {
                 SendCoinXHealthAnalytics();
                 CollectAnalytics();
-                if (IsValidRespawnPoint())
+                if (IsValidRespawnPoint() && pointCounter.points > 0)
                 {
                     RespawnPlayer();
                     Debug.Log("Player respawned at checkpoint");
@@ -256,7 +255,7 @@ public class PlayerJump : MonoBehaviour
             Debug.Log("Reocrded");
             CollectAnalytics();
             // Respawn the player at the checkpoint if available, else reload the scene
-            if (IsValidRespawnPoint())
+            if (IsValidRespawnPoint() && pointCounter.points > 0)
             {
                 RespawnPlayer();
                 Debug.Log("Player respawned at checkpoint");
@@ -296,10 +295,13 @@ public class PlayerJump : MonoBehaviour
 
     void RespawnPlayer()
     {
+        pointCounter.points--;
+        pointCounter.UpdatePointsText();
         // Set player position to the stored checkpoint position
         transform.position = respawnPoint;
-
+        pointCounter.BlinkPointsText(3.0f);
     }
+
     // private IEnumerator ReloadSceneAfterDelay(float delay)
     // {
     //     Time.timeScale = 0f;
@@ -338,6 +340,4 @@ public class PlayerJump : MonoBehaviour
             yield return new WaitForSeconds(0.5f); // Toggle every 0.5 seconds
         }
     }
-
-
 }

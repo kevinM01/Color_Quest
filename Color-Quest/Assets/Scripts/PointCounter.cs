@@ -77,4 +77,20 @@ public class PointCounter : MonoBehaviour
             yield return new WaitForSeconds(4);
             firstCoinText.enabled = false;
         }
+
+    public void BlinkPointsText(float duration)
+    {
+        StartCoroutine(BlinkTextForDuration(duration));
+    }
+
+    private IEnumerator BlinkTextForDuration(float duration)
+    {
+        float endTime = Time.time + duration;
+        while (Time.time < endTime)
+        {
+            pointsText.enabled = !pointsText.enabled;
+            yield return new WaitForSeconds(0.5f); // Adjust the blink speed as needed
+        }
+        pointsText.enabled = true; // Ensure the text is visible after blinking
+    }
 }
