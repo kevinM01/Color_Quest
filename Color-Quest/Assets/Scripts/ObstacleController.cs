@@ -10,7 +10,7 @@ public class ObstacleController : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         obstacleColor = GetComponent<SpriteRenderer>().color;
-        playerColorChange = FindObjectOfType<PlayerColorChange>(); // Assuming there's only one PlayerColorChange script in the scene
+        playerColorChange = FindObjectOfType<PlayerColorChange>();
     }
 
     void Update()
@@ -23,7 +23,7 @@ public class ObstacleController : MonoBehaviour
         else
         {
             // Colors don't match, set collider size to default
-            boxCollider.size = new Vector2(1f, 1f); // Adjust this size according to your needs
+            boxCollider.size = new Vector2(1f, 1f);
         }
     }
 }

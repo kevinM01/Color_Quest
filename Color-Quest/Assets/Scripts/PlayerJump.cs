@@ -105,8 +105,8 @@ public class PlayerJump : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D  other)
     {
-        /*Debug.Log("Inside Spike Collder");*/
-        if (other.gameObject.CompareTag("Spike") || other.gameObject.CompareTag("movingObs"))
+        /*Debug.Log("Inside Spike Collider");*/
+        if (other.gameObject.CompareTag("Spike"))
         {
         /*Debug.Log("Collided with Spike");*/
             if (damageCoroutine == null)
@@ -118,7 +118,7 @@ public class PlayerJump : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D  other)
     {
-        if (other.gameObject.CompareTag("Spike") || other.gameObject.CompareTag("movingObs"))
+        if (other.gameObject.CompareTag("Spike"))
         {
             if (damageCoroutine != null)
             {
@@ -127,6 +127,25 @@ public class PlayerJump : MonoBehaviour
             }
         }
     }
+
+    public void StartReduceHealthCoroutine()
+    {
+        if (damageCoroutine == null) // Check if the coroutine is already running
+        {
+            damageCoroutine = StartCoroutine(ReduceHealthOverTime());
+        }
+    }
+
+    public void StopReduceHealthCoroutine()
+    {
+        if (damageCoroutine != null)
+        {
+            StopCoroutine(damageCoroutine);
+            damageCoroutine = null;
+        }
+    }
+
+
     public IEnumerator ReduceHealthOverTime()
     {
         while (true)
