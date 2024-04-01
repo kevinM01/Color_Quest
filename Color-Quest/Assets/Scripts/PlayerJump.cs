@@ -27,10 +27,13 @@ public class PlayerJump : MonoBehaviour
     private SendToGoogle sendToGoogle;
     private SendHealthDamageToGoogle sendHealthDamageToGoogle;
     private SendCoinXHealthToGoogle sendCoinXHealthToGoogle;
+    private SendPlayerPositionToGoogle sendPlayerPositionToGoogle;
     private PointCounter pointCounter;
     private Coroutine blinkCoroutine;
 
     private Vector2 respawnPoint = Vector2.negativeInfinity;
+
+    private float analyticsTimer = 0f;
 
     private void Start()
     {
@@ -47,12 +50,21 @@ public class PlayerJump : MonoBehaviour
         sendHealthDamageToGoogle = FindObjectOfType<SendHealthDamageToGoogle>();
         sendCoinXHealthToGoogle = FindObjectOfType<SendCoinXHealthToGoogle>();
         pointCounter = FindObjectOfType<PointCounter>(); // Find the PointCounter instance
-
+        sendPlayerPositionToGoogle = FindObjectOfType<SendPlayerPositionToGoogle>();
     }
 
     private void Update()
     {
         groundedPlayer = IsGrounded();
+
+         analyticsTimer += Time.deltaTime;
+    if (analyticsTimer >= 5f) // Check if 1 second has passed
+    {
+        SendPlayerPositionAnalytics(); // Call your function
+        analyticsTimer = 0f; // Reset the timer
+    }
+
+        // SendPlayerPositionAnalytics();
         if (groundedPlayer && Mathf.Abs(rb.velocity.y) < 0.01f)
         {
             // Reset jumps when grounded and not currently moving upwards
@@ -90,6 +102,19 @@ public class PlayerJump : MonoBehaviour
             return; // Exit the update loop
             }
         }
+
+    private void SendPlayerPositionAnalytics(){
+        Scene currentScene = SceneManager.GetActiveScene();
+        Debug.Log("Send Analytics at: " + Time.deltaTime);
+        float x_coord = transform.position.x;
+        float y_coord = transform.position.y;
+        string color = "red";
+        Debug.Log("Current X Position of the Player: " + x_coord);
+        if (sendPlayerPositionToGoogle != null)
+        {
+            sendPlayerPositionToGoogle.Send(x_coord, y_coord, color, currentScene.name);
+        }
+    }
 
     // private IEnumerator ShowGameOverTextForThreeSeconds()
     // {
