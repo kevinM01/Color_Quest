@@ -1,11 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking; // Added to use UnityWebRequest
-
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class SendCoinXHealthToGoogle : MonoBehaviour
 {
