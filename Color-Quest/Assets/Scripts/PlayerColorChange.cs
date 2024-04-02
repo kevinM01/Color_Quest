@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerColorChange : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private float timer = 0f;
     private Color previousColor; // Store the previous color before the timer
+    public Image timerImage;
+    public GameObject tokenBarGameObject;
 
     public enum Type
     {
@@ -17,22 +20,50 @@ public class PlayerColorChange : MonoBehaviour
 
     void Start()
     {
+        tokenBarGameObject.SetActive(false);
         spriteRenderer = GetComponent<SpriteRenderer>();
         previousColor = spriteRenderer.color; // Initialize with initial color
     }
 
+    // void Update()
+    // {
+    //     if (timer > 0f)
+    //     {
+    //         timer -= Time.deltaTime; // Decrease timer based on game time
+    //         // Debug.Log(timer);
+    //         if (timer <= 0f) // Timer finished
+    //         {
+    //             ChangeToPreviousColor(); // Change back to the previous color
+    //         }
+    //     }
+    // }
+
     void Update()
+{
+    if (timer > 0f)
     {
-        if (timer > 0f)
+        timer -= Time.deltaTime;
+        if (timerImage != null)
         {
-            timer -= Time.deltaTime; // Decrease timer based on game time
-            // Debug.Log(timer);
-            if (timer <= 0f) // Timer finished
+            timerImage.fillAmount = timer / 5f; // Assuming a 5-second timer for simplicity
+        }
+
+        if (timer <= 0f)
+        {
+            ChangeToPreviousColor();
+            if (tokenBarGameObject != null) 
             {
-                ChangeToPreviousColor(); // Change back to the previous color
+                tokenBarGameObject.SetActive(false); // Disable the GameObject when the timer is done
             }
         }
     }
+}
+
+    public SpriteRenderer GetSpriteRenderer()
+    {
+        return spriteRenderer;
+    }
+
 
     void ChangeToPreviousColor()
     {
@@ -61,14 +92,21 @@ public class PlayerColorChange : MonoBehaviour
     {
         if (newColor == Color.red || newColor == Color.green || newColor == Color.blue)
         {
+            tokenBarGameObject.SetActive(false);
+            timerImage.fillAmount = 1;
             spriteRenderer.color = newColor;
             timer = 0f; // Start timer for 5 seconds
         }
         else
         {
+            
             previousColor = spriteRenderer.color; // Store the current color before changing
             spriteRenderer.color = Color.white;
             timer = 5f; // Start timer for 5 seconds (optional, adjust based on your logic)
+            if (tokenBarGameObject != null) 
+            {
+                tokenBarGameObject.SetActive(true); // Make sure it's visible when the timer starts
+            }
         }
     }
 

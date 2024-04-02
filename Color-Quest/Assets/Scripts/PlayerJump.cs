@@ -29,6 +29,8 @@ public class PlayerJump : MonoBehaviour
     private SendCoinXHealthToGoogle sendCoinXHealthToGoogle;
     private SendPlayerPositionToGoogle sendPlayerPositionToGoogle;
     private PointCounter pointCounter;
+
+    private PlayerColorChange playerColorChange;
     private Coroutine blinkCoroutine;
 
     private Vector2 respawnPoint = Vector2.negativeInfinity;
@@ -51,6 +53,7 @@ public class PlayerJump : MonoBehaviour
         sendCoinXHealthToGoogle = FindObjectOfType<SendCoinXHealthToGoogle>();
         pointCounter = FindObjectOfType<PointCounter>(); // Find the PointCounter instance
         sendPlayerPositionToGoogle = FindObjectOfType<SendPlayerPositionToGoogle>();
+        playerColorChange = FindObjectOfType<PlayerColorChange>();
     }
 
     private void Update()
@@ -108,7 +111,7 @@ public class PlayerJump : MonoBehaviour
         Debug.Log("Send Analytics at: " + Time.deltaTime);
         float x_coord = transform.position.x;
         float y_coord = transform.position.y;
-        string color = "red";
+        string color = playerColorChange.GetSpriteRenderer().color.ToString();
         Debug.Log("Current X Position of the Player: " + x_coord);
         if (sendPlayerPositionToGoogle != null)
         {
