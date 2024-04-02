@@ -3624,8 +3624,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 758645132}
-  - {fileID: 425272699}
   - {fileID: 703078526}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4866,14 +4864,14 @@ RectTransform:
   m_GameObject: {fileID: 425272698}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1664642, y: 1.1664642, z: 1.1664642}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 319251562}
+  m_Father: {fileID: 1057681751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 119, y: -165}
+  m_AnchoredPosition: {x: 77, y: -103}
   m_SizeDelta: {x: 25.490906, y: 51.203796}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &425272700
@@ -10527,14 +10525,14 @@ RectTransform:
   m_GameObject: {fileID: 758645131}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1664642, y: 1.1664642, z: 1.1664642}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 319251562}
+  m_Father: {fileID: 1057681751}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 170, y: -165.4}
+  m_AnchoredPosition: {x: 150, y: -106}
   m_SizeDelta: {x: 226.14087, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &758645133
@@ -13227,7 +13225,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -13245,6 +13243,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 857755568}
+  - {fileID: 758645132}
+  - {fileID: 425272699}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
