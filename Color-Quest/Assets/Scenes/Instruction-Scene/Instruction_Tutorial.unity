@@ -2225,7 +2225,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collect Coins
+  m_Text: 5 coins boost health, respawn costs 1
 --- !u!222 &1138569146
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2884,7 +2884,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collect Special PowerUp
+  m_Text: Collect Power-Ups
 --- !u!222 &1681223758
 CanvasRenderer:
   m_ObjectHideFlags: 0

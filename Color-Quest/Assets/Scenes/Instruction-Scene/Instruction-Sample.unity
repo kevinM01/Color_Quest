@@ -3228,7 +3228,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collect Coins
+  m_Text: 5 coins boost health, respawn costs 1
 --- !u!222 &1878891981
 CanvasRenderer:
   m_ObjectHideFlags: 0
