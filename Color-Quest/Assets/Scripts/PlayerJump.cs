@@ -17,6 +17,8 @@ public class PlayerJump : MonoBehaviour
     public Image healthBar;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI checkpointText;
+    public TextMeshProUGUI coinMinus;
+
 
     public int totalCoinsCollected = 0;
     public int healthRegains = 0;
@@ -339,6 +341,18 @@ public class PlayerJump : MonoBehaviour
         checkpointText.enabled = false; 
     }
 
+    IEnumerator ShowCoinMinusMsg()
+    {
+        yield return new WaitForSeconds(2f);
+
+        coinMinus.enabled = true;
+        coinMinus.text = "[Coins -1]";
+
+        yield return new WaitForSeconds(2f);
+
+        coinMinus.enabled = false;
+    }
+
     bool IsValidRespawnPoint()
     {
         // Check if the respawnPoint is not set to negative infinity
@@ -351,6 +365,9 @@ public class PlayerJump : MonoBehaviour
         pointCounter.points--;
         pointCounter.UpdatePointsText();
         // Set player position to the stored checkpoint position
+        
+        StartCoroutine(ShowCoinMinusMsg());
+
         transform.position = respawnPoint;
         pointCounter.BlinkPointsText(3.0f);
     }

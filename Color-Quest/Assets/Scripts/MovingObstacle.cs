@@ -37,8 +37,8 @@ public class MovingObstacle : MonoBehaviour
 
         transform.position = new Vector3(currentX, transform.position.y, transform.position.z);
 
-        // Handle player collision (assuming Player has a collider with "Player" tag)
-        /*if (IsPlayerColliding())
+        /*// Handle player collision (assuming Player has a collider with "Player" tag)
+        if (IsPlayerColliding())
         {
             // Call a function (we'll define this later) to handle player health reduction
             ReducePlayerHealth();

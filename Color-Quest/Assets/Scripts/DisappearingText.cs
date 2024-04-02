@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+
 public class DisappearingText : MonoBehaviour
 {
     public List<GameObject> tutorialUIElements; // Drag your UI elements into this list in the inspector
