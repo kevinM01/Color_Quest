@@ -963,9 +963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcd8d150bd517648b75d312e77d61c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1800634940}
-  tierBarRectTransform: {fileID: 1092599802}
-  offset: {x: 0, y: 0}
 --- !u!114 &47967476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5193,9 +5190,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcd8d150bd517648b75d312e77d61c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1800634940}
-  tierBarRectTransform: {fileID: 1092599802}
-  offset: {x: 0, y: 0}
 --- !u!1 &379505496
 GameObject:
   m_ObjectHideFlags: 0
@@ -14365,9 +14359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebcd8d150bd517648b75d312e77d61c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 1800634940}
-  tierBarRectTransform: {fileID: 1092599802}
-  offset: {x: 0, y: 0}
 --- !u!114 &888164616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27401,6 +27392,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc8020ac65ec054d8e164faa288bd1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerImage: {fileID: 47967476}
+  tokenBarGameObject: {fileID: 1092599801}
   type: 0
 --- !u!114 &1800634946
 MonoBehaviour:

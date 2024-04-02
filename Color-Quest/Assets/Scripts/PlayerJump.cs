@@ -106,18 +106,24 @@ public class PlayerJump : MonoBehaviour
             }
         }
 
-    private void SendPlayerPositionAnalytics(){
-        Scene currentScene = SceneManager.GetActiveScene();
-        Debug.Log("Send Analytics at: " + Time.deltaTime);
-        float x_coord = transform.position.x;
-        float y_coord = transform.position.y;
-        string color = playerColorChange.GetSpriteRenderer().color.ToString();
-        Debug.Log("Current X Position of the Player: " + x_coord);
-        if (sendPlayerPositionToGoogle != null)
-        {
-            sendPlayerPositionToGoogle.Send(x_coord, y_coord, color, currentScene.name);
-        }
+    private void SendPlayerPositionAnalytics()
+{
+    Scene currentScene = SceneManager.GetActiveScene();
+    Debug.Log("Send Analytics at: " + Time.deltaTime);
+    float x_coord = transform.position.x;
+    float y_coord = transform.position.y;
+
+    // Assuming you have correctly assigned the playerColorChange reference
+    // either via the inspector or dynamically in Start()
+    string color = playerColorChange.GetColorName();
+
+    Debug.Log("Current X Position of the Player: " + x_coord);
+    if (sendPlayerPositionToGoogle != null)
+    {
+        sendPlayerPositionToGoogle.Send(x_coord, y_coord, color, currentScene.name);
     }
+}
+
 
     // private IEnumerator ShowGameOverTextForThreeSeconds()
     // {
