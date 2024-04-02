@@ -16,16 +16,28 @@ public class TimerTrigger : MonoBehaviour
             if (timer <= 0)
             {
                 timerStarted = false;
-                timerText.text = "";
+                timerText.enabled = false;
             }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Change "Player" to the tag of the object you want to trigger the timer
+        if (other.CompareTag("Player")) 
         {
             timerStarted = true;
+            timerText.enabled = true;
+            if (timer <= 0)
+            {
+                timerStarted = false;
+                timerText.enabled = false;
+                Collect(other.gameObject);
+            }
         }
+    }
+
+    private void Collect(GameObject player)
+    {
+        Destroy(gameObject);
     }
 }

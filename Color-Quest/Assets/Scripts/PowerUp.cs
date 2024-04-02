@@ -5,7 +5,7 @@ using System.Collections;
 public class DestroyCollectible : MonoBehaviour
 {
     private bool flag;
-    public TextMeshProUGUI powerUpText;
+    //public TextMeshProUGUI powerUpText;
 
     // void Start()
     // {
@@ -15,7 +15,7 @@ public class DestroyCollectible : MonoBehaviour
 
     void Start()
     {
-        powerUpText.enabled = false;
+        //powerUpText.enabled = false;
         flag = false;
     }
 
@@ -35,7 +35,7 @@ public class DestroyCollectible : MonoBehaviour
         {
             if (!flag)
             {
-                StartCoroutine(ShowPowerUpText());
+                //StartCoroutine(ShowPowerUpText());
                 flag = true;
             }
         }
@@ -52,12 +52,12 @@ public class DestroyCollectible : MonoBehaviour
     //         Debug.Log("firstPowerUpText diabled");
     //     }
 
-    IEnumerator ShowPowerUpText()
+    /*IEnumerator ShowPowerUpText()
     {
         powerUpText.enabled = true;
         yield return new WaitForSeconds(4);
         powerUpText.enabled = false;
-    }
+    }*/     
 
     private void Collect(GameObject player)
     {
