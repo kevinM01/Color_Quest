@@ -9607,8 +9607,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc8020ac65ec054d8e164faa288bd1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerImage: {fileID: 0}
-  tokenBarGameObject: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  timerImage: {fileID: 1886271633}
+  tokenBarGameObject: {fileID: 118311808}
   type: 0
 --- !u!61 &1800634947
 BoxCollider2D:
