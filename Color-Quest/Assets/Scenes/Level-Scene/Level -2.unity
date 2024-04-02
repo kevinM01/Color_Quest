@@ -7438,9 +7438,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.0000009536743}
+  m_Offset: {x: 0.0018628438, y: 0.0000009437402}
   serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Radius: 0.554072
 --- !u!114 &517615091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16161,9 +16161,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0037288666, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.55966693
 --- !u!114 &1073243535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25790,6 +25790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc8020ac65ec054d8e164faa288bd1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
   timerImage: {fileID: 580598912}
   tokenBarGameObject: {fileID: 1329584084}
   type: 0
@@ -28469,13 +28470,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935931094}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0014199435, w: 0.999999}
   m_LocalPosition: {x: 10.85, y: -15.7, z: 9.988439}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1858707980}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.163}
 --- !u!114 &1935931097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28562,9 +28563,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000011920929, y: 0}
+  m_Offset: {x: 0.0018647237, y: 0.000005295621}
   serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Radius: 0.55034435
 --- !u!114 &1935931103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29636,9 +29637,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.007457137, y: 0}
   serializedVersion: 2
-  m_Radius: 0.49999997
+  m_Radius: 0.5484841
 --- !u!50 &1968910900
 Rigidbody2D:
   serializedVersion: 4

@@ -6582,9 +6582,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0000031789143, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.5633958
 --- !u!114 &552712131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15704,9 +15704,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0000063578286, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.56339896
 --- !u!114 &1233711613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23057,6 +23057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efc8020ac65ec054d8e164faa288bd1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
   timerImage: {fileID: 93679090}
   tokenBarGameObject: {fileID: 2106139663}
   type: 0
@@ -23234,9 +23235,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0037288666, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.5633958
 --- !u!114 &1800957001
 MonoBehaviour:
   m_ObjectHideFlags: 0
