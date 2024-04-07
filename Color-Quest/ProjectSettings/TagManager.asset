@@ -12,6 +12,7 @@ TagManager:
   - movingObs
   - PowerUp
   - Checkpoint
+  - Ground
   layers:
   - Default
   - TransparentFX

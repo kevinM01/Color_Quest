@@ -2307,7 +2307,7 @@ GameObject:
   - component: {fileID: 256666475}
   m_Layer: 0
   m_Name: Ground-1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14949,7 +14949,7 @@ GameObject:
   - component: {fileID: 1214298953}
   m_Layer: 0
   m_Name: Ground-24
-  m_TagString: Finish
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17651,7 +17651,7 @@ GameObject:
   - component: {fileID: 1442011434}
   m_Layer: 0
   m_Name: Ground-15
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17897,7 +17897,7 @@ GameObject:
   - component: {fileID: 1452563537}
   m_Layer: 0
   m_Name: Ground-3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19558,7 +19558,7 @@ GameObject:
   - component: {fileID: 1527699062}
   m_Layer: 0
   m_Name: Ground-17
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24179,7 +24179,7 @@ GameObject:
   - component: {fileID: 1847159643}
   m_Layer: 0
   m_Name: Ground-18
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24466,7 +24466,7 @@ GameObject:
   - component: {fileID: 1888864181}
   m_Layer: 0
   m_Name: Ground-16
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24621,7 +24621,7 @@ GameObject:
   - component: {fileID: 1890524067}
   m_Layer: 0
   m_Name: Ground-8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25524,7 +25524,7 @@ GameObject:
   - component: {fileID: 2028185776}
   m_Layer: 0
   m_Name: Ground-4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26145,7 +26145,7 @@ GameObject:
   - component: {fileID: 2082148023}
   m_Layer: 0
   m_Name: Ground-20
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26596,7 +26596,7 @@ GameObject:
   - component: {fileID: 2114897391}
   m_Layer: 0
   m_Name: Ground-25
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
