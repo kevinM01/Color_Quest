@@ -12,7 +12,12 @@ public class PowerUp : MonoBehaviour
 
     private void Collect(GameObject player)
     {
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        DisableObject();
     }
 
+    private void DisableObject()
+    {
+        gameObject.SetActive(false); // Disable the GameObject instead of destroying it
+    }
 }

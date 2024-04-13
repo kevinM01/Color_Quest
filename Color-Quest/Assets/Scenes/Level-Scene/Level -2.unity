@@ -25973,6 +25973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800634940}
   - component: {fileID: 1800634939}
+  - component: {fileID: 1800634949}
   - component: {fileID: 1800634942}
   - component: {fileID: 1800634944}
   - component: {fileID: 1800634945}
@@ -26112,6 +26113,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   timerImage: {fileID: 580598912}
   tokenBarGameObject: {fileID: 1329584084}
+  previousColorBar: {fileID: 580598912}
   type: 0
 --- !u!114 &1800634946
 MonoBehaviour:
@@ -26195,6 +26197,25 @@ MonoBehaviour:
   pointsText: {fileID: 758645133}
   points: 0
   firstCoinText: {fileID: 529051909}
+--- !u!114 &1800634949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800634938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b575a85b2d338954aa8df2934d16ec21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  healthBar: {fileID: 46926310}
+  healthText: {fileID: 703078527}
+  checkpointText: {fileID: 672917273}
+  coinMinus: {fileID: 1729065223}
+  totalCoinsCollected: 0
+  healthRegains: 0
 --- !u!1 &1817153547
 GameObject:
   m_ObjectHideFlags: 0
