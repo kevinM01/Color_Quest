@@ -39,12 +39,9 @@ public class PlayerJump : MonoBehaviour
 
     private float analyticsTimer = 0f;
 
-    public Transform bulletSpawnPoint;
-    public GameObject redBulletPrefab;
-
-    public GameObject blueBulletPrefab;
-    public GameObject greenBulletPrefab;
-    public float bulletSpeed=10;
+    public bool grounded{get; private set;}
+    public bool running => Mathf.Abs(rb.velocity.x) > 0.25f;
+    public bool jumping{get; private set;}
 
     private void Start()
     {
@@ -171,8 +168,8 @@ public class PlayerJump : MonoBehaviour
         // return hit.collider != null;
 
         // Adjust the start position of the raycast to be just below the player's feet (assuming a downward raycast)
-        Vector2 rayStart = new Vector2(transform.position.x, transform.position.y - GetComponent<Collider2D>().bounds.extents.y - 0.1f);
-        RaycastHit2D hit = Physics2D.Raycast(rayStart, Vector2.down, 0.2f);
+        Vector2 rayStart = new Vector2(transform.position.x, transform.position.y - GetComponent<Collider2D>().bounds.extents.y - 0.4f);
+        RaycastHit2D hit = Physics2D.Raycast(rayStart, Vector2.down, 0.4f);
 
 
         // RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f);
