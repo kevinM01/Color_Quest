@@ -39,9 +39,13 @@ public class PlayerJump : MonoBehaviour
 
     private float analyticsTimer = 0f;
 
-public Transform bulletSpawnPoint;
-public GameObject bulletPrefab;
-public float bulletSpeed=10;
+    public Transform bulletSpawnPoint;
+    public GameObject redBulletPrefab;
+
+    public GameObject blueBulletPrefab;
+    public GameObject greenBulletPrefab;
+    public float bulletSpeed=10;
+
     private void Start()
     {
         //respawnPoint = transform.position;
@@ -72,55 +76,67 @@ public float bulletSpeed=10;
         analyticsTimer = 0f; // Reset the timer
     }
 
-        // SendPlayerPositionAnalytics();
-        if (groundedPlayer && Mathf.Abs(rb.velocity.y) < 0.01f)
-        {
-            // Reset jumps when grounded and not currently moving upwards
-            jumpsLeft = extraJumps + 1; // Allows player for the initial jump without consuming extra jumps
-        }
+    // SendPlayerPositionAnalytics();
+    if (groundedPlayer && Mathf.Abs(rb.velocity.y) < 0.01f)
+    {
+        // Reset jumps when grounded and not currently moving upwards
+        jumpsLeft = extraJumps + 1; // Allows player for the initial jump without consuming extra jumps
+    }
 
-        float moveInput = Input.GetAxis("Horizontal");
-        // Adjusted for direct velocity setting; removed Time.deltaTime from horizontal movement calculation
-        rb.velocity = new Vector2(moveInput * playerSpeed, rb.velocity.y);
+    float moveInput = Input.GetAxis("Horizontal");
+    // Adjusted for direct velocity setting; removed Time.deltaTime from horizontal movement calculation
+    rb.velocity = new Vector2(moveInput * playerSpeed, rb.velocity.y);
 
-        // Double Jump Logic
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && jumpsLeft > 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, Mathf.Sqrt(2.0f * jumpHeight * Mathf.Abs(Physics2D.gravity.y)));
-            jumpsLeft--;
-        }
+    // Double Jump Logic
+    if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && jumpsLeft > 0)
+    {
+        rb.velocity = new Vector2(rb.velocity.x, Mathf.Sqrt(2.0f * jumpHeight * Mathf.Abs(Physics2D.gravity.y)));
+        jumpsLeft--;
+    }
 
+    /*UpdateHealthText();*/
+    UpdateHealthBar();
+
+    if (health <= 0)
+    {
+        health=0;
         /*UpdateHealthText();*/
         UpdateHealthBar();
 
-        if (health <= 0)
-        {
-            health=0;
-            /*UpdateHealthText();*/
-            UpdateHealthBar();
+        SendCoinXHealthAnalytics();
+        CollectAnalytics();
+        // gameOverText.enabled = true;
 
-            SendCoinXHealthAnalytics();
-            CollectAnalytics();
-            // gameOverText.enabled = true;
+        // StartCoroutine(ShowGameOverTextForThreeSeconds());
 
-            // StartCoroutine(ShowGameOverTextForThreeSeconds());
-
-            // // Stop the game and display game over text
-            // Time.timeScale = 0f; // Stop time to freeze the game
-            return; // Exit the update loop
-            }
+        // // Stop the game and display game over text
+        // Time.timeScale = 0f; // Stop time to freeze the game
+        return; // Exit the update loop
+    }
 
 
 
-            if(Input.GetKeyDown(KeyCode.B))
-            {
-                var bullet = Instantiate(bulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-                bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
-            }
-        }
+    if(Input.GetKeyDown(KeyCode.R))
+    {
+        var bullet = Instantiate(redBulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
+    }
+    if(Input.GetKeyDown(KeyCode.G))
+    {
+        var bullet = Instantiate(greenBulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
+    }
+    if(Input.GetKeyDown(KeyCode.B))
+    {
+        var bullet = Instantiate(blueBulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
+    }
+        
+
+    }
 
     private void SendPlayerPositionAnalytics()
-{
+    {
     Scene currentScene = SceneManager.GetActiveScene();
     Debug.Log("Send Analytics at: " + Time.deltaTime);
     float x_coord = transform.position.x;

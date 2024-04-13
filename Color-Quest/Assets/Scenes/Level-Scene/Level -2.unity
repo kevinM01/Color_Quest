@@ -26208,7 +26208,9 @@ MonoBehaviour:
   totalCoinsCollected: 0
   healthRegains: 0
   bulletSpawnPoint: {fileID: 1500064862}
-  bulletPrefab: {fileID: 7882510668978888823, guid: c22bbf720c5b4ab4f888e84a6f4ab796, type: 3}
+  redBulletPrefab: {fileID: 3301275299885307198, guid: 363e1b33d9ed34d96b2093b198184dee, type: 3}
+  blueBulletPrefab: {fileID: 649225105752337262, guid: bfe2feea9f32742fea13f3aaa933b47c, type: 3}
+  greenBulletPrefab: {fileID: 4069265891408384280, guid: c388c52d33d57479a9c2dfe8adc1a0ef, type: 3}
   bulletSpeed: 10
 --- !u!1 &1817153547
 GameObject:
