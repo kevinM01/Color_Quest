@@ -39,6 +39,9 @@ public class PlayerJump : MonoBehaviour
 
     private float analyticsTimer = 0f;
 
+public Transform bulletSpawnPoint;
+public GameObject bulletPrefab;
+public float bulletSpeed=10;
     private void Start()
     {
         //respawnPoint = transform.position;
@@ -105,6 +108,14 @@ public class PlayerJump : MonoBehaviour
             // // Stop the game and display game over text
             // Time.timeScale = 0f; // Stop time to freeze the game
             return; // Exit the update loop
+            }
+
+
+
+            if(Input.GetKeyDown(KeyCode.B))
+            {
+                var bullet = Instantiate(bulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+                bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
             }
         }
 
