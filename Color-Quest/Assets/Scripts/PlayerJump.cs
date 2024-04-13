@@ -45,7 +45,8 @@ public class PlayerJump : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public float bulletSpeed=10;
-
+    private int bulletsFired = 0;
+    public int maxBullets = 5;
     private void Start()
     {
         //respawnPoint = transform.position;
@@ -116,14 +117,15 @@ public class PlayerJump : MonoBehaviour
 
 
 
+   if(Input.GetKeyDown(KeyCode.F) && bulletsFired < maxBullets) // Check if 'F' is pressed and bullets fired is less than maximum
+        {
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            bullet.GetComponent<SpriteRenderer>().color = GetComponent<PlayerColorChange>().GetColor();
+            bullet.GetComponent<Bullet>().bulletColor = bullet.GetComponent<SpriteRenderer>().color;
+            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
 
-    if(Input.GetKeyDown(KeyCode.F)) // Using 'F' to fire bullets; change as needed
-    {
-        GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation); // Use any bullet prefab; it will be recolored
-        bullet.GetComponent<SpriteRenderer>().color = GetComponent<PlayerColorChange>().GetColor(); // Set bullet color to player's color
-        bullet.GetComponent<Bullet>().bulletColor = bullet.GetComponent<SpriteRenderer>().color; // Ensure the bullet script knows its color
-        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
-    }
+            bulletsFired++; // Increment bullets fired counter
+        }
 
         }
 
