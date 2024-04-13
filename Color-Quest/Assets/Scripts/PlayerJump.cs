@@ -42,6 +42,9 @@ public class PlayerJump : MonoBehaviour
     public bool grounded{get; private set;}
     public bool running => Mathf.Abs(rb.velocity.x) > 0.25f;
     public bool jumping{get; private set;}
+    public Transform bulletSpawnPoint;
+    public GameObject bulletPrefab;
+    public float bulletSpeed=10;
 
     private void Start()
     {
@@ -110,6 +113,18 @@ public class PlayerJump : MonoBehaviour
             // Time.timeScale = 0f; // Stop time to freeze the game
             return; // Exit the update loop
             }
+
+
+
+
+    if(Input.GetKeyDown(KeyCode.F)) // Using 'F' to fire bullets; change as needed
+    {
+        GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation); // Use any bullet prefab; it will be recolored
+        bullet.GetComponent<SpriteRenderer>().color = GetComponent<PlayerColorChange>().GetColor(); // Set bullet color to player's color
+        bullet.GetComponent<Bullet>().bulletColor = bullet.GetComponent<SpriteRenderer>().color; // Ensure the bullet script knows its color
+        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
+    }
+
         }
 
     private void SendPlayerPositionAnalytics()
