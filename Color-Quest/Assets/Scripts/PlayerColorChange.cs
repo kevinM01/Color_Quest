@@ -8,6 +8,7 @@ public class PlayerColorChange : MonoBehaviour
     private Color previousColor; // Store the previous color before the timer
     public Image timerImage;
     public GameObject tokenBarGameObject;
+    public Image previousColorBar; // Reference to the UI Image component representing the previous color
 
     public enum Type
     {
@@ -68,6 +69,14 @@ public class PlayerColorChange : MonoBehaviour
     void ChangeToPreviousColor()
     {
         spriteRenderer.color = previousColor; // Set back to the stored previous color
+        if (previousColorBar != null)
+        {
+            previousColorBar.color = spriteRenderer.color; // Update color bar to match current color
+        }
+        if (tokenBarGameObject != null)
+        {
+            tokenBarGameObject.SetActive(false); // Disable the GameObject when the timer is done
+        }
     }
 
     void ChangeToRandomColor()
@@ -99,13 +108,17 @@ public class PlayerColorChange : MonoBehaviour
         }
         else
         {
-            
             previousColor = spriteRenderer.color; // Store the current color before changing
             spriteRenderer.color = Color.white;
             timer = 5f; // Start timer for 5 seconds (optional, adjust based on your logic)
             if (tokenBarGameObject != null) 
             {
                 tokenBarGameObject.SetActive(true); // Make sure it's visible when the timer starts
+            }
+            // Update previous color bar (assuming it's a filled image):
+            if (previousColorBar != null)
+            {
+                previousColorBar.color = previousColor;
             }
         }
     }
