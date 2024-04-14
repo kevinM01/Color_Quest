@@ -18,10 +18,19 @@ public class Bullet : MonoBehaviour
         {
             // Access the SpriteRenderer to check the color of the obstacle
             Color obsColor = collision.gameObject.GetComponent<SpriteRenderer>().color;
-            // Destroy the obstacle only if it has a different color than the bullet
-            if (obsColor == bulletColor)
+            // Check if the player color is white
+            if (bulletColor == Color.white)
             {
+                // If the player color is white, destroy the obstacle regardless of its color
                 Destroy(collision.gameObject);
+            }
+            else
+            {
+                // Destroy the obstacle only if it has a different color than the bullet
+                if (obsColor == bulletColor)
+                {
+                    Destroy(collision.gameObject);
+                }
             }
         }
 

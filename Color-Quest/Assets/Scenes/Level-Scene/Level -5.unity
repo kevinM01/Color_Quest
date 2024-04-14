@@ -15776,6 +15776,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 950996719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &976559311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976559312}
+  m_Layer: 7
+  m_Name: BulletSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &976559312
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976559311}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.68, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1800634940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &995770459
 GameObject:
   m_ObjectHideFlags: 0
@@ -27505,7 +27536,6 @@ GameObject:
   - component: {fileID: 1800634942}
   - component: {fileID: 1800634944}
   - component: {fileID: 1800634945}
-  - component: {fileID: 1800634946}
   - component: {fileID: 1800634947}
   - component: {fileID: 1800634948}
   m_Layer: 7
@@ -27581,6 +27611,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1092599802}
+  - {fileID: 976559312}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1800634942
@@ -27642,25 +27673,6 @@ MonoBehaviour:
   tokenBarGameObject: {fileID: 1092599801}
   previousColorBar: {fileID: 377263764}
   type: 0
---- !u!114 &1800634946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1800634938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 465cc9873aef0a048955efde9ec691f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  healthBar: {fileID: 1075854913}
-  healthText: {fileID: 703078527}
-  checkpointText: {fileID: 1093612254}
-  coinMinus: {fileID: 1026052939}
-  totalCoinsCollected: 0
-  healthRegains: 0
 --- !u!61 &1800634947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27740,6 +27752,10 @@ MonoBehaviour:
   coinMinus: {fileID: 1026052939}
   totalCoinsCollected: 0
   healthRegains: 0
+  bulletSpawnPoint: {fileID: 976559312}
+  bulletPrefab: {fileID: 134933200574403185, guid: 348d8b0923bbf324cbc8deb9f20a1ebc, type: 3}
+  bulletSpeed: 10
+  maxBullets: 5
 --- !u!1 &1817153547
 GameObject:
   m_ObjectHideFlags: 0

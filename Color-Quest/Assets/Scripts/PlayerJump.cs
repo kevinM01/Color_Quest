@@ -44,7 +44,7 @@ public class PlayerJump : MonoBehaviour
     public bool jumping{get; private set;}
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
-    public float bulletSpeed=10;
+    public float bulletSpeed = 10;
     private int bulletsFired = 0;
     public int maxBullets = 5;
     private void Start()
@@ -122,7 +122,7 @@ public class PlayerJump : MonoBehaviour
 
 
 
-   if(Input.GetKeyDown(KeyCode.F) && bulletsFired < maxBullets) // Check if 'F' is pressed and bullets fired is less than maximum
+   if(Input.GetKeyDown(KeyCode.F) && bulletsFired < maxBullets) 
         {
             GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
             bullet.GetComponent<SpriteRenderer>().color = GetComponent<PlayerColorChange>().GetColor();
