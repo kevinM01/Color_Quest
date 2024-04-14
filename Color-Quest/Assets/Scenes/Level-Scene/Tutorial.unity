@@ -922,7 +922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.61}
-  m_AnchoredPosition: {x: -3.81, y: 11.26}
+  m_AnchoredPosition: {x: -4.526, y: 11.386}
   m_SizeDelta: {x: 200, y: 48.899082}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &60064907
@@ -18071,6 +18071,8 @@ GameObject:
   - component: {fileID: 1997778483}
   - component: {fileID: 1997778482}
   - component: {fileID: 1997778490}
+  - component: {fileID: 1997778491}
+  - component: {fileID: 1997778492}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -18105,13 +18107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 465cc9873aef0a048955efde9ec691f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  healthBar: {fileID: 406446439}
-  healthText: {fileID: 721466139}
-  checkpointText: {fileID: 191120822}
-  coinMinus: {fileID: 1963797447}
-  totalCoinsCollected: 0
-  healthRegains: 0
 --- !u!61 &1997778484
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18144,18 +18139,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0026283264, y: -0.037356947}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.32, y: 0.32}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.23702559, y: 0.254457}
   m_EdgeRadius: 0
 --- !u!114 &1997778485
 MonoBehaviour:
@@ -18172,6 +18167,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   timerImage: {fileID: 855770075}
   tokenBarGameObject: {fileID: 443037046}
+  previousColorBar: {fileID: 0}
   type: 0
 --- !u!114 &1997778486
 MonoBehaviour:
@@ -18256,7 +18252,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -6367560908665664636, guid: 40de9a8703e2e5a47882b0b86451c741, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18276,8 +18272,8 @@ Transform:
   m_GameObject: {fileID: 1997778481}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.71, y: 0.87, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.8125, z: 1}
+  m_LocalPosition: {x: 0.3408, y: 1.333, z: 0}
+  m_LocalScale: {x: 6.608098, y: 7.087678, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 443037051}
@@ -18297,6 +18293,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialUIElements: []
   player: {fileID: 1997778481}
+--- !u!114 &1997778491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997778481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b575a85b2d338954aa8df2934d16ec21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  healthBar: {fileID: 406446439}
+  healthText: {fileID: 721466139}
+  checkpointText: {fileID: 191120822}
+  coinMinus: {fileID: 1963797447}
+  totalCoinsCollected: 0
+  healthRegains: 0
+--- !u!114 &1997778492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997778481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2f1f31a82034d679638666e5973c7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2009320984
 GameObject:
   m_ObjectHideFlags: 0
@@ -19017,7 +19044,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0000038146973, y: 0}
@@ -19030,7 +19057,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048423399}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -19055,7 +19082,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0018856823, y: 0.000000059604645}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -19066,7 +19093,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 1.3}
+  m_Size: {x: 1.0055032, y: 1.0114814}
   m_EdgeRadius: 0
 --- !u!212 &2048423404
 SpriteRenderer:

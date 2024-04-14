@@ -42,7 +42,11 @@ public class PlayerJump : MonoBehaviour
     public bool grounded{get; private set;}
     public bool running => Mathf.Abs(rb.velocity.x) > 0.25f;
     public bool jumping{get; private set;}
-
+    public Transform bulletSpawnPoint;
+    public GameObject bulletPrefab;
+    public float bulletSpeed=10;
+    private int bulletsFired = 0;
+    public int maxBullets = 5;
     private void Start()
     {
         //respawnPoint = transform.position;
@@ -111,26 +115,25 @@ public class PlayerJump : MonoBehaviour
         return; // Exit the update loop
     }
 
+            // // Stop the game and display game over text
+            // Time.timeScale = 0f; // Stop time to freeze the game
+             // Exit the update loop
+            
 
 
-    if(Input.GetKeyDown(KeyCode.R))
-    {
-        var bullet = Instantiate(redBulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
-    }
-    if(Input.GetKeyDown(KeyCode.G))
-    {
-        var bullet = Instantiate(greenBulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
-    }
-    if(Input.GetKeyDown(KeyCode.B))
-    {
-        var bullet = Instantiate(blueBulletPrefab,bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right*bulletSpeed;
-    }
-        
 
+   if(Input.GetKeyDown(KeyCode.F) && bulletsFired < maxBullets) // Check if 'F' is pressed and bullets fired is less than maximum
+        {
+            GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+            bullet.GetComponent<SpriteRenderer>().color = GetComponent<PlayerColorChange>().GetColor();
+            bullet.GetComponent<Bullet>().bulletColor = bullet.GetComponent<SpriteRenderer>().color;
+            bullet.GetComponent<Rigidbody2D>().velocity = bulletSpawnPoint.right * bulletSpeed;
+
+            bulletsFired++; // Increment bullets fired counter
+        }
+    return;
     }
+
 
     private void SendPlayerPositionAnalytics()
     {

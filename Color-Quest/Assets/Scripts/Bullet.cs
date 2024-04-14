@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float life = 3;
+    public Color bulletColor; // Color of the bullet
 
     void Awake()
     {
@@ -15,11 +16,16 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("movingObs"))
         {
-            // Destroy the collided game object
-            Destroy(collision.gameObject);
+            // Access the SpriteRenderer to check the color of the obstacle
+            Color obsColor = collision.gameObject.GetComponent<SpriteRenderer>().color;
+            // Destroy the obstacle only if it has a different color than the bullet
+            if (obsColor == bulletColor)
+            {
+                Destroy(collision.gameObject);
+            }
         }
 
-        // Destroy the bullet
+        // Destroy the bullet in any case
         Destroy(gameObject);
     }
 }

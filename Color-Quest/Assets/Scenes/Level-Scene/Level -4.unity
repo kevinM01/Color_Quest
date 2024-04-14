@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 21188412}
   m_Layer: 0
   m_Name: RedPlatform-9
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -937,7 +937,7 @@ GameObject:
   - component: {fileID: 51204739}
   m_Layer: 0
   m_Name: RedPlatform-1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3647,7 +3647,7 @@ GameObject:
   - component: {fileID: 320180714}
   m_Layer: 0
   m_Name: RedPlatform-8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4070,7 +4070,7 @@ GameObject:
   - component: {fileID: 379505498}
   m_Layer: 0
   m_Name: GreenPlatform-7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4228,7 +4228,7 @@ GameObject:
   - component: {fileID: 381154743}
   m_Layer: 0
   m_Name: BluePlatform-4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9522,7 +9522,7 @@ GameObject:
   - component: {fileID: 710386125}
   m_Layer: 0
   m_Name: GreenPlatform-1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9678,7 +9678,7 @@ GameObject:
   - component: {fileID: 711478814}
   m_Layer: 0
   m_Name: RedPlatform-7
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13527,7 +13527,7 @@ GameObject:
   - component: {fileID: 1093645957}
   m_Layer: 0
   m_Name: BluePlatform-3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14497,7 +14497,7 @@ GameObject:
   - component: {fileID: 1178871409}
   m_Layer: 0
   m_Name: BluePlatform-1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15082,7 +15082,7 @@ GameObject:
   - component: {fileID: 1215872749}
   m_Layer: 0
   m_Name: RedPlatform-6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15947,7 +15947,7 @@ GameObject:
   - component: {fileID: 1240711409}
   m_Layer: 0
   m_Name: RedPlatform-2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18041,7 +18041,7 @@ GameObject:
   - component: {fileID: 1453921789}
   m_Layer: 0
   m_Name: GreenPlatform-2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20867,7 +20867,7 @@ GameObject:
   - component: {fileID: 1629589908}
   m_Layer: 0
   m_Name: RedPlatform-5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23199,6 +23199,10 @@ MonoBehaviour:
   coinMinus: {fileID: 1245407219}
   totalCoinsCollected: 0
   healthRegains: 0
+  bulletSpawnPoint: {fileID: 0}
+  bulletPrefab: {fileID: 0}
+  bulletSpeed: 10
+  maxBullets: 5
 --- !u!1 &1800956997
 GameObject:
   m_ObjectHideFlags: 0
@@ -24941,7 +24945,7 @@ GameObject:
   - component: {fileID: 1944195936}
   m_Layer: 0
   m_Name: GreenPlatform-6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
