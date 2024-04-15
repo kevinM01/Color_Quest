@@ -12,12 +12,18 @@ public class PowerUp : MonoBehaviour
 
     private void Collect(GameObject player)
     {
-        // Destroy(gameObject);
-        DisableObject();
-    }
+        // Get the Collectible component attached to the collectible GameObject
+        Collectible collectible = GetComponent<Collectible>();
 
-    private void DisableObject()
-    {
-        gameObject.SetActive(false); // Disable the GameObject instead of destroying it
+        if (collectible != null)
+        {
+            // Call the Disable method on the Collectible component
+            collectible.Disable();
+        }
+        else
+        {
+            // If Collectible component is not found, disable the GameObject directly
+            gameObject.SetActive(false);
+        }
     }
 }
