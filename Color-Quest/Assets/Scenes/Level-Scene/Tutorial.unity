@@ -3906,15 +3906,16 @@ RectTransform:
   m_GameObject: {fileID: 443037046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 1.9824295, y: 1.7719195, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 855770072}
   - {fileID: 2128243231}
-  m_Father: {fileID: 1997778489}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.26999992, y: 3.014}
+  m_AnchoredPosition: {x: 1.2057133, y: 14.121311}
   m_SizeDelta: {x: 4.048, y: 0.4094}
   m_Pivot: {x: 0.49999997, y: 0.49999988}
 --- !u!1 &469554974
@@ -6642,14 +6643,14 @@ RectTransform:
   m_GameObject: {fileID: 855770071}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.4, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2128243231}
+  m_Father: {fileID: 443037051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.000024795998}
+  m_AnchoredPosition: {x: 0.019999972, y: 0.0100097675}
   m_SizeDelta: {x: 4.048, y: 0.4094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &855770073
@@ -17683,7 +17684,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   timerImage: {fileID: 855770075}
   tokenBarGameObject: {fileID: 443037046}
-  previousColorBar: {fileID: 0}
+  previousColorBar: {fileID: 855770075}
   type: 0
 --- !u!114 &1997778486
 MonoBehaviour:
@@ -17791,8 +17792,7 @@ Transform:
   m_LocalPosition: {x: 0.3408, y: 1.333, z: 0}
   m_LocalScale: {x: 6.608098, y: 7.087678, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 443037051}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1997778490
@@ -17834,6 +17834,7 @@ MonoBehaviour:
   bulletSpawnPoint: {fileID: 0}
   bulletPrefab: {fileID: 0}
   bulletSpeed: 10
+  bulletsFired: 0
   maxBullets: 5
 --- !u!114 &1997778492
 MonoBehaviour:
@@ -18710,7 +18711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2128243231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18722,8 +18723,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.4, z: 0.25}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 855770072}
+  m_Children: []
   m_Father: {fileID: 443037051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -18915,6 +18915,7 @@ SceneRoots:
   - {fileID: 2140668520}
   - {fileID: 603375978}
   - {fileID: 1997778489}
+  - {fileID: 443037051}
   - {fileID: 2118421529}
   - {fileID: 993415729}
   - {fileID: 1125848489}
