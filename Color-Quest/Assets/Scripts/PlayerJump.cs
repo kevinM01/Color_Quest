@@ -400,6 +400,7 @@ if (rb.velocity.x > 0f) {
                 collectedCollectibles.Add(col.gameObject);
                 Debug.Log("Hello buddyyy");
                 collectible.Disable(); // Disable the collectible GameObject
+                Debug.Log("Collectible collected.");
             //}
         }
     }
