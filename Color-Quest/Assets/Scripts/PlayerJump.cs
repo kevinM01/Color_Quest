@@ -48,7 +48,10 @@ public class PlayerJump : MonoBehaviour
     public float bulletSpeed = 10;
     private int bulletsFired = 0;
     public int maxBullets = 5;
-    
+
+    private bool hasReachedCheckpoint = false;
+    private List<GameObject> collectedCollectibles = new List<GameObject>();
+
     private void Start()
     {
         //respawnPoint = transform.position;
@@ -145,7 +148,7 @@ public class PlayerJump : MonoBehaviour
     private void SendPlayerPositionAnalytics()
     {
     Scene currentScene = SceneManager.GetActiveScene();
-    Debug.Log("Send Analytics at: " + Time.deltaTime);
+    // Debug.Log("Send Analytics at: " + Time.deltaTime);
     float x_coord = transform.position.x;
     float y_coord = transform.position.y;
 
@@ -153,7 +156,7 @@ public class PlayerJump : MonoBehaviour
     // either via the inspector or dynamically in Start()
     string color = playerColorChange.GetColorName();
 
-    Debug.Log("Current X Position of the Player: " + x_coord);
+    // Debug.Log("Current X Position of the Player: " + x_coord);
     if (sendPlayerPositionToGoogle != null)
     {
         sendPlayerPositionToGoogle.Send(x_coord, y_coord, color, currentScene.name);
@@ -242,7 +245,7 @@ public class PlayerJump : MonoBehaviour
             IncreaseHealthByAmount(20);
             /*sendHealthDamageToGoogle();*/
             Scene currentScene = SceneManager.GetActiveScene();
-            Debug.Log("Current Scene Name: " + currentScene.name);
+            // Debug.Log("Current Scene Name: " + currentScene.name);
             float x_coord = transform.position.x;
             float y_coord = transform.position.y;
 
@@ -357,7 +360,7 @@ public class PlayerJump : MonoBehaviour
         {
             Debug.Log(respawnPoint);
             SendCoinXHealthAnalytics();
-            Debug.Log("Reocrded");
+            // Debug.Log("Reocrded");
             CollectAnalytics();
             // Respawn the player at the checkpoint if available, else reload the scene
             if (IsValidRespawnPoint() && pointCounter.points > 0)
@@ -372,12 +375,26 @@ public class PlayerJump : MonoBehaviour
                 Debug.Log("Player respawned at the beginning of the level");
             }
         }
-        else if (col.CompareTag("Checkpoint")) // Check if the player has crossed a checkpoint
+        if (col.CompareTag("Checkpoint")) // Check if the player has crossed a checkpoint
         {
+            hasReachedCheckpoint = true;            
             // Update the respawn point to the position of the checkpoint
             respawnPoint = col.transform.position;
             Debug.Log("Checkpoint reached");
             StartCoroutine(ShowCheckpointMessage());
+        }
+        if (col.CompareTag("Collectible"))
+        {
+            Collectible collectible = col.GetComponent<Collectible>();
+            Debug.Log("Hello in Collectible if... on TriggerrrEnterrr");
+            /*if (collectible != null && !collectible.IsCollected())*/
+            /*if (collectible != null)
+            {*/
+                // Collect the collectible
+                collectedCollectibles.Add(col.gameObject);
+                Debug.Log("Hello buddyyy");
+                collectible.Disable(); // Disable the collectible GameObject
+            //}
         }
     }
 
@@ -416,7 +433,17 @@ public class PlayerJump : MonoBehaviour
         pointCounter.UpdatePointsText();
         // Set player position to the stored checkpoint position
         isRespawning = false;
-        StartCoroutine(RespawnWithDelay(2.0f)); // Call the coroutine with a 1-second delay
+        StartCoroutine(RespawnWithDelay(0.5f)); // Call the coroutine with a 1-second delay
+
+        if (hasReachedCheckpoint && collectedCollectibles.Count > 0)
+        {
+            Debug.Log("Hello in respawn playerrr");
+            // Enable all collected collectibles upon respawn
+            foreach (GameObject collectible in collectedCollectibles)
+            {
+                collectible.SetActive(true);
+            }
+        }
     }
 
     IEnumerator RespawnWithDelay(float delay)
@@ -450,10 +477,10 @@ public class PlayerJump : MonoBehaviour
         //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         //SceneManager.LoadScene(currentSceneIndex);
         Scene currentScene = SceneManager.GetActiveScene();
-        Debug.Log("Current Scene Name: " + currentScene.name);
+        // Debug.Log("Current Scene Name: " + currentScene.name);
         float x_coord = transform.position.x;
         float y_coord = transform.position.y;
-        Debug.Log("Current X Position of the Player: " + x_coord);
+        // Debug.Log("Current X Position of the Player: " + x_coord);
         if (sendToGoogle != null)
         {
             sendToGoogle.Send(x_coord, y_coord, currentScene.name);
