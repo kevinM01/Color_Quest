@@ -50,7 +50,7 @@ public class PlayerJump : MonoBehaviour
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
     public float bulletSpeed = 10;
-    private int bulletsFired = 0;
+    public int bulletsFired = 0;
     public int maxBullets = 5;
 
     private bool hasReachedCheckpoint = false;
