@@ -97,13 +97,18 @@ public class PlayerJump : MonoBehaviour
     float moveInput = Input.GetAxis("Horizontal");
     // Adjusted for direct velocity setting; removed Time.deltaTime from horizontal movement calculation
     rb.velocity = new Vector2(moveInput * playerSpeed, rb.velocity.y);
-
+if (rb.velocity.x > 0f) {
+            transform.eulerAngles = Vector3.zero;
+        } else if (rb.velocity.x < 0f) {
+            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+        }
     // Double Jump Logic
     if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && jumpsLeft > 0)
     {
         rb.velocity = new Vector2(rb.velocity.x, Mathf.Sqrt(2.0f * jumpHeight * Mathf.Abs(Physics2D.gravity.y)));
         jumpsLeft--;
     }
+    
 
     /*UpdateHealthText();*/
     UpdateHealthBar();
