@@ -3,8 +3,9 @@ using UnityEngine;
 public class Collectible : MonoBehaviour
 {
     public Color color;
-    /*private bool isCollected = false;
-    private float collectedTimestamp = -1f;
+    private bool isCollected = false;
+    
+    /* private float collectedTimestamp = -1f;
 
     public void Collect()
     {
@@ -30,9 +31,15 @@ public class Collectible : MonoBehaviour
         return isCollected && collectedTimestamp > checkpointTimestamp;
     }*/
 
-    public void Collect()
+    /*public void Collect()
     {
         gameObject.SetActive(false); // Disable the collectible object
+    }*/
+
+    public void Disable()
+    {
+        // isCollected = true;
+        gameObject.SetActive(false); // Disable the GameObject
     }
 
     public bool IsCollected()

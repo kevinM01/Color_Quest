@@ -19,11 +19,15 @@ public class PlayerJump : MonoBehaviour
     public TextMeshProUGUI checkpointText;
     public TextMeshProUGUI coinMinus;
 
+    // Sprites for different states
+    public Sprite idleSprite;
+    public Sprite runningSprite;
+    public Sprite jumpingSprite;
+    private SpriteRenderer spriteRenderer;
 
     public int totalCoinsCollected = 0;
     public int healthRegains = 0;
 
-    // public TextMeshProUGUI gameOverText;
     private Coroutine damageCoroutine;
 
     private SendToGoogle sendToGoogle;
@@ -36,10 +40,11 @@ public class PlayerJump : MonoBehaviour
     private Coroutine blinkCoroutine;
 
     private Vector2 respawnPoint = Vector2.negativeInfinity;
+    private bool isRespawning = true;
 
     private float analyticsTimer = 0f;
 
-    public bool grounded{get; private set;}
+    public bool grounded { get; private set; }
     public bool running => Mathf.Abs(rb.velocity.x) > 0.25f;
     public bool jumping{get; private set;}
     public Transform bulletSpawnPoint;
@@ -47,35 +52,40 @@ public class PlayerJump : MonoBehaviour
     public float bulletSpeed = 10;
     private int bulletsFired = 0;
     public int maxBullets = 5;
+
+    private bool hasReachedCheckpoint = false;
+    private List<GameObject> collectedCollectibles = new List<GameObject>();
+
     private void Start()
     {
-        //respawnPoint = transform.position;
         rb = GetComponent<Rigidbody2D>();
-        // Initialize jumpsLeft with extraJumps + 1 to account for the initial ground jump.
+        spriteRenderer = GetComponent<SpriteRenderer>();  // Ensure there's a SpriteRenderer component attached
         jumpsLeft = extraJumps + 1;
         health = 100f;
-        // gameOverText.enabled = false;
-        /*UpdateHealthText();*/
         UpdateHealthBar();
 
         sendToGoogle = FindObjectOfType<SendToGoogle>();
         sendHealthDamageToGoogle = FindObjectOfType<SendHealthDamageToGoogle>();
         sendCoinXHealthToGoogle = FindObjectOfType<SendCoinXHealthToGoogle>();
-        pointCounter = FindObjectOfType<PointCounter>(); // Find the PointCounter instance
+        pointCounter = FindObjectOfType<PointCounter>();
         sendPlayerPositionToGoogle = FindObjectOfType<SendPlayerPositionToGoogle>();
         playerColorChange = FindObjectOfType<PlayerColorChange>();
     }
 
     private void Update()
     {
-        groundedPlayer = IsGrounded();
+        if (isRespawning)
+        {
 
-         analyticsTimer += Time.deltaTime;
-    if (analyticsTimer >= 2f) // Check if 1 second has passed
-    {
-        SendPlayerPositionAnalytics(); // Call your function
-        analyticsTimer = 0f; // Reset the timer
-    }
+        
+            groundedPlayer = IsGrounded();
+
+        analyticsTimer += Time.deltaTime;
+        if (analyticsTimer >= 2f)
+        {
+            SendPlayerPositionAnalytics();
+            analyticsTimer = 0f;
+        }
 
     // SendPlayerPositionAnalytics();
     if (groundedPlayer && Mathf.Abs(rb.velocity.y) < 0.01f)
@@ -133,12 +143,13 @@ public class PlayerJump : MonoBehaviour
         }
     return;
     }
+    }
 
 
     private void SendPlayerPositionAnalytics()
     {
     Scene currentScene = SceneManager.GetActiveScene();
-    Debug.Log("Send Analytics at: " + Time.deltaTime);
+    // Debug.Log("Send Analytics at: " + Time.deltaTime);
     float x_coord = transform.position.x;
     float y_coord = transform.position.y;
 
@@ -146,7 +157,7 @@ public class PlayerJump : MonoBehaviour
     // either via the inspector or dynamically in Start()
     string color = playerColorChange.GetColorName();
 
-    Debug.Log("Current X Position of the Player: " + x_coord);
+    // Debug.Log("Current X Position of the Player: " + x_coord);
     if (sendPlayerPositionToGoogle != null)
     {
         sendPlayerPositionToGoogle.Send(x_coord, y_coord, color, currentScene.name);
@@ -176,9 +187,9 @@ public class PlayerJump : MonoBehaviour
 
 
         // RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f);
-        if (hit.collider != null) {
+        /*if (hit.collider != null) {
             Debug.Log("Hit: " + hit.collider.tag);
-        }
+        }*/
         return hit.collider != null && (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Spike") || hit.collider.CompareTag("movingObs"));
     }
 
@@ -235,7 +246,7 @@ public class PlayerJump : MonoBehaviour
             IncreaseHealthByAmount(20);
             /*sendHealthDamageToGoogle();*/
             Scene currentScene = SceneManager.GetActiveScene();
-            Debug.Log("Current Scene Name: " + currentScene.name);
+            // Debug.Log("Current Scene Name: " + currentScene.name);
             float x_coord = transform.position.x;
             float y_coord = transform.position.y;
 
@@ -350,7 +361,7 @@ public class PlayerJump : MonoBehaviour
         {
             Debug.Log(respawnPoint);
             SendCoinXHealthAnalytics();
-            Debug.Log("Reocrded");
+            // Debug.Log("Reocrded");
             CollectAnalytics();
             // Respawn the player at the checkpoint if available, else reload the scene
             if (IsValidRespawnPoint() && pointCounter.points > 0)
@@ -365,12 +376,26 @@ public class PlayerJump : MonoBehaviour
                 Debug.Log("Player respawned at the beginning of the level");
             }
         }
-        else if (col.CompareTag("Checkpoint")) // Check if the player has crossed a checkpoint
+        if (col.CompareTag("Checkpoint")) // Check if the player has crossed a checkpoint
         {
+            hasReachedCheckpoint = true;            
             // Update the respawn point to the position of the checkpoint
             respawnPoint = col.transform.position;
             Debug.Log("Checkpoint reached");
             StartCoroutine(ShowCheckpointMessage());
+        }
+        if (col.CompareTag("Collectible"))
+        {
+            Collectible collectible = col.GetComponent<Collectible>();
+            Debug.Log("Hello in Collectible if... on TriggerrrEnterrr");
+            /*if (collectible != null && !collectible.IsCollected())*/
+            /*if (collectible != null)
+            {*/
+                // Collect the collectible
+                collectedCollectibles.Add(col.gameObject);
+                Debug.Log("Hello buddyyy");
+                collectible.Disable(); // Disable the collectible GameObject
+            //}
         }
     }
 
@@ -408,7 +433,25 @@ public class PlayerJump : MonoBehaviour
         pointCounter.points--;
         pointCounter.UpdatePointsText();
         // Set player position to the stored checkpoint position
-        
+        isRespawning = false;
+        StartCoroutine(RespawnWithDelay(0.5f)); // Call the coroutine with a 1-second delay
+
+        if (hasReachedCheckpoint && collectedCollectibles.Count > 0)
+        {
+            Debug.Log("Hello in respawn playerrr");
+            // Enable all collected collectibles upon respawn
+            foreach (GameObject collectible in collectedCollectibles)
+            {
+                collectible.SetActive(true);
+            }
+        }
+    }
+
+    IEnumerator RespawnWithDelay(float delay)
+    {
+        rb.velocity = Vector2.zero; // Set velocity to zero to stop movement
+        yield return new WaitForSeconds(delay); // Wait for the specified delay
+        isRespawning = true;
         StartCoroutine(ShowCoinMinusMsg());
 
         transform.position = respawnPoint;
@@ -435,10 +478,10 @@ public class PlayerJump : MonoBehaviour
         //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         //SceneManager.LoadScene(currentSceneIndex);
         Scene currentScene = SceneManager.GetActiveScene();
-        Debug.Log("Current Scene Name: " + currentScene.name);
+        // Debug.Log("Current Scene Name: " + currentScene.name);
         float x_coord = transform.position.x;
         float y_coord = transform.position.y;
-        Debug.Log("Current X Position of the Player: " + x_coord);
+        // Debug.Log("Current X Position of the Player: " + x_coord);
         if (sendToGoogle != null)
         {
             sendToGoogle.Send(x_coord, y_coord, currentScene.name);
