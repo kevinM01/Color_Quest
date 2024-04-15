@@ -31275,7 +31275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maincam: {fileID: 519420028}
   previecam: {fileID: 1123770981}
-  player: {fileID: 0}
 --- !u!1 &1981864669
 GameObject:
   m_ObjectHideFlags: 0
