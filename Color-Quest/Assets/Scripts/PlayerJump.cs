@@ -19,11 +19,15 @@ public class PlayerJump : MonoBehaviour
     public TextMeshProUGUI checkpointText;
     public TextMeshProUGUI coinMinus;
 
+    // Sprites for different states
+    public Sprite idleSprite;
+    public Sprite runningSprite;
+    public Sprite jumpingSprite;
+    private SpriteRenderer spriteRenderer;
 
     public int totalCoinsCollected = 0;
     public int healthRegains = 0;
 
-    // public TextMeshProUGUI gameOverText;
     private Coroutine damageCoroutine;
 
     private SendToGoogle sendToGoogle;
@@ -40,7 +44,7 @@ public class PlayerJump : MonoBehaviour
 
     private float analyticsTimer = 0f;
 
-    public bool grounded{get; private set;}
+    public bool grounded { get; private set; }
     public bool running => Mathf.Abs(rb.velocity.x) > 0.25f;
     public bool jumping{get; private set;}
     public Transform bulletSpawnPoint;
@@ -51,19 +55,16 @@ public class PlayerJump : MonoBehaviour
     
     private void Start()
     {
-        //respawnPoint = transform.position;
         rb = GetComponent<Rigidbody2D>();
-        // Initialize jumpsLeft with extraJumps + 1 to account for the initial ground jump.
+        spriteRenderer = GetComponent<SpriteRenderer>();  // Ensure there's a SpriteRenderer component attached
         jumpsLeft = extraJumps + 1;
         health = 100f;
-        // gameOverText.enabled = false;
-        /*UpdateHealthText();*/
         UpdateHealthBar();
 
         sendToGoogle = FindObjectOfType<SendToGoogle>();
         sendHealthDamageToGoogle = FindObjectOfType<SendHealthDamageToGoogle>();
         sendCoinXHealthToGoogle = FindObjectOfType<SendCoinXHealthToGoogle>();
-        pointCounter = FindObjectOfType<PointCounter>(); // Find the PointCounter instance
+        pointCounter = FindObjectOfType<PointCounter>();
         sendPlayerPositionToGoogle = FindObjectOfType<SendPlayerPositionToGoogle>();
         playerColorChange = FindObjectOfType<PlayerColorChange>();
     }
@@ -76,12 +77,12 @@ public class PlayerJump : MonoBehaviour
         
             groundedPlayer = IsGrounded();
 
-         analyticsTimer += Time.deltaTime;
-    if (analyticsTimer >= 2f) // Check if 1 second has passed
-    {
-        SendPlayerPositionAnalytics(); // Call your function
-        analyticsTimer = 0f; // Reset the timer
-    }
+        analyticsTimer += Time.deltaTime;
+        if (analyticsTimer >= 2f)
+        {
+            SendPlayerPositionAnalytics();
+            analyticsTimer = 0f;
+        }
 
     // SendPlayerPositionAnalytics();
     if (groundedPlayer && Mathf.Abs(rb.velocity.y) < 0.01f)
