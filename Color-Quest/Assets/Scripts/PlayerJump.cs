@@ -36,6 +36,7 @@ public class PlayerJump : MonoBehaviour
     private Coroutine blinkCoroutine;
 
     private Vector2 respawnPoint = Vector2.negativeInfinity;
+    private bool isRespawning = true;
 
     private float analyticsTimer = 0f;
 
@@ -47,6 +48,7 @@ public class PlayerJump : MonoBehaviour
     public float bulletSpeed = 10;
     private int bulletsFired = 0;
     public int maxBullets = 5;
+    
     private void Start()
     {
         //respawnPoint = transform.position;
@@ -68,7 +70,11 @@ public class PlayerJump : MonoBehaviour
 
     private void Update()
     {
-        groundedPlayer = IsGrounded();
+        if (isRespawning)
+        {
+
+        
+            groundedPlayer = IsGrounded();
 
          analyticsTimer += Time.deltaTime;
     if (analyticsTimer >= 2f) // Check if 1 second has passed
@@ -133,6 +139,7 @@ public class PlayerJump : MonoBehaviour
         }
     return;
     }
+    }
 
 
     private void SendPlayerPositionAnalytics()
@@ -176,9 +183,9 @@ public class PlayerJump : MonoBehaviour
 
 
         // RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f);
-        if (hit.collider != null) {
+        /*if (hit.collider != null) {
             Debug.Log("Hit: " + hit.collider.tag);
-        }
+        }*/
         return hit.collider != null && (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Spike") || hit.collider.CompareTag("movingObs"));
     }
 
@@ -408,7 +415,15 @@ public class PlayerJump : MonoBehaviour
         pointCounter.points--;
         pointCounter.UpdatePointsText();
         // Set player position to the stored checkpoint position
-        
+        isRespawning = false;
+        StartCoroutine(RespawnWithDelay(2.0f)); // Call the coroutine with a 1-second delay
+    }
+
+    IEnumerator RespawnWithDelay(float delay)
+    {
+        rb.velocity = Vector2.zero; // Set velocity to zero to stop movement
+        yield return new WaitForSeconds(delay); // Wait for the specified delay
+        isRespawning = true;
         StartCoroutine(ShowCoinMinusMsg());
 
         transform.position = respawnPoint;

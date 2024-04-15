@@ -61,7 +61,8 @@ public class DestroyCollectible : MonoBehaviour
 
     private void Collect(GameObject player)
     {
-        Destroy(gameObject);
+        // Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
 }
