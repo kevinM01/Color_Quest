@@ -30,6 +30,7 @@ public class Bullet : MonoBehaviour
             if (bulletColor == Color.white)
             {
                 // If the player color is white, destroy the obstacle regardless of its color
+                playerJump.bulletsHit++;
                 Destroy(collision.gameObject);
             }
             else
@@ -37,6 +38,7 @@ public class Bullet : MonoBehaviour
                 // Destroy the obstacle only if it has a different color than the bullet
                 if (obsColor == bulletColor)
                 {
+                    playerJump.bulletsHit++;
                     Destroy(collision.gameObject);
                 }
                 else

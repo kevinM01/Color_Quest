@@ -36,6 +36,7 @@ public class PlayerJump : MonoBehaviour
     private SendPlayerPositionToGoogle sendPlayerPositionToGoogle;
     private SendBulletAnalytics sendBulletAnalytics;
     public int bulletsWasted;
+    public int bulletsHit;
     private PointCounter pointCounter;
 
     private PlayerColorChange playerColorChange;
@@ -72,8 +73,10 @@ public class PlayerJump : MonoBehaviour
         sendCoinXHealthToGoogle = FindObjectOfType<SendCoinXHealthToGoogle>();
         pointCounter = FindObjectOfType<PointCounter>();
         sendPlayerPositionToGoogle = FindObjectOfType<SendPlayerPositionToGoogle>();
+        sendBulletAnalytics = FindObjectOfType<SendBulletAnalytics>();
         playerColorChange = FindObjectOfType<PlayerColorChange>();
         bulletsWasted = 0;
+        bulletsHit = 0;
     }
 
     private void Update()
@@ -534,7 +537,8 @@ if (rb.velocity.x > 0f) {
 
         if (sendBulletAnalytics != null)
         {
-            sendBulletAnalytics.Send(currentScene.name, this.bulletsWasted);
+            Debug.Log("What is UPppppp");
+            sendBulletAnalytics.Send(currentScene.name, (this.maxBullets - this.bulletsHit));
         }
     }
 
