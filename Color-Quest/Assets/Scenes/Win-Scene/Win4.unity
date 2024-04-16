@@ -475,7 +475,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Next Level
+  m_text: Tutorial 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -887,7 +887,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1752784514}
-        m_TargetAssemblyTypeName: Instruct5, Assembly-CSharp
+        m_TargetAssemblyTypeName: Tut3, Assembly-CSharp
         m_MethodName: LoadGame
         m_Mode: 1
         m_Arguments:
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1752784509}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90a69a055636c4db3ba15b8338a21084, type: 3}
+  m_Script: {fileID: 11500000, guid: d3d4ab3d64b4a4b7fa91c650c71ed125, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2021089363
