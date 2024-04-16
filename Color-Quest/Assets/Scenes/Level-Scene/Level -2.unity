@@ -7970,7 +7970,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.888693
+  orthographic size: 7.333552
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7995,7 +7995,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.528868, y: -115.476265, z: -10}
+  m_LocalPosition: {x: 4.24, y: -12.4, z: -10}
   m_LocalScale: {x: 6.608098, y: 5.7587385, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -12107,9 +12107,10 @@ Animation:
   m_GameObject: {fileID: 750841915}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 9b14f94b5f4aa4af085bfdfa6c9c8765, type: 2}
+  m_Animation: {fileID: 7400000, guid: a078787c40fd34ac5ab5cc53bb88dca0, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 9b14f94b5f4aa4af085bfdfa6c9c8765, type: 2}
+  - {fileID: 7400000, guid: a078787c40fd34ac5ab5cc53bb88dca0, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -25341,6 +25342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maincam: {fileID: 519420028}
   previecam: {fileID: 750841915}
+  playerObject: {fileID: 1800634938}
 --- !u!4 &1740928763
 Transform:
   m_ObjectHideFlags: 0

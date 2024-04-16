@@ -54,7 +54,7 @@ public class CamSwitch5 : MonoBehaviour
     // Update is called once per frame
     IEnumerator Preview()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(10);
         //  player.SetActive (true);
         EnablePlayerJumpScript();
         maincam.SetActive(true);
