@@ -21,7 +21,7 @@ public class SizeDecrease : MonoBehaviour
         float xScale = player.transform.localScale.y;
         if (xScale <= 0.3 )
         {
-            playerJump.CollectAnalytics();
+            playerJump.CollectAnalytics("healthCheck");
             SceneManager.LoadScene("SmallSize");
             Debug.Log("Die " + xScale);
         }

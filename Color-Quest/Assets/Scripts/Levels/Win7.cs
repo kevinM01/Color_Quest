@@ -22,6 +22,7 @@ public class Win7 : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerJump.SendCoinXHealthAnalytics();
+            playerJump.CollectAnalytics("winScene");
             SceneManager.LoadScene("Win7");
         }
 }

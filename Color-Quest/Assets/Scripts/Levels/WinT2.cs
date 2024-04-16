@@ -22,6 +22,7 @@ public class WinT2 : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerJump.SendCoinXHealthAnalytics();
+            playerJump.CollectAnalytics("winScene");
             SceneManager.LoadScene("WinT2");
         }
 }

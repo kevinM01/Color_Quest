@@ -55,6 +55,7 @@ public class PlayerJump : MonoBehaviour
     public float bulletSpeed = 10;
     public int bulletsFired = 0;
     public int maxBullets = 5;
+    public string isBulletAnalytic = "healthCheck";
 
 
     private bool hasReachedCheckpoint = false;
@@ -127,7 +128,7 @@ if (rb.velocity.x > 0f) {
         UpdateHealthBar();
 
         SendCoinXHealthAnalytics();
-        CollectAnalytics();
+        CollectAnalytics(isBulletAnalytic);
         // gameOverText.enabled = true;
 
         // StartCoroutine(ShowGameOverTextForThreeSeconds());
@@ -305,7 +306,7 @@ if (rb.velocity.x > 0f) {
             if (health <= 0)
             {
                 SendCoinXHealthAnalytics();
-                CollectAnalytics();
+                CollectAnalytics(isBulletAnalytic);
                 if (IsValidRespawnPoint() && pointCounter.points > 0)
                 {
                     RespawnPlayer();
@@ -409,7 +410,7 @@ if (rb.velocity.x > 0f) {
             Debug.Log("Colided with Fall"+ respawnPoint);
             SendCoinXHealthAnalytics();
             // Debug.Log("Reocrded");
-            CollectAnalytics();
+            CollectAnalytics(isBulletAnalytic);
             // Respawn the player at the checkpoint if available, else reload the scene
             if (IsValidRespawnPoint() && pointCounter.points > 0)
             {
@@ -515,12 +516,14 @@ if (rb.velocity.x > 0f) {
     //     SceneManager.LoadScene(currentSceneIndex);
 
     //     // Collect analytics
-    //     CollectAnalytics();
+    //     CollectAnalytics(isBulletAnalytic);
     // }
 
 
-    public void CollectAnalytics()
+    public void CollectAnalytics(string isBulletAnalytic)
     {
+        // healthCheck
+        // winScene
         // x coord of the player at the time of his dehant (rip player, awks!)
         // collect current level at time of death
         //int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -530,15 +533,26 @@ if (rb.velocity.x > 0f) {
         float x_coord = transform.position.x;
         float y_coord = transform.position.y;
         // Debug.Log("Current X Position of the Player: " + x_coord);
-        if (sendToGoogle != null)
+        if (isBulletAnalytic == "healthCheck")
         {
-            sendToGoogle.Send(x_coord, y_coord, currentScene.name);
-        }
+            if (sendToGoogle != null)
+            {
+                sendToGoogle.Send(x_coord, y_coord, currentScene.name);
+            }
 
-        if (sendBulletAnalytics != null)
+            if (sendBulletAnalytics != null)
+            {
+                Debug.Log("What is UPppppp - normal death");
+                sendBulletAnalytics.Send(currentScene.name, (this.maxBullets - this.bulletsHit));
+            }
+        }
+        if (isBulletAnalytic == "winScene")
         {
-            Debug.Log("What is UPppppp");
-            sendBulletAnalytics.Send(currentScene.name, (this.maxBullets - this.bulletsHit));
+            if (sendBulletAnalytics != null)
+            {
+                Debug.Log("What is UPppppp - Win Scneeeeee");
+                sendBulletAnalytics.Send(currentScene.name, (this.maxBullets - this.bulletsHit));
+            }
         }
     }
 

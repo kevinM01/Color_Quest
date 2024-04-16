@@ -24,6 +24,7 @@ public class Win4 : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerJump.SendCoinXHealthAnalytics();
+            playerJump.CollectAnalytics("winScene");
             SceneManager.LoadScene("Win4");
         }
 }
