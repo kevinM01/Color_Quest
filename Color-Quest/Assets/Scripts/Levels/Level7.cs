@@ -18,6 +18,6 @@ public class Level7 : MonoBehaviour
     }
     public void LoadGame()
     {
-        SceneManager.LoadScene("Instruction-Level 7”);
+        SceneManager.LoadScene("Instruction-Level 7");
     }
 }
