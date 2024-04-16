@@ -9,7 +9,7 @@ public class PlayerJump : MonoBehaviour
 {
     private Rigidbody2D rb;
     private bool groundedPlayer;
-    private float playerSpeed = 5.0f;
+    private float playerSpeed = 8.0f;
     private float jumpHeight = 3.0f;
     private int extraJumps = 1;
     private int jumpsLeft;
