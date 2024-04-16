@@ -6,6 +6,14 @@ public class Bullet : MonoBehaviour
 {
     public float life = 3;
     public Color bulletColor; // Color of the bullet
+    // public int bulletsWasted = 0;
+
+    public PlayerJump playerJump;
+
+    private void Start()
+    {
+        playerJump = FindObjectOfType<PlayerJump>();
+    }
 
     void Awake()
     {
@@ -31,7 +39,14 @@ public class Bullet : MonoBehaviour
                 {
                     Destroy(collision.gameObject);
                 }
+                else
+                {
+                    playerJump.bulletsWasted++;
+                }
             }
+        }
+        else{
+            playerJump.bulletsWasted++;
         }
 
         // Destroy the bullet in any case

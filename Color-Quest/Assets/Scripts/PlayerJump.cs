@@ -34,6 +34,8 @@ public class PlayerJump : MonoBehaviour
     private SendHealthDamageToGoogle sendHealthDamageToGoogle;
     private SendCoinXHealthToGoogle sendCoinXHealthToGoogle;
     private SendPlayerPositionToGoogle sendPlayerPositionToGoogle;
+    private SendBulletAnalytics sendBulletAnalytics;
+    public int bulletsWasted;
     private PointCounter pointCounter;
 
     private PlayerColorChange playerColorChange;
@@ -53,6 +55,7 @@ public class PlayerJump : MonoBehaviour
     public int bulletsFired = 0;
     public int maxBullets = 5;
 
+
     private bool hasReachedCheckpoint = false;
     private List<GameObject> collectedCollectibles = new List<GameObject>();
 
@@ -70,6 +73,7 @@ public class PlayerJump : MonoBehaviour
         pointCounter = FindObjectOfType<PointCounter>();
         sendPlayerPositionToGoogle = FindObjectOfType<SendPlayerPositionToGoogle>();
         playerColorChange = FindObjectOfType<PlayerColorChange>();
+        bulletsWasted = 0;
     }
 
     private void Update()
@@ -193,7 +197,7 @@ if (rb.velocity.x > 0f) {
 
         // RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f);
         if (hit.collider != null) {
-            Debug.Log("Hit: " + hit.collider.tag);
+            // Debug.Log("Hit: " + hit.collider.tag);
         }
         return hit.collider != null && (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Spike") || hit.collider.CompareTag("movingObs"));
     }
@@ -399,7 +403,7 @@ if (rb.velocity.x > 0f) {
     {
         if (col.CompareTag("Fall")) // Check if the player has fallen
         {
-            Debug.Log(respawnPoint);
+            Debug.Log("Colided with Fall"+ respawnPoint);
             SendCoinXHealthAnalytics();
             // Debug.Log("Reocrded");
             CollectAnalytics();
@@ -526,6 +530,11 @@ if (rb.velocity.x > 0f) {
         if (sendToGoogle != null)
         {
             sendToGoogle.Send(x_coord, y_coord, currentScene.name);
+        }
+
+        if (sendBulletAnalytics != null)
+        {
+            sendBulletAnalytics.Send(currentScene.name, this.bulletsWasted);
         }
     }
 
