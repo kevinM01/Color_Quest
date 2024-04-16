@@ -19,7 +19,7 @@ public class CamSwitchT3 : MonoBehaviour
         
     }
      IEnumerator Preview(){
-        yield return new WaitForSeconds (4);
+        yield return new WaitForSeconds (3);
         // player.SetActive (true);
         maincam.SetActive (true);
         previecam.SetActive (false);

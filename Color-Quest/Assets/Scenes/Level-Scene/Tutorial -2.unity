@@ -3042,9 +3042,10 @@ Animation:
   m_GameObject: {fileID: 852420824}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e16c5e3dc52e7479b9bcf51c99660ec9, type: 2}
+  m_Animation: {fileID: 7400000, guid: d83de7578f51d47b28365dd7082dbd74, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: e16c5e3dc52e7479b9bcf51c99660ec9, type: 2}
+  - {fileID: 7400000, guid: d83de7578f51d47b28365dd7082dbd74, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -3221,7 +3222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 858555466}
-  - component: {fileID: 858555465}
+  - component: {fileID: 858555467}
   m_Layer: 0
   m_Name: CamSwitch
   m_TagString: Untagged
@@ -3229,20 +3230,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &858555465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 858555464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15d0eceefb03244868552379a31aded0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maincam: {fileID: 2140668515}
-  previecam: {fileID: 852420824}
 --- !u!4 &858555466
 Transform:
   m_ObjectHideFlags: 0
@@ -3258,6 +3245,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &858555467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858555464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 380217cb93480440184ff1d6eb39b294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maincam: {fileID: 2140668515}
+  previecam: {fileID: 852420824}
 --- !u!1 &873505456
 GameObject:
   m_ObjectHideFlags: 0
