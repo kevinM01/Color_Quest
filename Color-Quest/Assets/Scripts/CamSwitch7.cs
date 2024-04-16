@@ -5,24 +5,60 @@ using UnityEngine;
 public class CamSwitch7 : MonoBehaviour
 {
     // Start is called before the first frame update
-      public GameObject maincam;
+    public GameObject maincam;
     public GameObject previecam;
+
+    public GameObject playerObject; // Reference to the player GameObject
+    private PlayerJump playerJumpScript; // Reference to the PlayerJump script attached to the player
+
+    // public GameObject player; 
     void Start()
     {
-         maincam.SetActive (false);
-        StartCoroutine (Preview());
-        
+        // Get the PlayerJump script component from the player GameObject
+        playerJumpScript = playerObject.GetComponent<PlayerJump>();
+
+        maincam.SetActive(false);
+        DisablePlayerJumpScript();
+        StartCoroutine(Preview());
+        //  player.SetActive (false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void EnablePlayerJumpScript()
     {
-        
+        if (playerJumpScript != null)
+        {
+            playerJumpScript.enabled = true;
+            Debug.Log("PlayerJump script enabled.");
+        }
+        else
+        {
+            Debug.LogWarning("PlayerJump script is not assigned.");
+        }
     }
-     IEnumerator Preview(){
-        yield return new WaitForSeconds (10);
-        // player.SetActive (true);
-        maincam.SetActive (true);
-        previecam.SetActive (false);
+
+    // Method to disable the PlayerJump script
+    public void DisablePlayerJumpScript()
+    {
+        if (playerJumpScript != null)
+        {
+            playerJumpScript.enabled = false;
+            Debug.Log("PlayerJump script disabled.");
+        }
+        else
+        {
+            Debug.LogWarning("PlayerJump script is not assigned.");
+        }
+    }
+
+
+    // Update is called once per frame
+    IEnumerator Preview()
+    {
+        yield return new WaitForSeconds(6);
+        //  player.SetActive (true);
+        EnablePlayerJumpScript();
+        maincam.SetActive(true);
+        previecam.SetActive(false);
+
     }
 }
