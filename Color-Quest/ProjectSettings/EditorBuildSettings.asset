@@ -101,4 +101,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instruction-Scene/Instruction-Level 7.unity
     guid: 6b390c2cd339bb44dad18819b4d5c9e6
+  - enabled: 1
+    path: Assets/Scenes/Win-Scene/WinT2.unity
+    guid: f1a64287f31e5458d8c53ebd19921c00
+  - enabled: 1
+    path: Assets/Scenes/Win-Scene/WinT3.unity
+    guid: 83837e3abdb42456fb017cbfac1dd6b5
   m_configObjects: {}
