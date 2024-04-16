@@ -6617,9 +6617,10 @@ Animation:
   m_GameObject: {fileID: 852420824}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: e16c5e3dc52e7479b9bcf51c99660ec9, type: 2}
+  m_Animation: {fileID: 7400000, guid: 84f73d9c9005747969daaefb93a84e31, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: e16c5e3dc52e7479b9bcf51c99660ec9, type: 2}
+  - {fileID: 7400000, guid: 84f73d9c9005747969daaefb93a84e31, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -18101,6 +18102,7 @@ MonoBehaviour:
   totalCoinsCollected: 0
   healthRegains: 0
   bulletsWasted: 0
+  bulletsHit: 0
   bulletSpawnPoint: {fileID: 0}
   bulletPrefab: {fileID: 0}
   bulletSpeed: 10
