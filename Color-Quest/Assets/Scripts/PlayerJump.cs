@@ -176,27 +176,59 @@ if (rb.velocity.x > 0f) {
     //     gameOverText.enabled = false; // Disable gameOverText after 3 seconds
     // }
 
-    private bool IsGrounded()
-    {
-        // // Define the layer mask to exclude the "Collectibles" layer
-        // // This assumes that "Collectibles" is the name of the layer you want to exclude
-        // int layerMask = ~(1 << LayerMask.NameToLayer("Collectibles"));
+    // private bool IsGrounded()
+    // {
+    //     // // Define the layer mask to exclude the "Collectibles" layer
+    //     // // This assumes that "Collectibles" is the name of the layer you want to exclude
+    //     // int layerMask = ~(1 << LayerMask.NameToLayer("Collectibles"));
         
-        // // Use the layer mask in the raycast
-        // RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f, layerMask);
-        // return hit.collider != null;
+    //     // // Use the layer mask in the raycast
+    //     // RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f, layerMask);
+    //     // return hit.collider != null;
 
-        // Adjust the start position of the raycast to be just below the player's feet (assuming a downward raycast)
-        Vector2 rayStart = new Vector2(transform.position.x, transform.position.y - GetComponent<Collider2D>().bounds.extents.y - 0.4f);
-        RaycastHit2D hit = Physics2D.Raycast(rayStart, Vector2.down, 0.4f);
+    //     // Adjust the start position of the raycast to be just below the player's feet (assuming a downward raycast)
+    //     Vector2 rayStart = new Vector2(transform.position.x, transform.position.y - GetComponent<Collider2D>().bounds.extents.y - 0.4f);
+    //     RaycastHit2D hit = Physics2D.Raycast(rayStart, Vector2.down, 0.4f);
 
 
-        // RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f);
-        /*if (hit.collider != null) {
-            Debug.Log("Hit: " + hit.collider.tag);
-        }*/
-        return hit.collider != null && (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Spike") || hit.collider.CompareTag("movingObs"));
+    //     // RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.2f);
+    //     if (hit.collider != null) {
+    //         Debug.Log("Hit: " + hit.collider.tag);
+    //     }
+    //     return hit.collider != null && (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Spike") || hit.collider.CompareTag("movingObs"));
+    // }
+
+    private bool IsGrounded()
+{
+    // Adjust the start position of the raycast to be just below the player's feet
+    Vector2 rayStart = new Vector2(transform.position.x, transform.position.y - GetComponent<Collider2D>().bounds.extents.y - 0.6f);
+    
+    // Perform the raycast without a layer mask
+    RaycastHit2D hit = Physics2D.Raycast(rayStart, Vector2.down, 0.4f);
+
+    Debug.DrawRay(rayStart, Vector2.down * 1f, Color.red);
+
+    // Check if the hit is valid and not the player
+    // if (hit.collider != null) {
+    //     Debug.Log("Hit: " + hit.collider.tag);
+    //     if (hit.collider.tag != "Player") {
+    //         return (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Spike") || hit.collider.CompareTag("movingObs"));
+    //     }
+    // }
+
+    if (hit.collider != null) {
+    Debug.Log("Hit: " + hit.collider.tag + ", GameObject: " + hit.collider.gameObject.name);
+    if (hit.collider.tag != "Player") {
+        return (hit.collider.CompareTag("Ground") || hit.collider.CompareTag("Spike") || hit.collider.CompareTag("movingObs"));
     }
+} else {
+    Debug.Log("No collision detected");
+}
+
+    return false;
+}
+
+
 
     void OnCollisionEnter2D(Collision2D  other)
     {
