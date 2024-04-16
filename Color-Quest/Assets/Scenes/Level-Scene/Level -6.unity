@@ -13969,7 +13969,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.12959573, y: 0.9194715}
   m_AnchorMax: {x: 0.12959573, y: 0.9194715}
-  m_AnchoredPosition: {x: 45.933533, y: -30.1}
+  m_AnchoredPosition: {x: 26.400024, y: -36.8}
   m_SizeDelta: {x: 217.7381, y: 55.1066}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &836433289
@@ -14032,8 +14032,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -29065,6 +29065,7 @@ MonoBehaviour:
   jumpingSprite: {fileID: 21300000, guid: 320f4eb52e227b446830a1f6fd691fca, type: 3}
   totalCoinsCollected: 0
   healthRegains: 0
+  bulletsWasted: 0
   bulletSpawnPoint: {fileID: 66010220}
   bulletPrefab: {fileID: 134933200574403185, guid: 348d8b0923bbf324cbc8deb9f20a1ebc, type: 3}
   bulletSpeed: 10
