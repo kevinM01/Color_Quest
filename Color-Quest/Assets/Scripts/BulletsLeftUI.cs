@@ -24,7 +24,7 @@ public class BulletsLeftUI : MonoBehaviour
         if (playerJump != null)
         {
             int bulletsLeft = playerJump.maxBullets - playerJump.bulletsFired;
-            textComponent.text = "Bullets Left: " + bulletsLeft.ToString();
+            textComponent.text = "Bullets: " + bulletsLeft.ToString();
         }
     }
 }
