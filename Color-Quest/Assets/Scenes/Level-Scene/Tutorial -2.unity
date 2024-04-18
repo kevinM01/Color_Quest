@@ -8193,6 +8193,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1997778481}
+  zoomOutSize: 13
+  zoomDistance: 20
 --- !u!114 &2140668517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8226,7 +8228,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.3764706, g: 0.45490196, b: 0.5686275, a: 0}
+  m_BackGroundColor: {r: 0.12941177, g: 0.1764706, b: 0.27450982, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
