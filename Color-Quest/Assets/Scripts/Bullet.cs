@@ -9,10 +9,12 @@ public class Bullet : MonoBehaviour
     // public int bulletsWasted = 0;
 
     public PlayerJump playerJump;
+    private PointCounter pointCounter;
 
     private void Start()
     {
         playerJump = FindObjectOfType<PlayerJump>();
+        pointCounter = FindObjectOfType<PointCounter>();
     }
 
     void Awake()
@@ -31,6 +33,10 @@ public class Bullet : MonoBehaviour
             {
                 // If the player color is white, destroy the obstacle regardless of its color
                 playerJump.bulletsHit++;
+                // increase 2 points per moving obstacle destroyed
+                pointCounter.points += 2;
+                Debug.Log("Increase 2 points, por favor - white");
+                pointCounter.UpdatePointsText();
                 Destroy(collision.gameObject);
             }
             else
@@ -39,6 +45,9 @@ public class Bullet : MonoBehaviour
                 if (obsColor == bulletColor)
                 {
                     playerJump.bulletsHit++;
+                    pointCounter.points += 2;
+                    Debug.Log("Increase 2 points, por favor - not white");
+                    pointCounter.UpdatePointsText();
                     Destroy(collision.gameObject);
                 }
                 else

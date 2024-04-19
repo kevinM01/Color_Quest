@@ -40,11 +40,11 @@ public class PointCounter : MonoBehaviour
             }
 
             // Check if the player has collected 5 points
-            if (points >= 5)
+            /*if (points >= 5)
             {
                 // Invoke a method to increase the player's health by 10
                 playerJump.IncreaseHealthByAmount(20);
-            }
+            }*/
         }
 
 //

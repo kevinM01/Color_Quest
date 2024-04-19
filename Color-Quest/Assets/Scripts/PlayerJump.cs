@@ -291,7 +291,9 @@ if (rb.velocity.x > 0f) {
             health -= 20f;
             UpdateHealthText();
             UpdateHealthBar();
-            IncreaseHealthByAmount(20);
+
+            // IncreaseHealthByAmount(20);
+            
             /*sendHealthDamageToGoogle();*/
             Scene currentScene = SceneManager.GetActiveScene();
             // Debug.Log("Current Scene Name: " + currentScene.name);
@@ -375,9 +377,9 @@ if (rb.velocity.x > 0f) {
         }
     }
 
-    public void IncreaseHealthByAmount(float amount)
+    /*public void IncreaseHealthByAmount(float amount)
     {
-        if (pointCounter != null)
+        /*if (pointCounter != null)
         {
             if (pointCounter.points >= 5) // Check if the player has at least 5 points
             {
@@ -388,7 +390,7 @@ if (rb.velocity.x > 0f) {
                     float newHealth = health + 20;
                     // If the new health exceeds 100, set it to 100
                     health = Mathf.Min(newHealth, 100);
-                    /*UpdateHealthText();*/
+                    *//*UpdateHealthText();*//*
                     UpdateHealthBar();
 
                     healthRegains += 1;
@@ -400,7 +402,7 @@ if (rb.velocity.x > 0f) {
                 }
             }
         }
-    }
+    }*/
 
 
     void OnTriggerEnter2D(Collider2D col)
