@@ -17,7 +17,7 @@ public class PlayerJump : MonoBehaviour
     public Image healthBar;
     public TextMeshProUGUI healthText;
     public TextMeshProUGUI checkpointText;
-    public TextMeshProUGUI coinMinus;
+    // public TextMeshProUGUI coinMinus;
 
     // Sprites for different states
     public Sprite idleSprite;
@@ -27,6 +27,8 @@ public class PlayerJump : MonoBehaviour
 
     public int totalCoinsCollected = 0;
     public int healthRegains = 0;
+
+    private bool checkpointShown = false;
 
     private Coroutine damageCoroutine;
 
@@ -57,6 +59,8 @@ public class PlayerJump : MonoBehaviour
     public int maxBullets = 5;
     public string isBulletAnalytic = "healthCheck";
 
+    public SpriteRenderer checkpointRenderer;
+
 
     private bool hasReachedCheckpoint = false;
     private List<GameObject> collectedCollectibles = new List<GameObject>();
@@ -68,6 +72,8 @@ public class PlayerJump : MonoBehaviour
         jumpsLeft = extraJumps + 1;
         health = 100f;
         UpdateHealthBar();
+
+        checkpointRenderer = GetComponent<SpriteRenderer>();
 
         sendToGoogle = FindObjectOfType<SendToGoogle>();
         sendHealthDamageToGoogle = FindObjectOfType<SendHealthDamageToGoogle>();
@@ -432,8 +438,17 @@ if (rb.velocity.x > 0f) {
             hasReachedCheckpoint = true;            
             // Update the respawn point to the position of the checkpoint
             respawnPoint = col.transform.position;
+            respawnPoint.x = respawnPoint.x - 1f;
+
+        CheckpointBehavior checkpointBehavior = col.gameObject.GetComponent<CheckpointBehavior>();
+        if (checkpointBehavior != null)
+        {
+            checkpointBehavior.ActivateCheckpoint();
+        }
+
             Debug.Log("Checkpoint reached");
-            StartCoroutine(ShowCheckpointMessage());
+            if(checkpointShown == false)
+                StartCoroutine(ShowCheckpointMessage());
         }
         if (col.CompareTag("Collectible"))
         {
@@ -459,19 +474,20 @@ if (rb.velocity.x > 0f) {
         yield return new WaitForSeconds(2f);
 
         checkpointText.enabled = false; 
+        checkpointShown = true;
     }
 
-    IEnumerator ShowCoinMinusMsg()
-    {
-        yield return new WaitForSeconds(2f);
+    // IEnumerator ShowCoinMinusMsg()
+    // {
+    //     yield return new WaitForSeconds(2f);
 
-        coinMinus.enabled = true;
-        coinMinus.text = "[Coins -1]";
+    //     coinMinus.enabled = true;
+    //     coinMinus.text = "[Coins -1]";
 
-        yield return new WaitForSeconds(2f);
+    //     yield return new WaitForSeconds(2f);
 
-        coinMinus.enabled = false;
-    }
+    //     coinMinus.enabled = false;
+    // }
 
     bool IsValidRespawnPoint()
     {
@@ -504,7 +520,7 @@ if (rb.velocity.x > 0f) {
         rb.velocity = Vector2.zero; // Set velocity to zero to stop movement
         yield return new WaitForSeconds(delay); // Wait for the specified delay
         isRespawning = true;
-        StartCoroutine(ShowCoinMinusMsg());
+        // StartCoroutine(ShowCoinMinusMsg());
 
         transform.position = respawnPoint;
         pointCounter.BlinkPointsText(3.0f);
