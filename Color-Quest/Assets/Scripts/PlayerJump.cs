@@ -249,6 +249,7 @@ if (rb.velocity.x > 0f) {
         /*Debug.Log("Collided with Spike");*/
             if (damageCoroutine == null)
             {
+                Debug.Log("Reduced health overtime");
                 damageCoroutine = StartCoroutine(ReduceHealthOverTime());
             }
         }
