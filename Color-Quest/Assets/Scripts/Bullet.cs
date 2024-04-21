@@ -42,7 +42,7 @@ public class Bullet : MonoBehaviour
             else
             {
                 // Destroy the obstacle only if it has a different color than the bullet
-                if (obsColor == bulletColor)
+                if (obsColor != bulletColor)
                 {
                     playerJump.bulletsHit++;
                     pointCounter.points += 2;
