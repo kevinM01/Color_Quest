@@ -385,9 +385,9 @@ if (rb.velocity.x > 0f) {
         }
     }
 
-    /*public void IncreaseHealthByAmount(float amount)
+    public void IncreaseHealthByAmount(float amount)
     {
-        /*if (pointCounter != null)
+        if (pointCounter != null)
         {
             if (pointCounter.points >= 5) // Check if the player has at least 5 points
             {
@@ -398,7 +398,7 @@ if (rb.velocity.x > 0f) {
                     float newHealth = health + 20;
                     // If the new health exceeds 100, set it to 100
                     health = Mathf.Min(newHealth, 100);
-                    *//*UpdateHealthText();*//*
+                    UpdateHealthText();
                     UpdateHealthBar();
 
                     healthRegains += 1;
@@ -410,7 +410,7 @@ if (rb.velocity.x > 0f) {
                 }
             }
         }
-    }*/
+    }
 
 
     void OnTriggerEnter2D(Collider2D col)
@@ -459,10 +459,10 @@ if (rb.velocity.x > 0f) {
             Collectible collectible = col.GetComponent<Collectible>();
             Debug.Log("Hello in Collectible if... on TriggerrrEnterrr");
             /*if (collectible != null && !collectible.IsCollected())*/
-            /*if (collectible != null)
-            {*/
-                // Collect the collectible
-                collectedCollectibles.Add(col.gameObject);
+        /*if (collectible != null)
+        {*/
+        // Collect the collectible
+        collectedCollectibles.Add(col.gameObject);
                 Debug.Log("Hello buddyyy");
                 collectible.Disable(); // Disable the collectible GameObject
                 Debug.Log("Collectible collected.");
@@ -502,7 +502,7 @@ if (rb.velocity.x > 0f) {
 
     void RespawnPlayer()
     {
-        pointCounter.points--;
+        // pointCounter.points--;
         pointCounter.UpdatePointsText();
         // Set player position to the stored checkpoint position
         isRespawning = false;

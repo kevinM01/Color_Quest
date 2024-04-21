@@ -35,7 +35,7 @@ public class Bullet : MonoBehaviour
                 playerJump.bulletsHit++;
                 // increase 2 points per moving obstacle destroyed
                 pointCounter.points += 2;
-                Debug.Log("Increase 2 points, por favor - white");
+                Debug.Log("Increase 2 points - white");
                 pointCounter.UpdatePointsText();
                 Destroy(collision.gameObject);
             }
@@ -46,7 +46,7 @@ public class Bullet : MonoBehaviour
                 {
                     playerJump.bulletsHit++;
                     pointCounter.points += 2;
-                    Debug.Log("Increase 2 points, por favor - not white");
+                    Debug.Log("Increase 2 points - not white");
                     pointCounter.UpdatePointsText();
                     Destroy(collision.gameObject);
                 }
