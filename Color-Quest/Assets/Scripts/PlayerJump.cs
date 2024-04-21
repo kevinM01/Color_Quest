@@ -45,6 +45,7 @@ public class PlayerJump : MonoBehaviour
     private Coroutine blinkCoroutine;
 
     private Vector2 respawnPoint = Vector2.negativeInfinity;
+    private Vector2 prevRespawnPoint = Vector2.positiveInfinity;
     private bool isRespawning = true;
 
     private float analyticsTimer = 0f;
@@ -439,6 +440,7 @@ if (rb.velocity.x > 0f) {
             // Update the respawn point to the position of the checkpoint
             respawnPoint = col.transform.position;
             respawnPoint.x = respawnPoint.x - 1f;
+            
 
         CheckpointBehavior checkpointBehavior = col.gameObject.GetComponent<CheckpointBehavior>();
         if (checkpointBehavior != null)
@@ -447,8 +449,10 @@ if (rb.velocity.x > 0f) {
         }
 
             Debug.Log("Checkpoint reached");
-            if(checkpointShown == false)
+            if(prevRespawnPoint.x != respawnPoint.x)
                 StartCoroutine(ShowCheckpointMessage());
+            Debug.Log("prevRespawnPoint: " + prevRespawnPoint + "respawnPoint: " + respawnPoint);
+            prevRespawnPoint = respawnPoint;
         }
         if (col.CompareTag("Collectible"))
         {
