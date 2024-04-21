@@ -451,13 +451,13 @@ if (rb.velocity.x > 0f) {
             Debug.Log("Checkpoint reached");
             if(prevRespawnPoint.x != respawnPoint.x)
                 StartCoroutine(ShowCheckpointMessage());
-            Debug.Log("prevRespawnPoint: " + prevRespawnPoint + "respawnPoint: " + respawnPoint);
+            // Debug.Log("prevRespawnPoint: " + prevRespawnPoint + "respawnPoint: " + respawnPoint);
             prevRespawnPoint = respawnPoint;
         }
         if (col.CompareTag("Collectible"))
         {
             Collectible collectible = col.GetComponent<Collectible>();
-            Debug.Log("Hello in Collectible if... on TriggerrrEnterrr");
+            // Debug.Log("Hello in Collectible if... on TriggerrrEnterrr");
             /*if (collectible != null && !collectible.IsCollected())*/
         /*if (collectible != null)
         {*/
