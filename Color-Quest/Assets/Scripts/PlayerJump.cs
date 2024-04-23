@@ -527,7 +527,7 @@ if (rb.velocity.x > 0f) {
         // StartCoroutine(ShowCoinMinusMsg());
 
         transform.position = respawnPoint;
-        pointCounter.BlinkPointsText(3.0f);
+        //pointCounter.BlinkPointsText(3.0f);
     }
 
     // private IEnumerator ReloadSceneAfterDelay(float delay)
