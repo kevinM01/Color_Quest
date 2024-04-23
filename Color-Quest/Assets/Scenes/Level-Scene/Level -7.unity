@@ -36391,6 +36391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200e0d474c4d3cb429399f85d1ca70fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerJump: {fileID: 1800634949}
 --- !u!114 &1758476364
 MonoBehaviour:
   m_ObjectHideFlags: 0
