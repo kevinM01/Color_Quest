@@ -127,7 +127,7 @@ if (rb.velocity.x > 0f) {
 
     /*UpdateHealthText();*/
     UpdateHealthBar();
-
+    IncreaseHealthByAmount(20);
     if (health <= 0)
     {
         health=0;
