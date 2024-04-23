@@ -46,4 +46,4 @@ public class FollowPlayer : MonoBehaviour
             isZoomedOut = true;
         }
     }
-}
+} 
