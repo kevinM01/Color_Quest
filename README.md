@@ -29,7 +29,7 @@ Indicates the number of coins collected.
 Navigate back to the main menu.
 
 
-## Level
+## Levels
 ![home](https://github.com/kevinM01/Algorithmic-Comparison-Prediction-of-Real-Estate-Pricing/assets/78092182/4b88107f-d2a2-44e3-9409-f465e0ca12b6)
 
 ![home](https://github.com/kevinM01/Algorithmic-Comparison-Prediction-of-Real-Estate-Pricing/assets/78092182/39033069-588a-453a-be17-772db56d3383)
@@ -38,6 +38,10 @@ Navigate back to the main menu.
 
 ![home](https://github.com/kevinM01/Algorithmic-Comparison-Prediction-of-Real-Estate-Pricing/assets/78092182/b2919382-e849-4a8a-8c43-27d77d841ec1)
 
+## Main Menu
+
 ![home](https://github.com/kevinM01/Algorithmic-Comparison-Prediction-of-Real-Estate-Pricing/assets/78092182/f39861a6-e21f-4b11-9292-551f81805ad9)
+
+## Intructions
 
 ![home](https://github.com/kevinM01/Algorithmic-Comparison-Prediction-of-Real-Estate-Pricing/assets/78092182/dd71b284-0356-4c5d-9eda-bc289057b624)
