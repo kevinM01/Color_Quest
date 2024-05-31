@@ -1,5 +1,8 @@
 # Color Quest
 
+## Playable Game Link
+https://play.unity.com/mg/other/build-2d4
+
 ## Logline
 Color Quest is a 2D level-based puzzle platformer where players must gather colored objects to alter their character's color so that it may pass through platforms that match the player's current color. Players must dodge obstacles and gather coins to acquire health and use checkpoints throughout the game.
 
@@ -42,6 +45,6 @@ Navigate back to the main menu.
 
 ![home](https://github.com/kevinM01/Algorithmic-Comparison-Prediction-of-Real-Estate-Pricing/assets/78092182/f39861a6-e21f-4b11-9292-551f81805ad9)
 
-## Intructions
+## Intruction Page
 
 ![home](https://github.com/kevinM01/Algorithmic-Comparison-Prediction-of-Real-Estate-Pricing/assets/78092182/dd71b284-0356-4c5d-9eda-bc289057b624)
